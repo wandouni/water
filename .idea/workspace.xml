@@ -4,14 +4,8 @@
     <list default="true" id="717ce54d-6a49-4a54-8503-87e5d38577d7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/month_table.min.css" afterPath="$PROJECT_DIR$/dist/css/month_table.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/statistical_report.min.css" afterPath="$PROJECT_DIR$/dist/css/statistical_report.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/year_table.min.css" afterPath="$PROJECT_DIR$/dist/css/year_table.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/month_table.less" afterPath="$PROJECT_DIR$/src/less/month_table.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/statistical_report.less" afterPath="$PROJECT_DIR$/src/less/statistical_report.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/year_table.less" afterPath="$PROJECT_DIR$/src/less/year_table.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/style/month_table.css" afterPath="$PROJECT_DIR$/static/style/month_table.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/style/statistical_report.css" afterPath="$PROJECT_DIR$/static/style/statistical_report.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/style/year_table.css" afterPath="$PROJECT_DIR$/static/style/year_table.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -87,10 +81,10 @@
       <file leaf-file-name="month_table.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/less/month_table.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="185" column="23" lean-forward="true" selection-start-line="185" selection-start-column="23" selection-end-line="185" selection-end-column="23" />
+            <state relative-caret-position="152">
+              <caret line="45" column="59" lean-forward="false" selection-start-line="45" selection-start-column="59" selection-end-line="45" selection-end-column="59" />
               <folding>
-                <element signature="e#1378#3888#0" expanded="false" />
+                <element signature="e#1381#3891#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -586,12 +580,12 @@
       <workItem from="1498632463801" duration="2863000" />
       <workItem from="1498635331726" duration="18249000" />
       <workItem from="1498702306402" duration="8608000" />
-      <workItem from="1498718817400" duration="6440000" />
+      <workItem from="1498718817400" duration="6878000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="377709000" />
+    <option name="totallyTimeSpent" value="378147000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -998,10 +992,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/less/month_table.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="185" column="23" lean-forward="true" selection-start-line="185" selection-start-column="23" selection-end-line="185" selection-end-column="23" />
+        <state relative-caret-position="152">
+          <caret line="45" column="59" lean-forward="false" selection-start-line="45" selection-start-column="59" selection-end-line="45" selection-end-column="59" />
           <folding>
-            <element signature="e#1378#3888#0" expanded="false" />
+            <element signature="e#1381#3891#0" expanded="false" />
           </folding>
         </state>
       </provider>

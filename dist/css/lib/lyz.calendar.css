@@ -45,7 +45,7 @@
     float: left;
     margin: 18px 0 0 5px;
     cursor: pointer;
-    background: url(../../img/date_bg.png) no-repeat 5px -87px;
+    background: url(../../../img/date_bg.png) no-repeat 5px -87px;
 }
 
 .calendar .calMain .calTitle .nextMonth {
@@ -54,7 +54,7 @@
     float: right;
     margin: 18px 5px 0 0;
     cursor: pointer;
-    background: url(../../img/date_bg.png) no-repeat 6px -157px;
+    background: url(../../../img/date_bg.png) no-repeat 6px -157px;
 }
 
 .calendar .calMain .calTitle .currentYear:hover {

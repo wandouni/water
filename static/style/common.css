@@ -63,7 +63,6 @@ html {
 }
 .wrapper .top-navbar {
   width: 100%;
-  min-width: 1366px;
   height: 68px;
   background: #FFF;
   border-bottom: #dcdcdc 1px solid;
@@ -95,6 +94,8 @@ html {
 }
 .wrapper .top-navbar .right {
   font-size: 0;
+  height: 100%;
+  line-height: 100%;
 }
 .wrapper .top-navbar .right .user {
   font-size: 14px;
@@ -103,6 +104,11 @@ html {
   margin-right: 53px;
   text-decoration: none;
   cursor: pointer;
+}
+@media screen and (max-width: 1024px) {
+  .wrapper .top-navbar .right .user {
+    display: none;
+  }
 }
 .wrapper .top-navbar .right .Cancellation {
   margin-right: 48px;
@@ -119,6 +125,11 @@ html {
   text-decoration: none;
   cursor: pointer;
 }
+@media screen and (max-width: 1024px) {
+  .wrapper .top-navbar .right .Cancellation {
+    margin-top: 21px;
+  }
+}
 .wrapper .content {
   width: 100%;
   background: #f1f1f2;
@@ -132,29 +143,8 @@ html {
   left: 0;
   z-index: 100;
 }
-.wrapper .content .navbar-side .nav .big-navbar {
-  /*position: relative;
-          &:after {
-            content: '';
-            position: absolute;
-            bottom: 0px;
-            left: 20px;
-            width: 196px;
-            height: 1px;
-            background-color: #334158;
-          }*/
-}
 .wrapper .content .navbar-side .nav .big-navbar .parent-wrapper {
   background: #283549;
-  /* background: #2a394e;
-             color: #527ee6;
-             &.active, &:hover {
-               background: #529fff;
-               border: none;
-               height: 48px;
-               color: #fff;
-               cursor: pointer;
-             }*/
   padding: 0 15px 0 20px;
 }
 .wrapper .content .navbar-side .nav .big-navbar .parent-wrapper a {

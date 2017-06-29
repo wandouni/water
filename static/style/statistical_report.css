@@ -16,7 +16,7 @@
   background-color: #fff;
   border: #efefef 1px solid;
   border-radius: 6px;
-  padding: 37px 0 43px 233px;
+  padding: 37px 233px 43px 233px;
   font-size: 0;
   margin-bottom: 10px;
   position: relative;
@@ -93,7 +93,7 @@
   line-height: 34px;
   padding-left: 127px;
 }
-.page-wrapper .search-wrapper .search-btn {
+.page-wrapper .search-wrapper .search-btn-wrapper {
   display: inline-block;
   width: 82px;
   height: 36px;
@@ -104,9 +104,9 @@
   border-radius: 4px;
   text-align: center;
   cursor: pointer;
-  margin: 31px 0 0 315px;
+  margin: 31px auto;
 }
-.page-wrapper .search-wrapper .search-btn:hover {
+.page-wrapper .search-wrapper .search-btn-wrapper:hover {
   background-color: #4d8fe8;
 }
 .page-wrapper .table-wrapper {

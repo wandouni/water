@@ -108,7 +108,7 @@ body, html {
   background: #f1f1f2;
   .top-navbar {
     width: 100%;
-    min-width: 1366px;
+    //min-width: 1366px;
     height: 68px;
     background: #FFF;
     border-bottom: #dcdcdc 1px solid;
@@ -142,6 +142,8 @@ body, html {
     }
     .right {
       font-size: 0;
+      height: 100%;
+      line-height: 100%;
       .user {
         font-size: 14px;
         color: #444;
@@ -149,10 +151,16 @@ body, html {
         margin-right: 53px;
         text-decoration: none;
         cursor: pointer;
+        @media screen and (max-width: 1024px) {
+          display: none;
+        }
       }
       .Cancellation {
         margin-right: 48px;
         .gray-gradient-btn(70px, 26px);
+        @media screen and (max-width: 1024px) {
+          margin-top: 21px;
+        }
       }
     }
   }
@@ -169,27 +177,8 @@ body, html {
       z-index: 100;
       .nav {
         .big-navbar {
-          /*position: relative;
-          &:after {
-            content: '';
-            position: absolute;
-            bottom: 0px;
-            left: 20px;
-            width: 196px;
-            height: 1px;
-            background-color: #334158;
-          }*/
           .parent-wrapper {
             .comSide;
-            /* background: #2a394e;
-             color: #527ee6;
-             &.active, &:hover {
-               background: #529fff;
-               border: none;
-               height: 48px;
-               color: #fff;
-               cursor: pointer;
-             }*/
             padding: 0 15px 0 20px;
             a {
               text-decoration: none;

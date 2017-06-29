@@ -3,9 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="717ce54d-6a49-4a54-8503-87e5d38577d7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/common.min.css" afterPath="$PROJECT_DIR$/dist/css/common.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/common.less" afterPath="$PROJECT_DIR$/src/less/common.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/style/common.css" afterPath="$PROJECT_DIR$/static/style/common.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/month_table.min.css" afterPath="$PROJECT_DIR$/dist/css/month_table.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/statistical_report.min.css" afterPath="$PROJECT_DIR$/dist/css/statistical_report.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/year_table.min.css" afterPath="$PROJECT_DIR$/dist/css/year_table.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/month_table.less" afterPath="$PROJECT_DIR$/src/less/month_table.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/statistical_report.less" afterPath="$PROJECT_DIR$/src/less/statistical_report.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/year_table.less" afterPath="$PROJECT_DIR$/src/less/year_table.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/style/month_table.css" afterPath="$PROJECT_DIR$/static/style/month_table.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/style/statistical_report.css" afterPath="$PROJECT_DIR$/static/style/statistical_report.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/style/year_table.css" afterPath="$PROJECT_DIR$/static/style/year_table.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,11 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="common.less" pinned="false" current-in-tab="true">
+      <file leaf-file-name="common.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/less/common.less">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="352">
-              <caret line="231" column="59" lean-forward="true" selection-start-line="231" selection-start-column="59" selection-end-line="231" selection-end-column="59" />
+              <caret line="231" column="59" lean-forward="false" selection-start-line="231" selection-start-column="59" selection-end-line="231" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -78,14 +84,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="month_table.less" pinned="false" current-in-tab="false">
+      <file leaf-file-name="month_table.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/less/month_table.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="241" column="22" lean-forward="false" selection-start-line="241" selection-start-column="22" selection-end-line="241" selection-end-column="22" />
+            <state relative-caret-position="381">
+              <caret line="185" column="23" lean-forward="true" selection-start-line="185" selection-start-column="23" selection-end-line="185" selection-end-column="23" />
               <folding>
                 <element signature="e#1378#3888#0" expanded="false" />
-                <element signature="e#4464#4680#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -117,8 +122,8 @@
       <file leaf-file-name="statistical_report.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/less/statistical_report.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="93" column="25" lean-forward="false" selection-start-line="93" selection-start-column="25" selection-end-line="93" selection-end-column="25" />
+            <state relative-caret-position="279">
+              <caret line="99" column="30" lean-forward="true" selection-start-line="99" selection-start-column="30" selection-end-line="99" selection-end-column="30" />
               <folding>
                 <element signature="e#25#285#0" expanded="false" />
                 <element signature="e#1119#1812#0" expanded="false" />
@@ -133,8 +138,8 @@
       <file leaf-file-name="year_table.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/less/year_table.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="250" column="41" lean-forward="false" selection-start-line="250" selection-start-column="41" selection-end-line="250" selection-end-column="41" />
+            <state relative-caret-position="359">
+              <caret line="195" column="22" lean-forward="false" selection-start-line="195" selection-start-column="22" selection-end-line="195" selection-end-column="22" />
               <folding>
                 <element signature="e#304#4370#0" expanded="false" />
                 <element signature="e#1172#3830#0" expanded="false" />
@@ -170,7 +175,6 @@
       <find>ac</find>
       <find>active</find>
       <find>parent-wrapper</find>
-      <find>little-navbar</find>
       <find>little-navbar active</find>
       <find>china</find>
       <find>litt</find>
@@ -184,6 +188,7 @@
       <find>search-btn</find>
       <find>user</find>
       <find>1366</find>
+      <find>little-navbar</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -224,8 +229,6 @@
         <option value="$PROJECT_DIR$/src/less/change_password.less" />
         <option value="$PROJECT_DIR$/src/less/device_check.less" />
         <option value="$PROJECT_DIR$/src/less/device_information.less" />
-        <option value="$PROJECT_DIR$/src/less/month_table.less" />
-        <option value="$PROJECT_DIR$/src/less/year_table.less" />
         <option value="$PROJECT_DIR$/src/less/login.less" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/year_table.html" />
@@ -240,9 +243,11 @@
         <option value="$PROJECT_DIR$/src/less/index.less" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/statistical_report.html" />
-        <option value="$PROJECT_DIR$/src/less/statistical_report.less" />
         <option value="$PROJECT_DIR$/src/less/installation_table.less" />
         <option value="$PROJECT_DIR$/src/less/common.less" />
+        <option value="$PROJECT_DIR$/src/less/statistical_report.less" />
+        <option value="$PROJECT_DIR$/src/less/year_table.less" />
+        <option value="$PROJECT_DIR$/src/less/month_table.less" />
       </list>
     </option>
   </component>
@@ -581,12 +586,12 @@
       <workItem from="1498632463801" duration="2863000" />
       <workItem from="1498635331726" duration="18249000" />
       <workItem from="1498702306402" duration="8608000" />
-      <workItem from="1498718817400" duration="5941000" />
+      <workItem from="1498718817400" duration="6440000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="377210000" />
+    <option name="totallyTimeSpent" value="377709000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -939,42 +944,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/less/month_table.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="241" column="22" lean-forward="false" selection-start-line="241" selection-start-column="22" selection-end-line="241" selection-end-column="22" />
-          <folding>
-            <element signature="e#1378#3888#0" expanded="false" />
-            <element signature="e#4464#4680#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/less/statistical_report.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="93" column="25" lean-forward="false" selection-start-line="93" selection-start-column="25" selection-end-line="93" selection-end-column="25" />
-          <folding>
-            <element signature="e#25#285#0" expanded="false" />
-            <element signature="e#1119#1812#0" expanded="false" />
-            <element signature="e#1197#1315#0" expanded="false" />
-            <element signature="e#1328#1806#0" expanded="false" />
-            <element signature="e#1829#2037#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/less/year_table.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="250" column="41" lean-forward="false" selection-start-line="250" selection-start-column="41" selection-end-line="250" selection-end-column="41" />
-          <folding>
-            <element signature="e#304#4370#0" expanded="false" />
-            <element signature="e#1172#3830#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/less/installation_table.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
@@ -997,8 +966,43 @@
     <entry file="file://$PROJECT_DIR$/src/less/common.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
-          <caret line="231" column="59" lean-forward="true" selection-start-line="231" selection-start-column="59" selection-end-line="231" selection-end-column="59" />
+          <caret line="231" column="59" lean-forward="false" selection-start-line="231" selection-start-column="59" selection-end-line="231" selection-end-column="59" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/less/statistical_report.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="99" column="30" lean-forward="true" selection-start-line="99" selection-start-column="30" selection-end-line="99" selection-end-column="30" />
+          <folding>
+            <element signature="e#25#285#0" expanded="false" />
+            <element signature="e#1119#1812#0" expanded="false" />
+            <element signature="e#1197#1315#0" expanded="false" />
+            <element signature="e#1328#1806#0" expanded="false" />
+            <element signature="e#1829#2037#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/less/year_table.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="195" column="22" lean-forward="false" selection-start-line="195" selection-start-column="22" selection-end-line="195" selection-end-column="22" />
+          <folding>
+            <element signature="e#304#4370#0" expanded="false" />
+            <element signature="e#1172#3830#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/less/month_table.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="185" column="23" lean-forward="true" selection-start-line="185" selection-start-column="23" selection-end-line="185" selection-end-column="23" />
+          <folding>
+            <element signature="e#1378#3888#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

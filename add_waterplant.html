@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>水务局信息和添加</title>
+    <link rel="stylesheet" href="dist/css/lib/bootstrap.css">
+    <link rel="stylesheet" href="dist/css/lib/iconfont.css">
+    <link rel="stylesheet" href="dist/css/lib/reset.css">
+    <link rel="stylesheet" href="dist/css/common.min.css">
+    <link rel="stylesheet" href="dist/css/add_waterplant.min.css">
+</head>
+<body>
+<div class="wrapper" id="wrapper">
+    <div class="top-navbar">
+        <div class="menu menu-svg none"></div>
+        <div class="left">
+            <a href="#" class="logo"></a>
+            <a class="title">物联网水电气表运营管理平台</a>
+        </div>
+        <div class="right">
+            <a class="user">用户：番禺区石碁管理</a>
+            <a class="Cancellation">注销</a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="navbar-side">
+            <ul class="nav">
+                <li class="big-navbar">
+                    <a href="./index.html" class="comSide">
+                        <span class="index-icon icon iconfont">&#xe604;</span><span
+                            class="index-text text">首页</span><span class="triangle"></span>
+                    </a>
+                </li>
+                <li class="big-navbar">
+                    <a href="#" data-toggle="collapse" data-target="#check" class="comSide">
+                        <span class="index-icon icon iconfont">&#xe60a;</span>
+                        <span class="index-text text">查询</span>
+                        <span class="triangle iconfont">&#xe724;</span>
+                    </a>
+                    <ul class="nav nav-second-level collapse comChild" id="check">
+                        <li class="little-navbar">
+                            <a href="./device_check.html" class="">表具查询</a><span class="gray-triangle none"></span>
+                        </li>
+                        <li class="little-navbar">
+                            <a href="./statistical_report.html">统计报表</a><span class="gray-triangle none"></span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="big-navbar">
+                    <a href="#" data-toggle="collapse" data-target="#datatable" class="comSide">
+                        <span class="index-icon icon iconfont">&#xe605;</span>
+                        <span class="index-text text">报表</span>
+                        <span class="triangle iconfont">&#xe724;</span>
+                    </a>
+                    <ul class="nav nav-second-level collapse comChild" id="datatable">
+                        <li class="little-navbar">
+                            <a href="./month_table.html" class="">用量月报表</a><span class="gray-triangle none"></span>
+                        </li>
+                        <li class="little-navbar">
+                            <a href="./year_table.html">用量年报表</a><span class="gray-triangle none"></span>
+                        </li>
+                        <li class="little-navbar">
+                            <a href="./installation_table.html">表具安装统计表</a><span class="gray-triangle none"></span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="big-navbar">
+                    <a href="#" data-toggle="collapse" data-target="#manage" class="comSide">
+                        <span class="index-icon icon iconfont">&#xe622;</span>
+                        <span class="index-text text">管理</span>
+                        <span class="triangle iconfont">&#xe724;</span>
+                    </a>
+                    <ul class="nav nav-second-level collapse comChild" id="manage">
+                        <li class="little-navbar">
+                            <a href="./device_information.html">表具信息</a><span class="gray-triangle none"></span>
+                        </li>
+                        <!--<li class="little-navbar">
+                            <a href="#">自动报警</a><span class="gray-triangle none"></span>
+                        </li>-->
+                    </ul>
+                </li>
+                <li class="big-navbar">
+                    <a href="#" data-toggle="collapse in" data-target="#security" class="comSide active">
+                        <span class="index-icon icon iconfont">&#xe601;</span>
+                        <span class="index-text text">职能权限</span>
+                        <span class="triangle iconfont">&#xe724;</span>
+                    </a>
+                    <ul class="nav nav-second-level collapse comChild in" id="security"><!--
+                        <li class="little-navbar">
+                            <a href="./change_password.html">修改密码</a><span class="gray-triangle none"></span>
+                        </li>-->
+                        <li class="little-navbar active">
+                            <a href="./add_waterplant.html">水务局列表</a><span class="gray-triangle none active"></span>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="page-wrapper">
+            <div class="title">水务局查询和添加</div>
+            <div class="info-wrapper">
+                <table class="table table-bordered info-table">
+                    <thead>
+                    <tr>
+                        <th>序号</th>
+                        <th>水务局编号</th>
+                        <th>水务局名称</th>
+                        <th>登录名</th>
+                        <th>水务局地址</th>
+                    </tr>
+                    </thead>
+                    <tbody class="info-tbody">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <span>添加水务局</span>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="dist/js/lib/jquery-3.1.1.min.js"></script>
+<script src="dist/js/lib/bootstrap.min.js"></script>
+<script src="dist/js/lib/mock.js"></script>
+<script src="src/js/url_str.js"></script>
+<script src="src/js/log_out.js"></script>
+<script src="src/js/add_waterplant.js"></script>
+<!--<script src="dist/js/url_str.min.js"></script>
+<script src="dist/js/log_out.min.js"></script>
+<script src="dist/js/add_waterplant.js"></script>-->
+</body>
+</html>

@@ -1,0 +1,273 @@
+/*公共样式*/
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.none {
+  display: none;
+}
+
+.comSide {
+  background: #283549;
+  a {
+    display: inline-block;
+    width: 100%;
+    color: #529fff;
+    border-bottom: #334158 1px solid;
+    //border-top: #334158 1px solid;
+  }
+  &.active, &:hover {
+    background: #529fff;
+    a {
+      height: 48px;
+      color: #fff;
+      cursor: pointer;
+      border: none;
+      .triangle {
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+      }
+    }
+
+  }
+}
+
+.comChild {
+  //background: #29374b;
+  color: #667ca0;
+  &.active, &:hover {
+    //background: #212b3b;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+.menu-svg {
+  background-image: url("../../img/menu.svg");
+}
+
+.close-svg {
+  background-image: url("../../img/close.svg");
+}
+
+.gray-gradient-btn(@width,@height) {
+  position: relative;
+  display: inline-block;
+  width: @width;
+  height: @height;
+  line-height: @height;
+  background-color: #bfbfbf;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 3px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.blue-btn(@width,@height) {
+  display: inline-block;
+  width: @width;
+  height: @height;
+  font-size: 12px;
+  text-align: center;
+  line-height: @height;
+  border-radius: 3px;
+  color: #fff;
+  background: #529fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.gray-boder-btn(@width,@height) {
+  width: @width;
+  height: @height;
+  display: inline-block;
+  border-radius: 10px;
+  border: #d5d5d5 1px solid;
+  text-align: center;
+  line-height: @height;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  min-width: 1366px;
+  overflow-x: scroll;
+  height: 100%;
+  background: #f1f1f2;
+  .top-navbar {
+    width: 100%;
+    min-width: 1366px;
+    height: 68px;
+    background: #FFF;
+    border-bottom: #dcdcdc 1px solid;
+    font-size: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    box-shadow: 0 0 5px 4px rgba(162, 162, 162, .2);
+    .menu {
+    }
+    .left {
+      .logo {
+        display: inline-block;
+        width: 136px;
+        height: 43px;
+        margin: 12px 95px 0 36px;
+        background: url("../../img/china_telecom.png") center center / 136px 43px no-repeat;
+      }
+      .title {
+        display: inline-block;
+        height: 68px;
+        vertical-align: top;
+        line-height: 68px;
+        font-size: 22px;
+        color: #979797;
+        font-weight: 500;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+    .right {
+      font-size: 0;
+      .user {
+        font-size: 14px;
+        color: #444;
+        line-height: 68px;
+        margin-right: 53px;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .Cancellation {
+        margin-right: 48px;
+        .gray-gradient-btn(70px, 26px);
+      }
+    }
+  }
+  .content {
+    width: 100%;
+    background: #f1f1f2;
+    .navbar-side {
+      width: 233px;
+      height: 100%;
+      background: #283549;
+      position: fixed;
+      top: 68px;
+      left: 0;
+      z-index: 100;
+      .nav {
+        .big-navbar {
+          /*position: relative;
+          &:after {
+            content: '';
+            position: absolute;
+            bottom: 0px;
+            left: 20px;
+            width: 196px;
+            height: 1px;
+            background-color: #334158;
+          }*/
+          .parent-wrapper {
+            .comSide;
+            /* background: #2a394e;
+             color: #527ee6;
+             &.active, &:hover {
+               background: #529fff;
+               border: none;
+               height: 48px;
+               color: #fff;
+               cursor: pointer;
+             }*/
+            padding: 0 15px 0 20px;
+            a {
+              text-decoration: none;
+              height: 48px;
+              line-height: 48px;
+              padding: 0;
+              position: relative;
+              .icon {
+                margin-left: 8px;
+                font-size: 18px;
+              }
+              .text {
+                font-size: 14px;
+                margin-left: 20px;
+              }
+              .triangle {
+                font-size: 14px;
+                position: absolute;
+                top: 0;
+                right: 0;
+              }
+            }
+          }
+          .nav {
+            padding: 0;
+            .little-navbar {
+              padding: 0 20px;
+              background: #29374b;
+              &:last-child {
+                a {
+                  border-bottom: #334158 1px solid;
+                }
+              }
+              &.active, &:hover {
+                background-color: #212b3b !important;
+                a {
+                  color: #fff;
+                }
+              }
+              a {
+                height: 48px;
+                color: #667ca0;
+                padding: 0;
+                text-indent: 50px;
+                font-size: 12px;
+                box-sizing: border-box;
+                &:hover {
+                  background-color: #212b3b !important;
+                }
+              }
+              .gray-triangle.active {
+                position: absolute;
+                display: inline-block;
+                top: 13px;
+                right: 0;
+                content: '';
+                width: 0;
+                height: 0;
+                border-top: 9px solid transparent;
+                border-right: 9px solid #f1f1f2;
+                border-bottom: 9px solid transparent;
+              }
+              height: 48px;
+              line-height: 48px;
+              position: relative;
+            }
+          }
+        }
+      }
+      .log-out {
+        display: none;
+      }
+    }
+    .page-wrapper {
+      width: 100%;
+      //min-width: 1100px;
+      padding: 86px 23px 18px 246px;
+      //overflow-x: scroll;
+    }
+  }
+}

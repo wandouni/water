@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
+    <title>首页</title>
+    <link rel="stylesheet" href="dist/css/lib/bootstrap.css">
+    <link rel="stylesheet" href="dist/css/lib/reset.css">
+    <link rel="stylesheet" href="dist/css/lib/iconfont.css">
+    <link rel="stylesheet" href="dist/css/common.min.css">
+    <link rel="stylesheet" href="dist/css/index.min.css">
+</head>
+<body>
+<div class="wrapper" id="wrapper">
+    <div class="top-navbar">
+        <div class="menu menu-svg none"></div>
+        <div class="left">
+            <a href="#" class="logo"></a>
+            <a class="title">物联网水电气表运营管理平台</a>
+        </div>
+        <div class="right">
+            <a class="user">用户：番禺区石碁管理</a>
+            <a class="Cancellation">注销</a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="navbar-side">
+            <ul class="nav">
+                <li class="big-navbar">
+                    <div class="parent-wrapper active">
+                        <a href="#" class="">
+                            <span class="index-icon icon iconfont">&#xe604;</span><span
+                                class="index-text text">首页</span><span class="triangle"></span>
+                        </a>
+                    </div>
+                </li>
+                <li class="big-navbar">
+                    <div class="parent-wrapper">
+                        <a href="#" data-toggle="collapse" data-target="#check" class="">
+                            <span class="index-icon icon iconfont">&#xe60a;</span>
+                            <span class="index-text text">查询</span>
+                            <span class="triangle iconfont">&#xe724;</span>
+                        </a>
+                    </div>
+                    <ul class="nav nav-second-level collapse comChild" id="check">
+                        <li class="little-navbar">
+                            <a href="./device_check.html" class="">表具查询</a><span
+                                class="gray-triangle none"></span>
+                        </li>
+                        <li class="little-navbar">
+                            <a href="./statistical_report.html">统计报表</a><span class="gray-triangle none"></span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="big-navbar">
+                    <div class="parent-wrapper">
+                        <a href="#" data-toggle="collapse" data-target="#datatable" class="">
+                            <span class="index-icon icon iconfont">&#xe605;</span>
+                            <span class="index-text text">报表</span>
+                            <span class="triangle iconfont">&#xe724;</span>
+                        </a>
+                    </div>
+                    <ul class="nav nav-second-level collapse comChild" id="datatable">
+                        <li class="little-navbar">
+                            <a href="./month_table.html" class="">用量月报表</a><span
+                                class="gray-triangle none"></span>
+                        </li>
+                        <li class="little-navbar">
+                            <a href="./year_table.html">用量年报表</a><span class="gray-triangle none"></span>
+                        </li>
+                        <li class="little-navbar">
+                            <a href="./installation_table.html">安装统计表</a><span class="gray-triangle none"></span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="big-navbar">
+                    <div class="parent-wrapper">
+                        <a href="#" data-toggle="collapse" data-target="#manage" class="">
+                            <span class="index-icon icon iconfont">&#xe622;</span>
+                            <span class="index-text text">管理</span>
+                            <span class="triangle iconfont">&#xe724;</span>
+                        </a>
+                    </div>
+                    <ul class="nav nav-second-level collapse comChild" id="manage">
+                        <li class="little-navbar">
+                            <a href="./device_information.html">表具信息</a><span class="gray-triangle none"></span>
+                        </li>
+                        <!--<li class="little-navbar">
+                            <a href="#">自动报警</a><span class="gray-triangle none"></span>
+                        </li>-->
+                    </ul>
+                </li>
+                <li class="big-navbar">
+                    <div class="parent-wrapper">
+                        <a href="#" data-toggle="collapse" data-target="#security" class="">
+                            <span class="index-icon icon iconfont">&#xe601;</span>
+                            <span class="index-text text">职能权限</span>
+                            <span class="triangle iconfont">&#xe724;</span>
+                        </a>
+                    </div>
+                    <ul class="nav nav-second-level collapse comChild" id="security">
+                        <li class="little-navbar">
+                            <a href="./change_password.html">修改密码</a><span class="gray-triangle none"></span>
+                        </li>
+                        <!--<li class="little-navbar">
+                            <a href="./add_waterplant.html">水务局列表</a><span class="gray-triangle none"></span>
+                        </li>-->
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="page-wrapper">
+            <div class="title">首页</div>
+            <div class="total-data-wrapper">
+                <div class="select-factory-wrapper">
+                    <span>选择水务局：</span>
+                    <input type="text" class="select-factory-input">
+                </div>
+                <div class="data-wrapper">
+                    <div class="block">
+                        <div class="icon water-icon"></div>
+                        <div class="content">
+                            <p class="key">用户月用水总量</p>
+                            <p class="value water-value">- - -</p>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="icon money-icon"></div>
+                        <div class="content">
+                            <p class="key">用户月总金额</p>
+                            <p class="value money-value">- - -</p>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="icon user-icon"></div>
+                        <div class="content">
+                            <p class="key">用户数量</p>
+                            <p class="value user-value">- - -</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="paging-check-wrapper">
+                <div class="info-title">
+                    <div class="info-title-text">实时统计表</div>
+                </div>
+                <div class="table-content">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr class="header-class">
+                        </tr>
+                        </thead>
+                        <tbody class="month-tbody">
+                        <tr class="table-no-data">
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="download-wrapper">
+                        <span class="text">下载表格</span><a class="download icon iconfont"
+                                                         href="">&#xe620;</a>
+                    </div>
+                    <div class="pagination-wrapper">
+                        <ul class="pagination"><!--
+                            <li><a href="#">&laquo;</a></li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">&raquo;</a></li>-->
+                        </ul>
+                        <div class="switch-wrapper">跳转到：
+                            <div class="switch-up-wrapper"><input type="text" class="switch-input">
+                                <span class="switch-btn icon iconfont">&#xe60b;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="dist/js/lib/jquery-3.1.1.min.js"></script>
+<script src="dist/js/lib/bootstrap.min.js"></script>
+<script src="dist/js/lib/mock.js"></script>
+<script src="src/js/url_str.js"></script>
+<script src="src/js/index.js"></script>
+<script src="src/js/log_out.js"></script>
+<!--<script src="dist/js/url_str.min.js"></script>
+<script src="dist/js/index.min.js"></script>
+<script src="dist/js/log_out.min.js"></script>-->
+</body>
+</html>

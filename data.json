@@ -1,0 +1,29 @@
+{
+  "dataList": [
+    {
+      "managerAccess": "weilong",
+      "address": "weilong",
+      "managerName": "番禺石基水务局",
+      "managerId": 2
+    },
+    {
+      "managerAccess": "long",
+      "address": "long",
+      "managerName": "世纪龙",
+      "managerId": 4
+    },
+    {
+      "managerAccess": "weiwei",
+      "address": "weiwei",
+      "managerName": "番禺水厂",
+      "managerId": 5
+    },
+    {
+      "managerAccess": "weiwe",
+      "address": "weiwe",
+      "managerName": "李先生",
+      "managerId": 7
+    }
+  ],
+  "msg": 0
+}

@@ -1,0 +1,286 @@
+﻿/*www.jq22.com*/
+.calendar {
+    position: absolute;
+    top: 264px !important;
+    width: 190px;
+    height: 180px;
+    padding: 0;
+    display: none;
+    float: left;
+    background: #fff;
+    box-shadow: 0 0 5px 5px rgba(162, 162, 162, 0.2);
+}
+
+.calendar .calMain {
+    width: 100%;
+    height: 180px;
+    float: left;
+    overflow: hidden;
+    position: absolute;
+}
+
+.calendar .calMain .calTitle {
+    width: 100%;
+    float: left;
+    height: 44px;
+    overflow: hidden;
+    background-color: #eff2f7;
+    border-bottom: #dcdfe4 1px solid;
+}
+
+.calendar .calMain .calTitle .t_date {
+    width: 145px;
+    float: left;
+    height: 44px;
+    color: #fff;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 44px;
+    text-align: center;
+}
+
+.calendar .calMain .calTitle .prevMonth {
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin: 18px 0 0 5px;
+    cursor: pointer;
+    background: url(../../img/date_bg.png) no-repeat 5px -87px;
+}
+
+.calendar .calMain .calTitle .nextMonth {
+    width: 15px;
+    height: 15px;
+    float: right;
+    margin: 18px 5px 0 0;
+    cursor: pointer;
+    background: url(../../img/date_bg.png) no-repeat 6px -157px;
+}
+
+.calendar .calMain .calTitle .currentYear:hover {
+    color: #51729d;
+}
+
+.calendar .calMain .calTitle .currentMonth:hover {
+    color: #51729d;
+}
+
+.calendar .calMain .calTitle .currentYearText {
+    float: left;
+    margin: 0 0 0 39px;
+    color: #333;
+    cursor: pointer;
+}
+
+.calendar .calMain .calTitle .currentMonthText {
+    float: left;
+    cursor: pointer;
+    width: 30px;
+    text-align: right;
+    color: #333;
+}
+
+.calendar .calMain .calContent {
+    width: 378px;
+    height: 157px;
+    float: left;
+}
+
+.calendar .calMain .calContent .enabled {
+    position: absolute;
+    width: 100%;
+    height: 157px;
+    float: left;
+}
+
+.calendar .calMain .calContent .reserve {
+    position: absolute;
+    width: 100%;
+    height: 157px;
+    float: left;
+}
+
+.calendar .calMain .calContent .tabD {
+    width: 100%;
+    float: left;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 0;
+}
+
+.calendar .calMain .calContent .tabD th {
+    background: #eff2f7;
+    line-height: 26px;
+    font-weight: normal;
+    text-align: center;
+    font-size: 12px;
+    color: #51729d;
+}
+
+.calendar .calMain .calContent .tabD td {
+    text-align: center;
+    line-height: 19px;
+    width: 27px;
+    font-weight: normal;
+    color: #333;
+    font-size: 12px;
+}
+
+.calendar .calMain .calContent .tabD td span {
+    color: #c0c0c0;
+}
+
+.calendar .calMain .calContent .tabD td a {
+    width: 23px;
+    line-height: 18px;
+    float: left;
+    margin: 2px;
+    cursor: pointer;
+    color: #51729d;
+}
+
+.calendar .calMain .calContent .tabD td .nextD {
+    color: #bccadc;
+}
+
+.calendar .calMain .calContent .tabD td .prevD {
+    color: #bccadc;
+}
+
+.calendar .calMain .calContent .tabD td .hover {
+    width: 21px;
+    line-height: 16px;
+    border: 1px solid #7d99bd;
+    float: left;
+    margin: 1px 0 0 2px;
+}
+
+.calendar .calMain .calContent .tabD td .current {
+    width: 21px;
+    line-height: 16px;
+    background: #ced1d6;
+    color: #fff;
+    float: left;
+    margin: 1px 0 0 2px;
+}
+
+.calendar .calMain .calContent .tabD td .select {
+    width: 21px;
+    line-height: 16px;
+    background: #ced1d6;
+    color: #fff;
+    float: left;
+    margin: 1px 0 0 2px;
+}
+
+.calendar .calMain .calContent .tabM {
+    width: 100%;
+    float: left;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 0;
+}
+
+.calendar .calMain .calContent .tabM td {
+    color: #1f3959;
+    text-align: center;
+    height: 50px;
+    width: 47px;
+}
+
+.calendar .calMain .calContent .tabM td a {
+    width: 42px;
+    line-height: 42px;
+    float: left;
+    margin: 0 0 0 2px;
+    cursor: pointer;
+    color: #51729d;
+}
+
+.calendar .calMain .calContent .tabM td .hover {
+    width: 40px;
+    line-height: 40px;
+    border: 1px solid #7d99bd;
+    float: left;
+    margin: 0 0 0 2px;
+}
+
+.calendar .calMain .calContent .tabM td .current {
+    width: 40px;
+    line-height: 40px;
+    border: 1px solid #51729d;
+    float: left;
+    margin: 0 0 0 2px;
+}
+
+.calendar .calMain .calContent .tabM td .select {
+    width: 40px;
+    line-height: 40px;
+    /*background: #51729d;*/
+    border: 1px solid #51729d;
+    color: #333;
+    float: left;
+    margin: 0 0 0 2px;
+}
+
+.calendar .calMain .calContent .tabY {
+    width: 100%;
+    float: left;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 0;
+}
+
+.calendar .calMain .calContent .tabY td {
+    color: #1f3959;
+    text-align: center;
+    height: 50px;
+    width: 47px;
+}
+
+.calendar .calMain .calContent .tabY td a {
+    width: 42px;
+    line-height: 42px;
+    float: left;
+    margin: 0 0 0 2px;
+    cursor: pointer;
+    color: #51729d;
+}
+
+.calendar .calMain .calContent .tabY td .nextY {
+    color: #bccadc;
+}
+
+.calendar .calMain .calContent .tabY td .prevY {
+    color: #bccadc;
+}
+
+.calendar .calMain .calContent .tabY td .hover {
+    width: 40px;
+    line-height: 40px;
+    border: 1px solid #7d99bd;
+    float: left;
+    margin: 0 0 0 2px;
+}
+
+.calendar .calMain .calContent .tabY td .current {
+    width: 40px;
+    line-height: 40px;
+    border: 1px solid #51729d;
+    float: left;
+    margin: 0 0 0 2px;
+}
+
+.calendar .calMain .calContent .tabY td .select {
+    width: 40px;
+    line-height: 40px;
+    /*background: #51729d;*/
+    border: 1px solid #51729d;
+    color: #333;
+    float: left;
+    margin: 0 0 0 2px;
+}
+
+.calendar .calMain a:hover {
+    text-decoration: none;
+}

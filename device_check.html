@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>表具查询</title>
+    <link rel="stylesheet" href="dist/css/lib/bootstrap.css">
+    <link rel="stylesheet" href="dist/css/lib/iconfont.css">
+    <link rel="stylesheet" href="dist/css/lib/reset.css">
+    <link rel="stylesheet" href="dist/css/common.min.css">
+    <link rel="stylesheet" href="dist/css/device_check.min.css">
+</head>
+<body>
+<div class="wrapper" id="wrapper">
+    <div class="top-navbar">
+        <div class="menu menu-svg none"></div>
+        <div class="left">
+            <a href="#" class="logo"></a>
+            <a class="title">物联网水电气表运营管理平台</a>
+        </div>
+        <div class="right">
+            <a class="user">用户：番禺区石碁管理</a>
+            <a class="Cancellation">注销</a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="navbar-side">
+            <ul class="nav">
+                <li class="big-navbar">
+                    <div class="parent-wrapper">
+                        <a href="./index.html" class="">
+                            <span class="index-icon icon iconfont">&#xe604;</span><span
+                                class="index-text text">首页</span><span class="triangle"></span>
+                        </a>
+                    </div>
+                </li>
+                <li class="big-navbar">
+                    <div class="parent-wrapper active">
+                        <a href="#" data-toggle="collapse" data-target="#check" class="">
+                            <span class="index-icon icon iconfont">&#xe60a;</span>
+                            <span class="index-text text">查询</span>
+                            <span class="triangle iconfont">&#xe724;</span>
+                        </a>
+                    </div>
+                    <ul class="nav nav-second-level collapse comChild in" id="check">
+                        <li class="little-navbar active">
+                            <a href="./device_check.html" class="">表具查询</a><span
+                                class="gray-triangle none active"></span>
+                        </li>
+                        <li class="little-navbar">
+                            <a href="./statistical_report.html">统计报表</a><span class="gray-triangle none"></span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="big-navbar">
+                    <div class="parent-wrapper">
+                        <a href="#" data-toggle="collapse" data-target="#datatable" class="">
+                            <span class="index-icon icon iconfont">&#xe605;</span>
+                            <span class="index-text text">报表</span>
+                            <span class="triangle iconfont">&#xe724;</span>
+                        </a>
+                    </div>
+                    <ul class="nav nav-second-level collapse comChild" id="datatable">
+                        <li class="little-navbar">
+                            <a href="./month_table.html" class="">用量月报表</a><span class="gray-triangle none"></span>
+                        </li>
+                        <li class="little-navbar">
+                            <a href="./year_table.html">用量年报表</a><span class="gray-triangle none"></span>
+                        </li>
+                        <li class="little-navbar">
+                            <a href="./installation_table.html">表具安装统计表</a><span class="gray-triangle none"></span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="big-navbar">
+                    <div class="parent-wrapper">
+                        <a href="#" data-toggle="collapse" data-target="#manage" class="">
+                            <span class="index-icon icon iconfont">&#xe622;</span>
+                            <span class="index-text text">管理</span>
+                            <span class="triangle iconfont">&#xe724;</span>
+                        </a>
+                    </div>
+                    <ul class="nav nav-second-level collapse comChild" id="manage">
+                        <li class="little-navbar">
+                            <a href="./device_information.html">表具信息</a><span class="gray-triangle none"></span>
+                        </li>
+                        <!--<li class="little-navbar">
+                            <a href="#">自动报警</a><span class="gray-triangle none"></span>
+                        </li>-->
+                    </ul>
+                </li>
+                <li class="big-navbar">
+                    <div class="parent-wrapper">
+                        <a href="#" data-toggle="collapse" data-target="#security" class="">
+                            <span class="index-icon icon iconfont">&#xe601;</span>
+                            <span class="index-text text">职能权限</span>
+                            <span class="triangle iconfont">&#xe724;</span>
+                        </a>
+                    </div>
+                    <ul class="nav nav-second-level collapse comChild" id="security">
+                        <li class="little-navbar">
+                            <a href="./change_password.html">修改密码</a><span class="gray-triangle none"></span>
+                        </li>
+                        <!--<li class="little-navbar">
+                            <a href="./add_waterplant.html">水务局列表</a><span class="gray-triangle none"></span>
+                        </li>-->
+                    </ul>
+                </li>
+                <li class="log-out">登出</li>
+            </ul>
+        </div>
+        <div class="page-wrapper">
+            <div class="title">表具查询</div>
+            <div class="search-wrapper">
+                <div class="enter-year">
+                    输入表号：<input type="text" class="device-number" placeholder="例如：13699161406">
+                    输入安装地址：<input type="text" class="install-address" placeholder="例如：莲路沙涌村段36号">
+                </div>
+                <span class="search-tip"></span>
+                <span class="search-btn">搜 索</span>
+            </div>
+            <div class="table-wrapper">
+                <!--<div class="table-title">图表</div>-->
+                <div class="info-title">
+                    <div class="info-title-text">查询统计表</div>
+                </div>
+                <div class="table-content">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>水表表号</th>
+                            <th>起始用量</th>
+                            <th>累计用量</th>
+                            <th>使用金额</th>
+                            <th>价格类型</th>
+                            <th>安装地址</th>
+                        </tr>
+                        </thead>
+                        <tbody class="year-tbody">
+                        <tr class="table-no-data">
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="pagination-wrapper">
+                        <ul class="pagination"><!--
+                            <li><a href="#">&laquo;</a></li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">&raquo;</a></li>-->
+                        </ul>
+                        <div class="switch-wrapper">跳转到：
+                            <div class="switch-up-wrapper"><input type="text" class="switch-input">
+                                <span class="switch-btn icon iconfont">&#xe60b;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="dist/js/lib/jquery-3.1.1.min.js"></script>
+<script src="dist/js/lib/bootstrap.min.js"></script>
+<script src="dist/js/lib/mock.js"></script>
+<script src="src/js/url_str.js"></script>
+<script src="src/js/device_check.js"></script>
+<script src="src/js/log_out.js"></script>
+<!--<script src="dist/js/url_str.min.js"></script>
+<script src="dist/js/device_check.min.js"></script>
+<script src="dist/js/log_out.min.js"></script>-->
+</body>
+</html>

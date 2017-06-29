@@ -4,15 +4,8 @@
     <list default="true" id="717ce54d-6a49-4a54-8503-87e5d38577d7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/common.min.css" afterPath="$PROJECT_DIR$/dist/css/common.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/installation_table.min.css" afterPath="$PROJECT_DIR$/dist/css/installation_table.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/statistical_report.min.css" afterPath="$PROJECT_DIR$/dist/css/statistical_report.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/common.less" afterPath="$PROJECT_DIR$/src/less/common.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/installation_table.less" afterPath="$PROJECT_DIR$/src/less/installation_table.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/statistical_report.less" afterPath="$PROJECT_DIR$/src/less/statistical_report.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/style/common.css" afterPath="$PROJECT_DIR$/static/style/common.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/style/installation_table.css" afterPath="$PROJECT_DIR$/static/style/installation_table.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/style/statistical_report.css" afterPath="$PROJECT_DIR$/static/style/statistical_report.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistical_report.html" afterPath="$PROJECT_DIR$/statistical_report.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="common.less" pinned="false" current-in-tab="false">
+      <file leaf-file-name="common.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/less/common.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="165" column="3" lean-forward="true" selection-start-line="165" selection-start-column="3" selection-end-line="165" selection-end-column="3" />
+            <state relative-caret-position="352">
+              <caret line="231" column="59" lean-forward="true" selection-start-line="231" selection-start-column="59" selection-end-line="231" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -79,7 +72,7 @@
         <entry file="file://$PROJECT_DIR$/src/less/login.less">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="66" column="34" lean-forward="true" selection-start-line="66" selection-start-column="34" selection-end-line="66" selection-end-column="34" />
+              <caret line="66" column="34" lean-forward="false" selection-start-line="66" selection-start-column="34" selection-end-line="66" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -108,11 +101,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.less" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/less/index.less">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="142">
-              <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+              <caret line="18" column="37" lean-forward="false" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
               <folding>
                 <element signature="e#2502#4647#0" expanded="false" />
                 <element signature="e#3149#4643#0" expanded="false" />
@@ -248,8 +241,8 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/statistical_report.html" />
         <option value="$PROJECT_DIR$/src/less/statistical_report.less" />
-        <option value="$PROJECT_DIR$/src/less/common.less" />
         <option value="$PROJECT_DIR$/src/less/installation_table.less" />
+        <option value="$PROJECT_DIR$/src/less/common.less" />
       </list>
     </option>
   </component>
@@ -588,12 +581,12 @@
       <workItem from="1498632463801" duration="2863000" />
       <workItem from="1498635331726" duration="18249000" />
       <workItem from="1498702306402" duration="8608000" />
-      <workItem from="1498718817400" duration="5028000" />
+      <workItem from="1498718817400" duration="5941000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="376297000" />
+    <option name="totallyTimeSpent" value="377210000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -920,14 +913,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/less/common.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="165" column="3" lean-forward="true" selection-start-line="165" selection-start-column="3" selection-end-line="165" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/less/device_check.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="262">
@@ -949,7 +934,7 @@
     <entry file="file://$PROJECT_DIR$/src/less/login.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="66" column="34" lean-forward="true" selection-start-line="66" selection-start-column="34" selection-end-line="66" selection-end-column="34" />
+          <caret line="66" column="34" lean-forward="false" selection-start-line="66" selection-start-column="34" selection-end-line="66" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -1001,11 +986,19 @@
     <entry file="file://$PROJECT_DIR$/src/less/index.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142">
-          <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+          <caret line="18" column="37" lean-forward="false" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
           <folding>
             <element signature="e#2502#4647#0" expanded="false" />
             <element signature="e#3149#4643#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/less/common.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="231" column="59" lean-forward="true" selection-start-line="231" selection-start-column="59" selection-end-line="231" selection-end-column="59" />
+          <folding />
         </state>
       </provider>
     </entry>

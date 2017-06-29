@@ -222,8 +222,13 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-.wrapper .content .navbar-side .nav .big-navbar .nav .little-navbar a:hover {
+.wrapper .content .navbar-side .nav .big-navbar .nav .little-navbar a:hover,
+.wrapper .content .navbar-side .nav .big-navbar .nav .little-navbar a:active,
+.wrapper .content .navbar-side .nav .big-navbar .nav .little-navbar a:visited {
   background-color: #212b3b !important;
+}
+.wrapper .content .navbar-side .nav .big-navbar .nav .little-navbar a:link {
+  background-color: transparent !important;
 }
 .wrapper .content .navbar-side .nav .big-navbar .nav .little-navbar .gray-triangle.active {
   position: absolute;

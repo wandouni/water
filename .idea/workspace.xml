@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="717ce54d-6a49-4a54-8503-87e5d38577d7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/device_check.min.css" afterPath="$PROJECT_DIR$/dist/css/device_check.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/index.min.css" afterPath="$PROJECT_DIR$/dist/css/index.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/month_table.min.css" afterPath="$PROJECT_DIR$/dist/css/month_table.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/year_table.min.css" afterPath="$PROJECT_DIR$/dist/css/year_table.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/index.js" afterPath="$PROJECT_DIR$/src/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/month_table.js" afterPath="$PROJECT_DIR$/src/js/month_table.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/year_table.js" afterPath="$PROJECT_DIR$/src/js/year_table.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/device_check.less" afterPath="$PROJECT_DIR$/src/less/device_check.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/index.less" afterPath="$PROJECT_DIR$/src/less/index.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/month_table.less" afterPath="$PROJECT_DIR$/src/less/month_table.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/year_table.less" afterPath="$PROJECT_DIR$/src/less/year_table.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/style/device_check.css" afterPath="$PROJECT_DIR$/static/style/device_check.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/style/index.css" afterPath="$PROJECT_DIR$/static/style/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/style/month_table.css" afterPath="$PROJECT_DIR$/static/style/month_table.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/style/year_table.css" afterPath="$PROJECT_DIR$/static/style/year_table.css" />
-    </list>
+    <list default="true" id="717ce54d-6a49-4a54-8503-87e5d38577d7" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -73,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="month_table.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="month_table.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/month_table.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="34" column="64" lean-forward="false" selection-start-line="34" selection-start-column="64" selection-end-line="34" selection-end-column="64" />
+            <state relative-caret-position="361">
+              <caret line="36" column="4" lean-forward="false" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
               <folding>
                 <element signature="e#1281#1769#0" expanded="false" />
                 <element signature="e#4771#5278#0" expanded="false" />
@@ -89,11 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="url_str.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/url_str.js">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="28" lean-forward="false" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+            <state relative-caret-position="0">
+              <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -247,7 +230,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js/index.js" />
         <option value="$PROJECT_DIR$/js/month_table.js" />
         <option value="$PROJECT_DIR$/js/year_table.js" />
         <option value="$PROJECT_DIR$/js/device_check.js" />
@@ -298,6 +280,7 @@
         <option value="$PROJECT_DIR$/src/js/index.js" />
         <option value="$PROJECT_DIR$/src/js/year_table.js" />
         <option value="$PROJECT_DIR$/src/js/month_table.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -682,12 +665,12 @@
       <workItem from="1498702306402" duration="8608000" />
       <workItem from="1498718817400" duration="12451000" />
       <workItem from="1498785702568" duration="44945000" />
-      <workItem from="1499130823906" duration="46017000" />
+      <workItem from="1499130823906" duration="46320000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="474682000" />
+    <option name="totallyTimeSpent" value="474985000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -745,6 +728,7 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.gitignore" />
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.md" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -756,13 +740,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4">
-          <caret line="18" column="24" lean-forward="false" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1285,8 +1262,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/month_table.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="34" column="64" lean-forward="false" selection-start-line="34" selection-start-column="64" selection-end-line="34" selection-end-column="64" />
+        <state relative-caret-position="361">
+          <caret line="36" column="4" lean-forward="false" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
           <folding>
             <element signature="e#1281#1769#0" expanded="false" />
             <element signature="e#4771#5278#0" expanded="false" />
@@ -1294,6 +1271,14 @@
             <element signature="e#6761#6992#0" expanded="false" />
             <element signature="e#7020#7099#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>

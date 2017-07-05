@@ -102,12 +102,12 @@
                         </a>
                     </div>
                     <ul class="nav nav-second-level collapse comChild" id="security">
-                        <li class="little-navbar">
+                        <li class="little-navbar change-password-item">
                             <a href="./change_password.html">修改密码</a><span class="gray-triangle none"></span>
                         </li>
-                        <!--<li class="little-navbar">
+                        <li class="little-navbar add-plant-item">
                             <a href="./add_waterplant.html">水务局列表</a><span class="gray-triangle none"></span>
-                        </li>-->
+                        </li>
                     </ul>
                 </li>
             </ul>
@@ -116,6 +116,10 @@
             <div class="title">用量年报表</div>
             <div class="search-wrapper">
                 <div class="enter-year">
+                    <div class="select-factory-wrapper">
+                        <span>选择水务局：</span>
+                        <select class="select-factory-input"></select>
+                    </div>
                     <span>输入起止年份：</span>
                     <input type="text" class="start-year" placeholder="输入：例如2016">
                     <span> - </span>
@@ -136,7 +140,9 @@
                     </div>-->
                 </div>
                 <span class="search-tip">2222</span>
-                <span class="search-btn">搜 索</span>
+                <div class="search-btn-wrapper">
+                    <span class="search-btn">搜 索</span>
+                </div>
             </div>
             <div class="table-wrapper">
                 <div class="info-title">
@@ -183,6 +189,7 @@
 <script src="dist/js/lib/mock.js"></script>
 <script src="dist/js/lib/echarts.common.min.js"></script>
 <script src="src/js/url_str.js"></script>
+<script src="src/js/nav.js"></script>
 <script src="src/js/year_table.js"></script>
 <script src="src/js/log_out.js"></script>
 <!--<script src="dist/js/url_str.min.js"></script>

@@ -1,4 +1,6 @@
 $(function () {
+	console.log('%c惊不惊喜！意不意外！', 'background-image:-webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );color:transparent;-webkit-background-clip: text;font-size:12px;');
+
 	var $select_factory_wrapper = $('.select-factory-wrapper');  //选择水务局的模块
 	var $water_value = $('.water-value');
 	var $money_value = $('.money-value');
@@ -10,12 +12,35 @@ $(function () {
 	var $switch_input = $('.switch-input');
 	var $switch_btn = $('.switch-btn');
 	var $download = $('.download');
+	var $select_factory_input = $('.select-factory-input');
+	var $no_data = $('.no-data');
+	var $table_content = $('.table-content');
+	var permission;
+	var firstLoad = false;
 
 	var currentIndex;//当前所在页的页数
 
 	/*获取session permission字段*/
+	// sessionStorage.setItem('permission', '1');
 	console.log(getStorage('permission'));
 	initPage();
+
+	function initPage() {
+		//1 电信 2 水务局
+		permission = getStorage('permission');
+		switch (permission) {
+			case '1':
+				/*初始化页面*/
+				generateData(1, 1);
+				initValueChange(); //绑定select值改变触发的事件
+				break;
+			default:
+				$select_factory_wrapper.css('display', 'none');
+				generateData(1, 0);
+				break;
+		}
+
+	}
 
 	function initClick() {
 		$switch_btn.click(function () {
@@ -24,36 +49,66 @@ $(function () {
 				console.log('请输入页数');
 				alert('请输入页数');
 			} else {
-				CheckData(switch_input, 0);
+				generateData(switch_input, 0);
 			}
 		});
 		$download.attr('href', common_url + '/watersys/watersysDataTOExcel.do');
 
 	}
 
-	function initPage() {
-		//1 电信 2 水务局
-		var permission = getStorage('permission');
-		switch (permission) {
-			case '1':
-				/*初始化页面*/
-				CheckData(1, 1);
-				break;
-			default:
-				$select_factory_wrapper.css('display', 'none');
-				CheckData(1, 0);
-				break;
+	function generateData(index, flag) {
+		var check_data;
+		if (permission === '1') {
+			check_data = 'index=' + index + '&flag=' + flag;
+			CheckData(check_data);
+			initFactoryList('');
+		} else {
+			check_data = 'index=' + index + '&flag=' + flag;
+			CheckData(check_data);
 		}
+	}
+
+	function initFactoryList(data) {
+		$.ajax({
+			type: 'POST',
+			url: common_url + '/watersys/getAllWatersysInfo.do',
+			dataType: 'json',
+			context: document.body,
+			data: data,
+			timeout: 5000,
+			success: function (data) {
+				if (data.msg === 0) {
+					factoryList = data.dataList;
+					console.log(data);
+					renderFactoryList(factoryList);
+				} else {
+					console.log('未查询到任何水务局信息');
+					alert('未查询到任何水务局信息');
+				}
+			},
+			error: function () {
+				console.log('ajax error');
+				alert('网络错误，请重试！');
+			}
+		});
+	}
+
+	function initValueChange() {
+		$select_factory_input.change(function () {
+			console.log('changed');
+			var data = 'index=1&' + 'managerUserId=' + $select_factory_input.val();
+			console.log(data);
+			CheckData(data);
+		});
 
 	}
 
-	function CheckData(index, flag) {
-		var check_data = 'index=' + index + '&flag=' + flag;
-		console.log(check_data);
+	function CheckData(data) {
+		console.log(data);
 		$.ajax({
 			type: 'POST',
 			url: common_url + '/watersys/getWatersysDataByPage.do',
-			data: check_data,
+			data: data,
 			dataType: 'json',
 			timeout: 100000,
 			context: document.body,
@@ -61,17 +116,31 @@ $(function () {
 				if (data.msg === 0) {
 					console.log(data);
 					renderTotalData(data);
+
+					$table_content.css('display', 'block');
+					$no_data.css('display', 'none');
 					renderTable(data);
+
 					renderPagination(data.currentpage, data.totalpage);
+
 					initClick();
 				} else {
 					console.log('ajax 返回空');
+					renderNoData();
 				}
 			},
 			error: function (XMLHttpRequest) {
 				console.log('ajax error');
 			}
 		});
+	}
+
+	function renderNoData() {
+		$water_value.text('---');
+		$money_value.text('---');
+		$user_value.text('---');
+		$table_content.css('display', 'none');
+		$no_data.css('display', 'block');
 	}
 
 	function getStorage(key) {
@@ -110,7 +179,7 @@ $(function () {
 		console.log(data.currentpage);
 		for (var i = 0; i < body.length; i++) {
 			var tr = body[i];
-			var index = i + 1 + (data.currentpage - 1) * 13;
+			var index = i + 1 + (data.currentpage - 1) * 10;
 			$month_tbody.append($('<tr>'
 				+ '<td>' + index + '</td>'
 				+ '<td>' + tr.waterMeterNum + '</td>'
@@ -130,7 +199,7 @@ $(function () {
 	function renderPagination(current, total) {
 		currentIndex = current;
 		$pagination.empty();
-		if (total <= 7) {
+		if (total <= 15) {
 			for (var i = 1; i <= total; i++) {
 				if (i === current) {
 					$pagination.append($('<li class="active"><a class="pagination-index">' + i + '</a></li>'));
@@ -164,7 +233,7 @@ $(function () {
 					if (index_value === current) {
 
 					} else {
-						CheckData(index_value, 0);
+						generateData(index_value, 0);
 					}
 				});
 			})(i);
@@ -173,17 +242,26 @@ $(function () {
 			if (current === 1) {
 
 			} else {
-				CheckData(current - 1, 0);
+				generateData(current - 1, 0);
 			}
 		});
 		$('.next-page').click(function () {
 			if (current === total) {
 
 			} else {
-				CheckData(current + 1, 0);
+				generateData(current + 1, 0);
 			}
 		});
 	}
 
-
+	/*渲染厂商列表*/
+	function renderFactoryList(factoryList) {
+		for (var i = 0; i < factoryList.length; i++) {
+			$select_factory_input.append($('<option>', {
+				value: factoryList[i].managerId,
+				text: factoryList[i].managerName
+			}));
+		}
+		console.log($select_factory_input.val());
+	}
 });

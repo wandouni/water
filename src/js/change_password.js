@@ -108,7 +108,6 @@ $(function () {
 			$new_password_tip.css('display', 'block');
 			return false;
 		}
-
 	}
 
 	function checkConfirm() {

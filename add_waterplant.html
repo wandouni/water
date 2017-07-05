@@ -29,17 +29,21 @@
         <div class="navbar-side">
             <ul class="nav">
                 <li class="big-navbar">
-                    <a href="./index.html" class="comSide">
-                        <span class="index-icon icon iconfont">&#xe604;</span><span
-                            class="index-text text">首页</span><span class="triangle"></span>
-                    </a>
+                    <div class="parent-wrapper">
+                        <a href="./index.html" class="">
+                            <span class="index-icon icon iconfont">&#xe604;</span><span
+                                class="index-text text">首页</span><span class="triangle"></span>
+                        </a>
+                    </div>
                 </li>
                 <li class="big-navbar">
-                    <a href="#" data-toggle="collapse" data-target="#check" class="comSide">
-                        <span class="index-icon icon iconfont">&#xe60a;</span>
-                        <span class="index-text text">查询</span>
-                        <span class="triangle iconfont">&#xe724;</span>
-                    </a>
+                    <div class="parent-wrapper">
+                        <a href="#" data-toggle="collapse" data-target="#check" class="">
+                            <span class="index-icon icon iconfont">&#xe60a;</span>
+                            <span class="index-text text">查询</span>
+                            <span class="triangle iconfont">&#xe724;</span>
+                        </a>
+                    </div>
                     <ul class="nav nav-second-level collapse comChild" id="check">
                         <li class="little-navbar">
                             <a href="./device_check.html" class="">表具查询</a><span class="gray-triangle none"></span>
@@ -50,11 +54,13 @@
                     </ul>
                 </li>
                 <li class="big-navbar">
-                    <a href="#" data-toggle="collapse" data-target="#datatable" class="comSide">
-                        <span class="index-icon icon iconfont">&#xe605;</span>
-                        <span class="index-text text">报表</span>
-                        <span class="triangle iconfont">&#xe724;</span>
-                    </a>
+                    <div class="parent-wrapper">
+                        <a href="#" data-toggle="collapse" data-target="#datatable" class="">
+                            <span class="index-icon icon iconfont">&#xe605;</span>
+                            <span class="index-text text">报表</span>
+                            <span class="triangle iconfont">&#xe724;</span>
+                        </a>
+                    </div>
                     <ul class="nav nav-second-level collapse comChild" id="datatable">
                         <li class="little-navbar">
                             <a href="./month_table.html" class="">用量月报表</a><span class="gray-triangle none"></span>
@@ -68,11 +74,13 @@
                     </ul>
                 </li>
                 <li class="big-navbar">
-                    <a href="#" data-toggle="collapse" data-target="#manage" class="comSide">
-                        <span class="index-icon icon iconfont">&#xe622;</span>
-                        <span class="index-text text">管理</span>
-                        <span class="triangle iconfont">&#xe724;</span>
-                    </a>
+                    <div class="parent-wrapper">
+                        <a href="#" data-toggle="collapse" data-target="#manage" class="">
+                            <span class="index-icon icon iconfont">&#xe622;</span>
+                            <span class="index-text text">管理</span>
+                            <span class="triangle iconfont">&#xe724;</span>
+                        </a>
+                    </div>
                     <ul class="nav nav-second-level collapse comChild" id="manage">
                         <li class="little-navbar">
                             <a href="./device_information.html">表具信息</a><span class="gray-triangle none"></span>
@@ -83,17 +91,16 @@
                     </ul>
                 </li>
                 <li class="big-navbar">
-                    <a href="#" data-toggle="collapse in" data-target="#security" class="comSide active">
-                        <span class="index-icon icon iconfont">&#xe601;</span>
-                        <span class="index-text text">职能权限</span>
-                        <span class="triangle iconfont">&#xe724;</span>
-                    </a>
-                    <ul class="nav nav-second-level collapse comChild in" id="security"><!--
-                        <li class="little-navbar">
-                            <a href="./change_password.html">修改密码</a><span class="gray-triangle none"></span>
-                        </li>-->
+                    <div class="parent-wrapper active">
+                        <a href="#" data-toggle="collapse in" data-target="#security" class="">
+                            <span class="index-icon icon iconfont">&#xe601;</span>
+                            <span class="index-text text">职能权限</span>
+                            <span class="triangle iconfont">&#xe724;</span>
+                        </a>
+                    </div>
+                    <ul class="nav nav-second-level collapse comChild in" id="security">
                         <li class="little-navbar active">
-                            <a href="./add_waterplant.html">水务局列表</a><span class="gray-triangle none active"></span>
+                            <a href="./add_waterplant.html">水务局查询和添加</a><span class="gray-triangle none active"></span>
                         </li>
                     </ul>
                 </li>
@@ -113,16 +120,51 @@
                     </tr>
                     </thead>
                     <tbody class="info-tbody">
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                    <tr class="no-data">
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
                     </tr>
                     </tbody>
                 </table>
-                <span>添加水务局</span>
+                <div class="add-plants">添加水务局</div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-wrapper" id="modal-wrapper">
+        <div class="right-bottom-wrapper">
+            <div class="submit-wrapper">
+                <div class="close-wrapper"><i class="iconfont close-icon">&#xe6d0;</i></div>
+                <div class="one-line-rapper">
+                    <span class="key account">
+                        账号:
+                    </span>
+                    <input type="text" class="input account-input">
+                </div>
+                <div class="one-line-rapper">
+                    <span class="key name">
+                        名称:
+                    </span>
+                    <input type="text" class="input name-input">
+                </div>
+                <div class="one-line-rapper">
+                    <span class="key address">
+                        地址:
+                    </span>
+                    <input type="text" class="input address-input">
+                </div>
+                <div class="one-line-rapper">
+                    <span class="key pass-word">
+                        密码:
+                    </span>
+                    <input type="password" class="input password-input">
+                </div>
+                <div class="tip-wrapper">您还有信息未填写！</div>
+                <div class="submit-btn-wrapper">
+                    <span class="submit-btn">提交</span>
+                </div>
             </div>
         </div>
     </div>

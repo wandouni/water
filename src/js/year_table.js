@@ -10,6 +10,54 @@ $(function () {
 	var $year_tbody = $('.year-tbody');
 	var $line_no_data = $('.line-no-data');
 	var $table_no_data = $('.table-no-data');
+	var $select_factory_input = $('.select-factory-input');
+	var $select_factory_wrapper = $('.select-factory-wrapper');
+	var permission;
+
+	/*---------------初始化页面----------------*/
+	// sessionStorage.setItem('permission', 1);
+	/*初始化页面，区分电信和水务局*/
+	initPage();
+
+	function initPage() {
+		//1 电信 2 水务局
+		permission = getStorage('permission');
+		console.log(permission);
+		switch (permission) {
+			case '1':
+				/*初始化页面*/
+				initFactoryList();
+				break;
+			default:
+				$select_factory_wrapper.css('display', 'none');
+				break;
+		}
+	}
+
+	function initFactoryList() {
+		console.log('ajax21');
+		$.ajax({
+			type: 'POST',
+			url: common_url + '/watersys/getAllWatersysInfo.do',
+			dataType: 'json',
+			context: document.body,
+			data: '',
+			timeout: 5000,
+			success: function (data) {
+				if (data.msg === 0) {
+					console.log(data);
+					renderFactoryList(data.dataList);
+				} else {
+					alert('未查询到任何水务局信息');
+					console.log('未查询到任何水务局信息！');
+				}
+			},
+			error: function () {
+				console.log('ajax error');
+				alert('ajax error');
+			}
+		});
+	}
 
 	/*----------------搜索按钮的点击事件-------------------*/
 	$search_btn.click(function () {
@@ -19,14 +67,22 @@ $(function () {
 			$search_tip.text('年份输入不能为空！');
 			$search_tip.css('display', 'inline-block');
 		} else {
-			checkData(start_year_value, end_year_value);
+			$search_tip.css('display', 'none');
+			var data;
+			if (permission === '1') {
+				data = 'startYear=' + (start_year_value || new Date().getFullYear())
+					+ '&endYear=' + (end_year_value || new Date().getFullYear())
+					+ '&managerId=' + $select_factory_input.val();
+				checkData(data);
+			} else {
+				data = 'startYear=' + (start_year_value || new Date().getFullYear())
+					+ '&endYear=' + (end_year_value || new Date().getFullYear());
+				checkData(data);
+			}
 		}
 	});
 
-	function checkData(start, end) {
-		var start_year = start || new Date().getFullYear();
-		var end_year = end || new Date().getFullYear();
-		var data = 'startYear=' + start_year + '&endYear=' + end_year;
+	function checkData(data) {
 		console.log(data);
 		/*请求数据*/
 		$.ajax({
@@ -74,7 +130,7 @@ $(function () {
 		for (var j = 0; j < arr.length; j++) {
 			(function (num) {
 				var $tr = $('<tr><td>'
-					+ num + '</td><td>'
+					+ (num + 1) + '</td><td>'
 					+ arr[j].year + '</td><td>'
 					+ arr[j].userNum + '</td><td>'
 					+ arr[j].amountNum + '</td><td>'
@@ -172,4 +228,19 @@ $(function () {
 		line_chart_wrapper.setOption(option);
 	}
 
+	function getStorage(key) {
+		var value = sessionStorage.getItem(key);
+		return value ? value : false;
+	}
+
+	/*渲染厂商列表*/
+	function renderFactoryList(factoryList) {
+		for (var i = 0; i < factoryList.length; i++) {
+			$select_factory_input.append($('<option>', {
+				value: factoryList[i].managerId,
+				text: factoryList[i].managerName
+			}));
+		}
+		console.log($select_factory_input.val());
+	}
 });

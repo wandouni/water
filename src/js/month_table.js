@@ -17,6 +17,53 @@ $(function () {
 	var $select_year_wrapper = $('.select-year-wrapper');
 	var $search_btn = $('.search-btn'); //搜索按钮
 	var $month_tbody = $('.month-tbody');
+	var $select_factory_wrapper = $('.select-factory-wrapper');
+	var $select_factory_input = $('.select-factory-input');
+	var permission;
+
+	// sessionStorage.setItem('permission', 1);
+	/*初始化页面，区分电信和水务局*/
+	initPage();
+
+	function initPage() {
+		//1 电信 2 水务局
+		permission = getStorage('permission');
+		console.log(permission);
+		switch (permission) {
+			case '1':
+				/*初始化页面*/
+				initFactoryList();
+				break;
+			default:
+				$select_factory_wrapper.css('display', 'none');
+				break;
+		}
+	}
+
+	function initFactoryList() {
+		console.log('ajax21');
+		$.ajax({
+			type: 'POST',
+			url: common_url + '/watersys/getAllWatersysInfo.do',
+			dataType: 'json',
+			context: document.body,
+			data: '',
+			timeout: 5000,
+			success: function (data) {
+				if (data.msg === 0) {
+					console.log(data);
+					renderFactoryList(data.dataList);
+				} else {
+					alert('未查询到任何水务局信息');
+					console.log('未查询到任何水务局信息！');
+				}
+			},
+			error: function () {
+				console.log('ajax error');
+				alert('ajax error');
+			}
+		});
+	}
 
 	/*给输入框一个默认的时间，为今年*/
 	$year_input.val(new Date().getFullYear());
@@ -84,12 +131,19 @@ $(function () {
 	});
 
 	$search_btn.click(function () {
-		checkData($year_input.val());
+		var data;
+		if (permission === '1') {
+			data = ('year=' + $year_input.val() || (new Date().getFullYear()) ) + '&managerId=' + $select_factory_input.val();
+			console.log(data);
+			checkData(data);
+		} else {
+			data = 'year=' + $year_input.val() || (new Date().getFullYear());
+			console.log(data);
+			checkData(data);
+		}
 	});
 
-	function checkData(time) {
-		var year = time || new Date().getFullYear();
-		var data = 'year=' + year;
+	function checkData(data) {
 		/*请求数据*/
 		$.ajax({
 			type: 'POST',
@@ -232,5 +286,21 @@ $(function () {
 			}
 		};
 		line_chart_wrapper.setOption(option);
+	}
+
+	/*渲染厂商列表*/
+	function renderFactoryList(factoryList) {
+		for (var i = 0; i < factoryList.length; i++) {
+			$select_factory_input.append($('<option>', {
+				value: factoryList[i].managerId,
+				text: factoryList[i].managerName
+			}));
+		}
+		console.log($select_factory_input.val());
+	}
+
+	function getStorage(key) {
+		var value = sessionStorage.getItem(key);
+		return value ? value : false;
 	}
 });

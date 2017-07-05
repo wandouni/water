@@ -1,4 +1,6 @@
 $(function () {
+	var $select_factory_wrapper = $('.select-factory-wrapper');
+	var $select_factory_input = $('.select-factory-input');
 	var $device_number = $('.device-number'); //表号input
 	var $install_address = $('.install-address'); //地址input
 	var $search_btn = $('.search-btn');
@@ -12,14 +14,37 @@ $(function () {
 	var $switch_btn = $('.switch-btn');
 	var device_number_value;
 	var install_address_value;
+	var factory_value;
+	var isFirst = true;
+	var permission;
+	var factoryList;
 
-	initClick();
+	// sessionStorage.setItem('permission', 1);
+
+	/*初始化页面，区分电信和水务局*/
+	initPage();
+
+	function initPage() {
+		//1 电信 2 水务局
+		permission = getStorage('permission');
+		console.log(permission);
+		switch (permission) {
+			case '1':
+				/*初始化页面*/
+				initFactoryList('');
+				break;
+			default:
+				$select_factory_wrapper.css('display', 'none');
+				break;
+		}
+		initClick();
+	}
 
 	function initClick() {
 		$search_btn.click(function () {
 			device_number_value = $device_number.val();
 			install_address_value = $install_address.val();
-			checkData(device_number_value, install_address_value, 1);
+			generateData(device_number_value, install_address_value, 1);
 		});
 	}
 
@@ -30,14 +55,50 @@ $(function () {
 				console.log('请输入页数');
 				alert('请输入页数');
 			} else {
-				checkData(device_number_value, install_address_value, switch_input);
+				generateData(device_number_value, install_address_value, switch_input, permission, $select_factory_input.val());
 			}
 		});
 	}
 
-	function checkData(number, address, page) {
-		var data = 'meterCode=' + number + '&userAddress=' + address + '&page=' + page;
-		console.log(data);
+	function generateData(number, address, page) {
+		var data;
+		if (permission === 2) {
+			data = 'meterCode=' + number + '&userAddress=' + address + '&page=' + page;
+			console.log(data);
+			checkData(data);
+		} else {
+			var factoryId = $select_factory_input.val();
+			data = 'meterCode=' + number + '&userAddress=' + address + '&managerId=' + factoryId + '&page=' + page;
+			console.log(data);
+			checkData(data);
+		}
+	}
+
+	function initFactoryList(data) {
+		$.ajax({
+			type: 'POST',
+			url: common_url + '/watersys/getAllWatersysInfo.do',
+			dataType: 'json',
+			context: document.body,
+			data: data,
+			timeout: 5000,
+			success: function (data) {
+				if (data.msg === 0) {
+					factoryList = data.dataList;
+					console.log(data);
+					renderFactoryList(factoryList);
+				} else {
+					console.log('未查询到任何水务局信息');
+					alert('未查询到任何水务局信息');
+				}
+			},
+			error: function () {
+				console.log('ajax error');
+			}
+		});
+	}
+
+	function checkData(data) {
 		/*请求数据*/
 		$.ajax({
 			type: 'POST',
@@ -48,7 +109,6 @@ $(function () {
 			timeout: 5000,
 			success: function (data) {
 				if (data.msg === 0) {
-					console.log(data);
 					renderTable(data, data.dataList);
 					renderPagination(data.currentPage, data.totalPage);
 					initSwitchClick();
@@ -64,6 +124,17 @@ $(function () {
 		});
 	}
 
+	/*渲染厂商列表*/
+	function renderFactoryList(factoryList) {
+		for (var i = 0; i < factoryList.length; i++) {
+			$select_factory_input.append($('<option>', {
+				value: factoryList[i].managerId,
+				text: factoryList[i].managerName
+			}));
+		}
+		console.log($select_factory_input.val());
+	}
+
 	/*渲染表格*/
 	function renderTable(data, arr) {
 		$table_content.css('display', 'block');
@@ -74,7 +145,7 @@ $(function () {
 		for (var j = 0; j < arr.length; j++) {
 			(function (num) {
 				var $tr = $('<tr><td>'
-					+ (num + 1) + '</td><td>'
+					+ ((num + 1) * (data.currentPage) * 10) + '</td><td>'
 					+ arr[j].meterCode + '</td><td>'
 					+ arr[j].earlyAmount + '</td><td>'
 					+ arr[j].nowAmount + '</td><td>'
@@ -114,7 +185,7 @@ $(function () {
 					if (index_value === current) {
 
 					} else {
-						checkData(device_number_value, install_address_value, index_value);
+						generateData(device_number_value, install_address_value, index_value);
 					}
 				});
 			})(i);
@@ -123,15 +194,20 @@ $(function () {
 			if (current === 1) {
 
 			} else {
-				checkData(device_number_value, install_address_value, current - 1);
+				generateData(device_number_value, install_address_value, current - 1);
 			}
 		});
 		$('.next-page').click(function () {
 			if (current === total) {
 
 			} else {
-				checkData(device_number_value, install_address_value, current + 1);
+				generateData(device_number_value, install_address_value, current + 1);
 			}
 		});
+	}
+
+	function getStorage(key) {
+		var value = sessionStorage.getItem(key);
+		return value ? value : false;
 	}
 });

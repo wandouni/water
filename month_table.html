@@ -101,12 +101,12 @@
                         </a>
                     </div>
                     <ul class="nav nav-second-level collapse comChild" id="security">
-                        <li class="little-navbar">
+                        <li class="little-navbar change-password-item">
                             <a href="./change_password.html">修改密码</a><span class="gray-triangle none"></span>
                         </li>
-                        <!--<li class="little-navbar">
+                        <li class="little-navbar add-plant-item">
                             <a href="./add_waterplant.html">水务局列表</a><span class="gray-triangle none"></span>
-                        </li>-->
+                        </li>
                     </ul>
                 </li>
             </ul>
@@ -114,6 +114,10 @@
         <div class="page-wrapper">
             <div class="title">用量月报表</div>
             <div class="select-time-wrapper">
+                <div class="select-factory-wrapper">
+                    <span>选择水务局：</span>
+                    <select class="select-factory-input"></select>
+                </div>
                 <span class="select-text">选择年份:</span>
                 <div class="select-time">
                     <input type="text" class="year-input">
@@ -173,6 +177,7 @@
 <script src="dist/js/lib/mock.js"></script>
 <script src="dist/js/lib/echarts.common.min.js"></script>
 <script src="src/js/url_str.js"></script>
+<script src="src/js/nav.js"></script>
 <script src="src/js/month_table.js"></script>
 <script src="src/js/log_out.js"></script><!--<script src="dist/js/url_str.min.js"></script>
 <script src="dist/js/month_table.min.js"></script>

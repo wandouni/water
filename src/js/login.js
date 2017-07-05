@@ -128,7 +128,7 @@ $(function () {
 					default:
 						$user_input.val('');
 						sessionStorage.setItem('permission', permission);
-						window.location.href = '../../index.html';
+						window.location.href = '../manager/index.html';
 						break;
 				}
 			},

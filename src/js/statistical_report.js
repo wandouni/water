@@ -57,7 +57,6 @@ $(function () {
 		});
 	}
 
-
 	/*渲染表格*/
 	function renderTable(data, arr) {
 		$table_no_data.empty();
@@ -65,7 +64,7 @@ $(function () {
 		for (var j = 0; j < arr.length; j++) {
 			(function (num) {
 				var $tr = $('<tr><td>'
-					+ num + '</td><td>'
+					+ (num + 1) + '</td><td>'
 					+ arr[j].meterCode + '</td><td>'
 					+ arr[j].amountNum + '</td><td>'
 					+ arr[j].priceNum + '</td><td>'

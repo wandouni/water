@@ -29,6 +29,7 @@
   font-size: 14px;
   margin: 0 0 16px 233px;
   width: 912px;
+  display: none;
 }
 .page-wrapper .select-time-wrapper .select-factory-wrapper .select-factory-input {
   width: 189px;

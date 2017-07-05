@@ -137,6 +137,7 @@
   font-size: 14px;
   margin: 0 auto 16px;
   width: 912px;
+  display: none;
 }
 .page-wrapper .search-wrapper .enter-year .select-factory-wrapper .select-factory-input {
   width: 189px;

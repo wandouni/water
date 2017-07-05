@@ -31,6 +31,7 @@ $(function () {
 		switch (permission) {
 			case '1':
 				/*初始化页面*/
+				$select_factory_wrapper.css('display', 'block');
 				generateData(1, 1);
 				initValueChange(); //绑定select值改变触发的事件
 				break;

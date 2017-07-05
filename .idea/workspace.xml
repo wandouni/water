@@ -3,43 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="717ce54d-6a49-4a54-8503-87e5d38577d7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add_waterplant.html" afterPath="$PROJECT_DIR$/add_waterplant.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/change_password.html" afterPath="$PROJECT_DIR$/change_password.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data.json" afterPath="$PROJECT_DIR$/data.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/device_check.html" afterPath="$PROJECT_DIR$/device_check.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/device_information.html" afterPath="$PROJECT_DIR$/device_information.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/add_waterplant.min.css" afterPath="$PROJECT_DIR$/dist/css/add_waterplant.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/device_check.min.css" afterPath="$PROJECT_DIR$/dist/css/device_check.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/index.min.css" afterPath="$PROJECT_DIR$/dist/css/index.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/lib/iconfont.css" afterPath="$PROJECT_DIR$/dist/css/lib/iconfont.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/month_table.min.css" afterPath="$PROJECT_DIR$/dist/css/month_table.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/statistical_report.min.css" afterPath="$PROJECT_DIR$/dist/css/statistical_report.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/year_table.min.css" afterPath="$PROJECT_DIR$/dist/css/year_table.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/installation_table.html" afterPath="$PROJECT_DIR$/installation_table.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/month_table.html" afterPath="$PROJECT_DIR$/month_table.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/change_password.js" afterPath="$PROJECT_DIR$/src/js/change_password.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/device_check.js" afterPath="$PROJECT_DIR$/src/js/device_check.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/index.js" afterPath="$PROJECT_DIR$/src/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/login.js" afterPath="$PROJECT_DIR$/src/js/login.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/month_table.js" afterPath="$PROJECT_DIR$/src/js/month_table.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/statistical_report.js" afterPath="$PROJECT_DIR$/src/js/statistical_report.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/url_str.js" afterPath="$PROJECT_DIR$/src/js/url_str.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/year_table.js" afterPath="$PROJECT_DIR$/src/js/year_table.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/add_waterplant.less" afterPath="$PROJECT_DIR$/src/less/add_waterplant.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/device_check.less" afterPath="$PROJECT_DIR$/src/less/device_check.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/index.less" afterPath="$PROJECT_DIR$/src/less/index.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/month_table.less" afterPath="$PROJECT_DIR$/src/less/month_table.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/statistical_report.less" afterPath="$PROJECT_DIR$/src/less/statistical_report.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/year_table.less" afterPath="$PROJECT_DIR$/src/less/year_table.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/style/add_waterplant.css" afterPath="$PROJECT_DIR$/static/style/add_waterplant.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/style/device_check.css" afterPath="$PROJECT_DIR$/static/style/device_check.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/style/index.css" afterPath="$PROJECT_DIR$/static/style/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/style/month_table.css" afterPath="$PROJECT_DIR$/static/style/month_table.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/style/statistical_report.css" afterPath="$PROJECT_DIR$/static/style/statistical_report.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/style/year_table.css" afterPath="$PROJECT_DIR$/static/style/year_table.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistical_report.html" afterPath="$PROJECT_DIR$/statistical_report.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/year_table.html" afterPath="$PROJECT_DIR$/year_table.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -60,53 +38,52 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="month_table.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/less/month_table.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="229">
+              <caret line="28" column="29" lean-forward="true" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+              <folding>
+                <element signature="e#1926#4436#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="49" lean-forward="false" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+            <state relative-caret-position="360">
+              <caret line="33" column="61" lean-forward="false" selection-start-line="33" selection-start-column="61" selection-end-line="33" selection-end-column="61" />
               <folding>
-                <element signature="e#1489#1780#0" expanded="false" />
-                <element signature="e#2097#2592#0" expanded="false" />
-                <element signature="e#3521#3685#0" expanded="false" />
-                <element signature="e#3713#3792#0" expanded="false" />
-                <element signature="e#3826#3953#0" expanded="false" />
-                <element signature="e#3983#5217#0" expanded="false" />
-                <element signature="e#5262#5836#0" expanded="false" />
-                <element signature="e#5875#5916#0" expanded="false" />
-                <element signature="e#5959#6614#0" expanded="false" />
-                <element signature="e#6669#6900#0" expanded="false" />
-                <marker date="1499248552958" expanded="true" signature="5650:5657" ph="«" />
-                <marker date="1499248552958" expanded="true" signature="5721:5728" ph="»" />
+                <element signature="e#1542#1833#0" expanded="false" />
+                <element signature="e#2150#2645#0" expanded="false" />
+                <element signature="e#3574#3738#0" expanded="false" />
+                <element signature="e#3766#3845#0" expanded="false" />
+                <element signature="e#3879#4006#0" expanded="false" />
+                <element signature="e#4036#5270#0" expanded="false" />
+                <element signature="e#5315#5889#0" expanded="false" />
+                <element signature="e#5928#5969#0" expanded="false" />
+                <element signature="e#6012#6667#0" expanded="false" />
+                <element signature="e#6722#6953#0" expanded="false" />
+                <marker date="1499249860230" expanded="true" signature="5703:5710" ph="«" />
+                <marker date="1499249860230" expanded="true" signature="5774:5781" ph="»" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="month_table.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="month_table.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/js/month_table.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="23" column="47" lean-forward="true" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+            <state relative-caret-position="331">
+              <caret line="34" column="64" lean-forward="false" selection-start-line="34" selection-start-column="64" selection-end-line="34" selection-end-column="64" />
               <folding>
-                <element signature="e#947#1198#0" expanded="false" />
-                <element signature="e#1228#1716#0" expanded="false" />
-                <element signature="e#4718#5225#0" expanded="false" />
-                <element signature="e#5266#6653#0" expanded="false" />
-                <element signature="e#6708#6939#0" expanded="false" />
-                <element signature="e#6967#7046#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="statistical_report.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/statistical_report.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="66" column="45" lean-forward="true" selection-start-line="66" selection-start-column="45" selection-end-line="66" selection-end-column="45" />
-              <folding>
-                <element signature="e#920#1495#0" expanded="false" />
+                <element signature="e#1281#1769#0" expanded="false" />
+                <element signature="e#4771#5278#0" expanded="false" />
+                <element signature="e#5319#6706#0" expanded="false" />
+                <element signature="e#6761#6992#0" expanded="false" />
+                <element signature="e#7020#7099#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -149,24 +126,24 @@
       <file leaf-file-name="year_table.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/year_table.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="46" lean-forward="true" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+            <state relative-caret-position="405">
+              <caret line="27" column="19" lean-forward="false" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
               <folding>
-                <element signature="e#964#1452#0" expanded="false" />
-                <element signature="e#3289#3792#0" expanded="false" />
-                <element signature="e#3828#5214#0" expanded="false" />
-                <element signature="e#5242#5321#0" expanded="false" />
-                <element signature="e#5376#5607#0" expanded="false" />
+                <element signature="e#1017#1505#0" expanded="false" />
+                <element signature="e#3342#3845#0" expanded="false" />
+                <element signature="e#3881#5267#0" expanded="false" />
+                <element signature="e#5295#5374#0" expanded="false" />
+                <element signature="e#5429#5660#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="device_check.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="device_check.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/device_check.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
-              <caret line="13" column="39" lean-forward="true" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+              <caret line="13" column="39" lean-forward="false" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
               <folding>
                 <element signature="e#1121#1327#0" expanded="false" />
                 <element signature="e#1357#1654#0" expanded="false" />
@@ -183,32 +160,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="installation_table.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/installation_table.js">
+      <file leaf-file-name="index.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/less/index.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="258">
+              <caret line="140" column="20" lean-forward="false" selection-start-line="140" selection-start-column="20" selection-end-line="140" selection-end-column="20" />
+              <folding>
+                <element signature="e#3293#4787#0" expanded="false" />
+                <element signature="e#5342#6164#0" expanded="false" />
+                <element signature="e#6189#7194#0" expanded="false" />
+                <element signature="e#7221#9131#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="device_check.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/less/device_check.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="395">
+              <caret line="31" column="19" lean-forward="false" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="log_out.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/log_out.js">
+      <file leaf-file-name="year_table.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/less/year_table.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/login.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2010">
-              <caret line="134" column="58" lean-forward="false" selection-start-line="134" selection-start-column="58" selection-end-line="134" selection-end-column="58" />
-              <folding />
+            <state relative-caret-position="365">
+              <caret line="35" column="21" lean-forward="false" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+              <folding>
+                <element signature="e#1746#4404#0" expanded="false" />
+                <element signature="e#4685#5049#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -229,7 +214,6 @@
       <find>enter-y</find>
       <find>search-w</find>
       <find>checkData</find>
-      <find>select-factory-wrapper</find>
       <find>renderTotalData</find>
       <find>table-content</find>
       <find>appear</find>
@@ -254,6 +238,7 @@
       <find>$select_factory_input</find>
       <find>search-wrapper</find>
       <find>renderTable</find>
+      <find>select-factory-wrapper</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -284,7 +269,6 @@
         <option value="$PROJECT_DIR$/src/js/add_waterplant.js" />
         <option value="$PROJECT_DIR$/src/less/add_waterplant.less" />
         <option value="$PROJECT_DIR$/src/js/url_str.js" />
-        <option value="$PROJECT_DIR$/src/less/index.less" />
         <option value="$PROJECT_DIR$/src/js/statistical_report.js" />
         <option value="$PROJECT_DIR$/change_password.html" />
         <option value="$PROJECT_DIR$/device_information.html" />
@@ -295,7 +279,6 @@
         <option value="$PROJECT_DIR$/src/js/nav.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/data.json" />
-        <option value="$PROJECT_DIR$/src/less/month_table.less" />
         <option value="$PROJECT_DIR$/year_table.html" />
         <option value="$USER_HOME$/Desktop/20150512122515265/Loading.js" />
         <option value="$USER_HOME$/Desktop/勾.svg" />
@@ -306,13 +289,15 @@
         <option value="$PROJECT_DIR$/../pop/pop.html" />
         <option value="$PROJECT_DIR$/dist/css/lib/iconfont.css" />
         <option value="$PROJECT_DIR$/src/js/login.js" />
-        <option value="$PROJECT_DIR$/src/less/device_check.less" />
         <option value="$PROJECT_DIR$/src/less/statistical_report.less" />
-        <option value="$PROJECT_DIR$/src/less/year_table.less" />
-        <option value="$PROJECT_DIR$/src/js/index.js" />
-        <option value="$PROJECT_DIR$/src/js/month_table.js" />
-        <option value="$PROJECT_DIR$/src/js/year_table.js" />
         <option value="$PROJECT_DIR$/src/js/device_check.js" />
+        <option value="$PROJECT_DIR$/src/less/index.less" />
+        <option value="$PROJECT_DIR$/src/less/device_check.less" />
+        <option value="$PROJECT_DIR$/src/less/year_table.less" />
+        <option value="$PROJECT_DIR$/src/less/month_table.less" />
+        <option value="$PROJECT_DIR$/src/js/index.js" />
+        <option value="$PROJECT_DIR$/src/js/year_table.js" />
+        <option value="$PROJECT_DIR$/src/js/month_table.js" />
       </list>
     </option>
   </component>
@@ -697,12 +682,12 @@
       <workItem from="1498702306402" duration="8608000" />
       <workItem from="1498718817400" duration="12451000" />
       <workItem from="1498785702568" duration="44945000" />
-      <workItem from="1499130823906" duration="45523000" />
+      <workItem from="1499130823906" duration="46017000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="474188000" />
+    <option name="totallyTimeSpent" value="474682000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -878,16 +863,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/less/month_table.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="39" selection-end-column="20" />
-          <folding>
-            <element signature="e#1904#4414#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1005,20 +980,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/less/index.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="228" column="41" lean-forward="true" selection-start-line="228" selection-start-column="41" selection-end-line="228" selection-end-column="41" />
-          <folding>
-            <element signature="e#2734#3253#0" expanded="false" />
-            <element signature="e#3272#4766#0" expanded="false" />
-            <element signature="e#5321#6143#0" expanded="false" />
-            <element signature="e#6168#7173#0" expanded="false" />
-            <element signature="e#7200#9110#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/less/common.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
@@ -1087,14 +1048,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/less/device_check.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/less/statistical_report.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1121,17 +1074,6 @@
             <element signature="n#ul#0;n#li#3;n#ul#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#li#0;n#ul#0;n#li#3;n#ul#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#a#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/less/year_table.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-          <folding>
-            <element signature="e#1723#4381#0" expanded="false" />
-            <element signature="e#4662#5026#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1181,27 +1123,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="49" lean-forward="false" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
-          <folding>
-            <element signature="e#1489#1780#0" expanded="false" />
-            <element signature="e#2097#2592#0" expanded="false" />
-            <element signature="e#3521#3685#0" expanded="false" />
-            <element signature="e#3713#3792#0" expanded="false" />
-            <element signature="e#3826#3953#0" expanded="false" />
-            <element signature="e#3983#5217#0" expanded="false" />
-            <element signature="e#5262#5836#0" expanded="false" />
-            <element signature="e#5875#5916#0" expanded="false" />
-            <element signature="e#5959#6614#0" expanded="false" />
-            <element signature="e#6669#6900#0" expanded="false" />
-            <marker date="1499248552958" expanded="true" signature="5650:5657" ph="«" />
-            <marker date="1499248552958" expanded="true" signature="5721:5728" ph="»" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/installation_table.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1226,25 +1147,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/month_table.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="23" column="47" lean-forward="true" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
-          <folding>
-            <element signature="e#947#1198#0" expanded="false" />
-            <element signature="e#1228#1716#0" expanded="false" />
-            <element signature="e#4718#5225#0" expanded="false" />
-            <element signature="e#5266#6653#0" expanded="false" />
-            <element signature="e#6708#6939#0" expanded="false" />
-            <element signature="e#6967#7046#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/statistical_report.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
-          <caret line="66" column="45" lean-forward="true" selection-start-line="66" selection-start-column="45" selection-end-line="66" selection-end-column="45" />
+          <caret line="66" column="45" lean-forward="false" selection-start-line="66" selection-start-column="45" selection-end-line="66" selection-end-column="45" />
           <folding>
             <element signature="e#920#1495#0" expanded="false" />
           </folding>
@@ -1256,20 +1162,6 @@
         <state relative-caret-position="45">
           <caret line="3" column="28" lean-forward="false" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/year_table.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="46" lean-forward="true" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
-          <folding>
-            <element signature="e#964#1452#0" expanded="false" />
-            <element signature="e#3289#3792#0" expanded="false" />
-            <element signature="e#3828#5214#0" expanded="false" />
-            <element signature="e#5242#5321#0" expanded="false" />
-            <element signature="e#5376#5607#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1298,7 +1190,7 @@
     <entry file="file://$PROJECT_DIR$/src/js/device_check.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="13" column="39" lean-forward="true" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+          <caret line="13" column="39" lean-forward="false" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
           <folding>
             <element signature="e#1121#1327#0" expanded="false" />
             <element signature="e#1357#1654#0" expanded="false" />
@@ -1310,6 +1202,97 @@
             <element signature="e#5444#5523#0" expanded="false" />
             <marker date="1499249082023" expanded="true" signature="4463:4470" ph="«" />
             <marker date="1499249082023" expanded="true" signature="4534:4541" ph="»" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/less/index.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="140" column="20" lean-forward="false" selection-start-line="140" selection-start-column="20" selection-end-line="140" selection-end-column="20" />
+          <folding>
+            <element signature="e#3293#4787#0" expanded="false" />
+            <element signature="e#5342#6164#0" expanded="false" />
+            <element signature="e#6189#7194#0" expanded="false" />
+            <element signature="e#7221#9131#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/less/device_check.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="31" column="19" lean-forward="false" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/less/year_table.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="35" column="21" lean-forward="false" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+          <folding>
+            <element signature="e#1746#4404#0" expanded="false" />
+            <element signature="e#4685#5049#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/less/month_table.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="28" column="29" lean-forward="true" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+          <folding>
+            <element signature="e#1926#4436#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="33" column="61" lean-forward="false" selection-start-line="33" selection-start-column="61" selection-end-line="33" selection-end-column="61" />
+          <folding>
+            <element signature="e#1542#1833#0" expanded="false" />
+            <element signature="e#2150#2645#0" expanded="false" />
+            <element signature="e#3574#3738#0" expanded="false" />
+            <element signature="e#3766#3845#0" expanded="false" />
+            <element signature="e#3879#4006#0" expanded="false" />
+            <element signature="e#4036#5270#0" expanded="false" />
+            <element signature="e#5315#5889#0" expanded="false" />
+            <element signature="e#5928#5969#0" expanded="false" />
+            <element signature="e#6012#6667#0" expanded="false" />
+            <element signature="e#6722#6953#0" expanded="false" />
+            <marker date="1499249860230" expanded="true" signature="5703:5710" ph="«" />
+            <marker date="1499249860230" expanded="true" signature="5774:5781" ph="»" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/year_table.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="19" lean-forward="false" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+          <folding>
+            <element signature="e#1017#1505#0" expanded="false" />
+            <element signature="e#3342#3845#0" expanded="false" />
+            <element signature="e#3881#5267#0" expanded="false" />
+            <element signature="e#5295#5374#0" expanded="false" />
+            <element signature="e#5429#5660#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/month_table.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="34" column="64" lean-forward="false" selection-start-line="34" selection-start-column="64" selection-end-line="34" selection-end-column="64" />
+          <folding>
+            <element signature="e#1281#1769#0" expanded="false" />
+            <element signature="e#4771#5278#0" expanded="false" />
+            <element signature="e#5319#6706#0" expanded="false" />
+            <element signature="e#6761#6992#0" expanded="false" />
+            <element signature="e#7020#7099#0" expanded="false" />
           </folding>
         </state>
       </provider>

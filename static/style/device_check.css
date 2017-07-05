@@ -30,6 +30,7 @@
   font-size: 14px;
   margin-bottom: 16px;
   width: 912px;
+  display: none;
 }
 .page-wrapper .search-wrapper .select-factory-wrapper .select-factory-input {
   width: 189px;

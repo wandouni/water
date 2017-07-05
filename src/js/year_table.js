@@ -26,6 +26,7 @@ $(function () {
 		switch (permission) {
 			case '1':
 				/*初始化页面*/
+				$select_factory_wrapper.css('display', 'block');
 				initFactoryList();
 				break;
 			default:

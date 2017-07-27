@@ -107,10 +107,12 @@ $(function () {
 					renderTable(data.dataList);
 				} else {
 					console.log('返回信息不存在');
+					alert("返回信息不存在");
 				}
 			},
 			error: function () {
 				console.log('网络异常！');
+				alert("网络出错");
 			}
 		});
 	}

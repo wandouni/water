@@ -134,6 +134,7 @@ $(function () {
 			},
 			error: function (XMLHttpRequest, textStatus) {
 				console.log('ajax error');
+				alert('网络错误');
 			}
 		});
 	}

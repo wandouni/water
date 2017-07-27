@@ -42,10 +42,12 @@ $(function () {
 					renderText(data);
 				} else {
 					console.log('数据库查询异常');
+					alert('数据库查询异常');
 				}
 			},
 			error: function () {
 				console.log('ajax error');
+				alert('网络出错');
 			}
 		});
 	}

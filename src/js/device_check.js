@@ -60,17 +60,42 @@ $(function () {
 		});
 	}
 
+	function initPagination(current, total, flag) {
+		/*flag 0渲染导航 1不需要渲染导航*/
+		console.log(current);
+		console.log(total);
+		var options = {
+			"id": "page",//显示页码的元素
+			"maxshowpageitem": 3,//最多显示的页码个数
+			"pagelistcount": 10,//每页显示数据个数
+			"callBack": function (index) {
+				var data;
+				if (permission === 2) {
+					data = 'meterCode=' + $('.device-number').val() + '&userAddress=' + $('.install-address').val() + '&page=' + index;
+					console.log(data);
+					checkData(data, 0);
+				} else {
+					var factoryId = $select_factory_input.val();
+					data = 'meterCode=' + $('.device-number').val() + '&userAddress=' + $('.install-address').val() + '&managerId=' + factoryId + '&page=' + index;
+					console.log(data);
+					checkData(data, 0);
+				}
+			}
+		};
+		page.init(10 * total, current, options);
+	}
+
 	function generateData(number, address, page) {
 		var data;
 		if (permission === 2) {
 			data = 'meterCode=' + number + '&userAddress=' + address + '&page=' + page;
 			console.log(data);
-			checkData(data);
+			checkData(data, 0);
 		} else {
 			var factoryId = $select_factory_input.val();
 			data = 'meterCode=' + number + '&userAddress=' + address + '&managerId=' + factoryId + '&page=' + page;
 			console.log(data);
-			checkData(data);
+			checkData(data, 0);
 		}
 	}
 
@@ -94,11 +119,12 @@ $(function () {
 			},
 			error: function () {
 				console.log('ajax error');
+				alert('网络出错');
 			}
 		});
 	}
 
-	function checkData(data) {
+	function checkData(data, flag) {
 		/*请求数据*/
 		$.ajax({
 			type: 'POST',
@@ -110,7 +136,11 @@ $(function () {
 			success: function (data) {
 				if (data.msg === 0) {
 					renderTable(data, data.dataList);
-					renderPagination(data.currentPage, data.totalPage);
+					// renderPagination(data.currentPage, data.totalPage);
+					if (flag === 0) {
+						initPagination(data.currentPage, data.totalPage, 0);
+					}
+
 					initSwitchClick();
 				} else {
 					$table_content.css('display', 'none');
@@ -120,6 +150,7 @@ $(function () {
 			},
 			error: function () {
 				console.log('ajax error');
+				alert('网络出错');
 			}
 		});
 	}
@@ -145,7 +176,7 @@ $(function () {
 		for (var j = 0; j < arr.length; j++) {
 			(function (num) {
 				var $tr = $('<tr><td>'
-					+ ((num + 1) * (data.currentPage) * 10) + '</td><td>'
+					+ ((num + 1) + (data.currentPage - 1) * 10) + '</td><td>'
 					+ arr[j].meterCode + '</td><td>'
 					+ arr[j].earlyAmount + '</td><td>'
 					+ arr[j].nowAmount + '</td><td>'
@@ -157,54 +188,54 @@ $(function () {
 		}
 	}
 
-	function renderPagination(current, total) {
-		// currentIndex = current;
-		$pagination.empty();
-		if (total <= 5) {
-			for (var i = 1; i <= total; i++) {
-				if (i === current) {
-					$pagination.append($('<li class="active"><a class="pagination-index">' + i + '</a></li>'));
-				} else {
-					$pagination.append($('<li><a class="pagination-index">' + i + '</a></li>'));
-				}
-			}
-			$pagination.prepend($('<li><a class="pre-page">&laquo;</a></li>'));
-			$pagination.append($('<li><a class="next-page">&raquo;</a></li>'));
-		}
-		bindIndexClick(current, total);
-	}
+	/*function renderPagination(current, total) {
+	 // currentIndex = current;
+	 $pagination.empty();
+	 if (total <= 5) {
+	 for (var i = 1; i <= total; i++) {
+	 if (i === current) {
+	 $pagination.append($('<li class="active"><a class="pagination-index">' + i + '</a></li>'));
+	 } else {
+	 $pagination.append($('<li><a class="pagination-index">' + i + '</a></li>'));
+	 }
+	 }
+	 $pagination.prepend($('<li><a class="pre-page">&laquo;</a></li>'));
+	 $pagination.append($('<li><a class="next-page">&raquo;</a></li>'));
+	 }
+	 bindIndexClick(current, total);
+	 }*/
 
-	function bindIndexClick(current, total) {
-		var $pagination_index = $('.pagination-index');
-		for (var i = 0; i < $pagination_index.length; i++) {
-			(function (index) {
-				$($pagination_index[index]).click(function (e) {
-					var index_value = parseInt($(e.target).text());
-					console.log(index_value);
-					console.log(current);
-					if (index_value === current) {
+	/*function bindIndexClick(current, total) {
+	 var $pagination_index = $('.pagination-index');
+	 for (var i = 0; i < $pagination_index.length; i++) {
+	 (function (index) {
+	 $($pagination_index[index]).click(function (e) {
+	 var index_value = parseInt($(e.target).text());
+	 console.log(index_value);
+	 console.log(current);
+	 if (index_value === current) {
 
-					} else {
-						generateData(device_number_value, install_address_value, index_value);
-					}
-				});
-			})(i);
-		}
-		$('.pre-page').click(function () {
-			if (current === 1) {
+	 } else {
+	 generateData(device_number_value, install_address_value, index_value);
+	 }
+	 });
+	 })(i);
+	 }
+	 $('.pre-page').click(function () {
+	 if (current === 1) {
 
-			} else {
-				generateData(device_number_value, install_address_value, current - 1);
-			}
-		});
-		$('.next-page').click(function () {
-			if (current === total) {
+	 } else {
+	 generateData(device_number_value, install_address_value, current - 1);
+	 }
+	 });
+	 $('.next-page').click(function () {
+	 if (current === total) {
 
-			} else {
-				generateData(device_number_value, install_address_value, current + 1);
-			}
-		});
-	}
+	 } else {
+	 generateData(device_number_value, install_address_value, current + 1);
+	 }
+	 });
+	 }*/
 
 	function getStorage(key) {
 		var value = sessionStorage.getItem(key);

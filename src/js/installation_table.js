@@ -106,6 +106,8 @@ $(function () {
 			},
 			error: function () {
 				console.log('ajax error');
+				console.log('网络错误');
+
 			}
 		});
 	}

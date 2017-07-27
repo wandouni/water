@@ -5,12 +5,17 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>修改密码</title>
+    <meta name="keywords" content="物联网，水，电，气，数据运营平台">
+    <meta name="description" content="物联网，水，电，气，数据运营平台">
+    <title>换表记录</title>
     <link rel="stylesheet" href="dist/css/lib/bootstrap.css">
     <link rel="stylesheet" href="dist/css/lib/iconfont.css">
     <link rel="stylesheet" href="dist/css/lib/reset.css">
+    <link rel="stylesheet" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
+    <link rel="stylesheet" href="dist/css/lib/foundation-datepicker.css">
+    <link rel="stylesheet" href="dist/css/lib/page.css">
     <link rel="stylesheet" href="dist/css/common.min.css">
-    <link rel="stylesheet" href="dist/css/change_password.min.css">
+    <link rel="stylesheet" href="dist/css/change_device.min.css">
 </head>
 <body>
 <div class="wrapper" id="wrapper">
@@ -37,19 +42,20 @@
                     </div>
                 </li>
                 <li class="big-navbar">
-                    <div class="parent-wrapper">
+                    <div class="parent-wrapper active">
                         <a href="#" data-toggle="collapse" data-target="#check" class="">
                             <span class="index-icon icon iconfont">&#xe60a;</span>
                             <span class="index-text text">查询</span>
                             <span class="triangle iconfont">&#xe724;</span>
                         </a>
                     </div>
-                    <ul class="nav nav-second-level collapse comChild" id="check">
+                    <ul class="nav nav-second-level collapse comChild in" id="check">
                         <li class="little-navbar">
                             <a href="./device_check.html" class="">表具查询</a><span class="gray-triangle none"></span>
                         </li>
-                        <li class="little-navbar">
-                            <a href="./change_device.html" class="">换表记录</a><span class="gray-triangle none"></span>
+                        <li class="little-navbar active">
+                            <a href="./change_device.html" class="">换表记录</a><span
+                                class="gray-triangle none active"></span>
                         </li>
                         <li class="little-navbar">
                             <a href="./statistical_report.html">统计报表</a><span class="gray-triangle none"></span>
@@ -94,55 +100,81 @@
                     </ul>
                 </li>
                 <li class="big-navbar">
-                    <div class="parent-wrapper active">
-                        <a href="#" data-toggle="collapse in" data-target="#security" class="">
+                    <div class="parent-wrapper">
+                        <a href="#" data-toggle="collapse" data-target="#security" class="">
                             <span class="index-icon icon iconfont">&#xe601;</span>
                             <span class="index-text text">职能权限</span>
                             <span class="triangle iconfont">&#xe724;</span>
                         </a>
                     </div>
-                    <ul class="nav nav-second-level collapse comChild in" id="security">
-                        <li class="little-navbar active">
-                            <a href="./change_password.html">修改密码</a><span class="gray-triangle none active"></span>
+                    <ul class="nav nav-second-level collapse comChild" id="security">
+                        <li class="little-navbar">
+                            <a href="./add_waterplant.html">水务局查询和添加</a><span class="gray-triangle none"></span>
                         </li>
                     </ul>
                 </li>
             </ul>
         </div>
         <div class="page-wrapper">
-            <div class="title">修改密码</div>
-            <div class="change-password-wrapper">
-                <div class="center-wrapper">
-                    <div class="line-wrapper">
-                        <span>旧密码：</span>
-                        <input type="password" class="old-password">
-                        <div class="old-password-tip tip-wrapper"></div>
-                    </div>
-                    <div class="line-wrapper">
-                        <span>新密码：</span>
-                        <input type="password" class="new-password">
-                        <div class="new-password-tip tip-wrapper"></div>
-                    </div>
-                    <div class="line-wrapper">
-                        <span>确认密码：</span>
-                        <input type="password" class="confirm-password">
-                        <div class="confirm-password-tip tip-wrapper"></div>
-                    </div>
-                    <div class="confirm-btn gray">确定</div>
+            <div class="title">换表记录</div>
+            <div class="search-wrapper">
+                <div class="device-number">
+                    <span>原表号：</span>
+                    <input type="text" class="original_device-number" placeholder="例如：13699161406">
+                    <span>新表号：</span>
+                    <input type="text" class="new_device-number" placeholder="例如：13699161406">
+                </div>
+                <div class="enter-year" id="enter-year">
+                    <span class="text">选择起止日期：</span>
+                    <input type="text" class="start-time" id="start-time" placeholder="2016-01-01">
+                    <span> - </span>
+                    <input type="text" class="end-time" id="end-time" placeholder="2017-01-01">
+                </div>
+                <div class="search-tip"></div>
+                <div class="search-btn-wrapper">
+                    <div class="search-btn">搜 索</div>
+                </div>
+            </div>
+            <div class="table-wrapper">
+                <div class="info-title">
+                    <div class="info-title-text">图表</div>
+                </div>
+                <div class="table-content">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>安装地址</th>
+                            <th>更换时间</th>
+                            <th>原表号</th>
+                            <th>新表号</th>
+                            <th>累积用量</th>
+                        </tr>
+                        </thead>
+                        <tbody class="year-tbody">
+                        <tr class="table-no-data">
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="pagination-wrapper">
+                    <div id="page" class="page clearfix "></div>
                 </div>
             </div>
         </div>
     </div>
-
 </div>
 <script src="dist/js/lib/jquery-3.1.1.min.js"></script>
 <script src="dist/js/lib/bootstrap.min.js"></script>
+<script src="dist/js/lib/page.js"></script>
 <script src="dist/js/lib/mock.js"></script>
+<script src="dist/js/lib/foundation-datepicker.js"></script>
 <script src="src/js/url_str.js"></script>
-<script src="src/js/change_password.js"></script>
 <script src="src/js/log_out.js"></script>
-<!--<script src="dist/js/url_str.min.js"></script>
-<script src="dist/js/change_password.min.js"></script>
-<script src="dist/js/log_out.min.js"></script>-->
+<script src="src/js/change_device.js"></script>
 </body>
 </html>

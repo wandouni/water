@@ -1,41 +1,131 @@
 {
-  "dataList": [
+  "totalpage": 21,
+  "currentpage": 1,
+  "title": {
+    "meterUserId": "用户编号",
+    "waterMeterNum": "表号",
+    "oldTotal": "上月表数",
+    "nowTotal": "本月表数",
+    "totalUse": "本月用量",
+    "meterUserName": "用户名称",
+    "meterUserAddress": "用户地址",
+    "date1": "表机抄日期",
+    "date2": "表机抄时间"
+  },
+  "pageData": [
     {
-      "managerAccess": "weilong",
-      "address": "weilong",
-      "managerName": "番禺石基水务局",
-      "managerId": 2
+      "meterUserId": "00240171",
+      "waterMeterNum": "15901543770",
+      "oldTotal": 70.05,
+      "nowTotal": 74.7,
+      "totalUse": 4.65,
+      "meterUserName": "",
+      "meterUserAddress": "莲路沙涌村段36号",
+      "date1": "20170725",
+      "date2": "01:30:03"
     },
     {
-      "managerAccess": "long",
-      "address": "long",
-      "managerName": "世纪龙",
-      "managerId": 4
+      "meterUserId": "00702486",
+      "waterMeterNum": "13439244138",
+      "oldTotal": 9.1,
+      "nowTotal": 37.25,
+      "totalUse": 28.15,
+      "meterUserName": "",
+      "meterUserAddress": "南浦村38",
+      "date1": "20170726",
+      "date2": "22:20:46"
     },
     {
-      "managerAccess": "weiwei",
-      "address": "weiwei",
-      "managerName": "番禺水厂",
-      "managerId": 5
+      "meterUserId": "01330553",
+      "waterMeterNum": "13611377934",
+      "oldTotal": 0.0,
+      "nowTotal": 13.55,
+      "totalUse": 13.55,
+      "meterUserName": "",
+      "meterUserAddress": "南浦村223",
+      "date1": "20170726",
+      "date2": "20:58:19"
     },
     {
-      "managerAccess": "weiwe",
-      "address": "weiwe",
-      "managerName": "李先生",
-      "managerId": 7
+      "meterUserId": "01374954",
+      "waterMeterNum": "13552271604",
+      "oldTotal": 11.2,
+      "nowTotal": 39.5,
+      "totalUse": 28.3,
+      "meterUserName": "",
+      "meterUserAddress": "南浦村49",
+      "date1": "20170726",
+      "date2": "11:36:57"
     },
     {
-      "managerAccess": "111111",
-      "address": "111111",
-      "managerName": "申",
-      "managerId": 11
+      "meterUserId": "02436338",
+      "waterMeterNum": "13693034125",
+      "oldTotal": 6.05,
+      "nowTotal": 13.35,
+      "totalUse": 7.3,
+      "meterUserName": "",
+      "meterUserAddress": "南浦村24",
+      "date1": "20170726",
+      "date2": "08:51:28"
     },
     {
-      "managerAccess": "1111",
-      "address": "1111",
-      "managerName": "11111",
-      "managerId": 12
+      "meterUserId": "03711580",
+      "waterMeterNum": "13521520540",
+      "oldTotal": 0.0,
+      "nowTotal": 11.85,
+      "totalUse": 11.85,
+      "meterUserName": "",
+      "meterUserAddress": "南浦村193",
+      "date1": "20170726",
+      "date2": "16:48:27"
+    },
+    {
+      "meterUserId": "03885636",
+      "waterMeterNum": "13552199401",
+      "oldTotal": 16.65,
+      "nowTotal": 65.2,
+      "totalUse": 48.55,
+      "meterUserName": "",
+      "meterUserAddress": "南浦村27",
+      "date1": "20170726",
+      "date2": "06:46:53"
+    },
+    {
+      "meterUserId": "04134604",
+      "waterMeterNum": "13439244527",
+      "oldTotal": 0.0,
+      "nowTotal": 35.1,
+      "totalUse": 35.1,
+      "meterUserName": "",
+      "meterUserAddress": "南浦村190",
+      "date1": "20170726",
+      "date2": "20:21:13"
+    },
+    {
+      "meterUserId": "04864427",
+      "waterMeterNum": "13693034542",
+      "oldTotal": 0.0,
+      "nowTotal": 3.85,
+      "totalUse": 3.85,
+      "meterUserName": "",
+      "meterUserAddress": "南浦村9",
+      "date1": "20170726",
+      "date2": "14:45:27"
+    },
+    {
+      "meterUserId": "05357792",
+      "waterMeterNum": "13439149047",
+      "oldTotal": 8.6,
+      "nowTotal": 28.0,
+      "totalUse": 19.4,
+      "meterUserName": "",
+      "meterUserAddress": "南浦村81",
+      "date1": "20170726",
+      "date2": "15:33:14"
     }
   ],
-  "msg": 0
+  "msg": 0,
+  "totalAmount": 5494.1,
+  "totalPrice": 13812.54,
+  "userNum": 201
 }

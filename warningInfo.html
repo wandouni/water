@@ -2,15 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
-    <title>首页</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="物联网，水，电，气，数据运营平台">
+    <meta name="description" content="物联网，水，电，气，数据运营平台">
+    <title>自动报警</title>
     <link rel="stylesheet" href="dist/css/lib/bootstrap.css">
-    <link rel="stylesheet" href="dist/css/lib/reset.css">
     <link rel="stylesheet" href="dist/css/lib/iconfont.css">
+    <link rel="stylesheet" href="dist/css/lib/reset.css">
     <link rel="stylesheet" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
     <link rel="stylesheet" href="dist/css/lib/page.css">
+    <link rel="stylesheet" href="dist/css/lib/foundation-datepicker.css">
     <link rel="stylesheet" href="dist/css/common.min.css">
-    <link rel="stylesheet" href="dist/css/index.min.css">
+    <link rel="stylesheet" href="dist/css/warningInfo.min.css">
 </head>
 <body>
 <div class="wrapper" id="wrapper">
@@ -29,8 +34,8 @@
         <div class="navbar-side">
             <ul class="nav">
                 <li class="big-navbar">
-                    <div class="parent-wrapper active">
-                        <a href="#" class="">
+                    <div class="parent-wrapper">
+                        <a href="./index.html" class="">
                             <span class="index-icon icon iconfont">&#xe604;</span><span
                                 class="index-text text">首页</span><span class="triangle"></span>
                         </a>
@@ -46,11 +51,11 @@
                     </div>
                     <ul class="nav nav-second-level collapse comChild" id="check">
                         <li class="little-navbar">
-                            <a href="./device_check.html" class="">表具查询</a><span
-                                class="gray-triangle none"></span>
+                            <a href="./device_check.html" class="">表具查询</a><span class="gray-triangle none"></span>
                         </li>
                         <li class="little-navbar">
-                            <a href="./change_device.html" class="">换表记录</a><span class="gray-triangle none"></span>
+                            <a href="./change_device.html" class="">换表记录</a><span
+                                class="gray-triangle none"></span>
                         </li>
                         <li class="little-navbar">
                             <a href="./statistical_report.html">统计报表</a><span class="gray-triangle none"></span>
@@ -67,31 +72,30 @@
                     </div>
                     <ul class="nav nav-second-level collapse comChild" id="datatable">
                         <li class="little-navbar">
-                            <a href="./month_table.html" class="">用量月报表</a><span
-                                class="gray-triangle none"></span>
+                            <a href="./month_table.html" class="">用量月报表</a><span class="gray-triangle none"></span>
                         </li>
                         <li class="little-navbar">
                             <a href="./year_table.html">用量年报表</a><span class="gray-triangle none"></span>
                         </li>
                         <li class="little-navbar">
-                            <a href="./installation_table.html">安装统计表</a><span class="gray-triangle none"></span>
+                            <a href="./installation_table.html">表具安装统计表</a><span class="gray-triangle none"></span>
                         </li>
                     </ul>
                 </li>
                 <li class="big-navbar">
-                    <div class="parent-wrapper">
+                    <div class="parent-wrapper active">
                         <a href="#" data-toggle="collapse" data-target="#manage" class="">
                             <span class="index-icon icon iconfont">&#xe622;</span>
                             <span class="index-text text">管理</span>
                             <span class="triangle iconfont">&#xe724;</span>
                         </a>
                     </div>
-                    <ul class="nav nav-second-level collapse comChild" id="manage">
+                    <ul class="nav nav-second-level collapse comChild in" id="manage">
                         <li class="little-navbar">
                             <a href="./device_information.html">表具信息</a><span class="gray-triangle none"></span>
                         </li>
-                        <li class="little-navbar">
-                            <a href="./warningInfo.html">自动报警</a><span class="gray-triangle none"></span>
+                        <li class="little-navbar active">
+                            <a href="./warningInfo.html">自动报警</a><span class="gray-triangle none active"></span>
                         </li>
                     </ul>
                 </li>
@@ -104,62 +108,53 @@
                         </a>
                     </div>
                     <ul class="nav nav-second-level collapse comChild" id="security">
-                        <li class="little-navbar change-password-item">
-                            <a href="./change_password.html">修改密码</a><span class="gray-triangle none"></span>
-                        </li>
-                        <li class="little-navbar add-plant-item">
-                            <a href="./add_waterplant.html">水务局列表</a><span class="gray-triangle none"></span>
+                        <li class="little-navbar">
+                            <a href="./add_waterplant.html">水务局查询和添加</a><span class="gray-triangle none"></span>
                         </li>
                     </ul>
                 </li>
             </ul>
         </div>
         <div class="page-wrapper">
-            <div class="title">首页</div>
-            <div class="total-data-wrapper">
-                <div class="select-factory-wrapper">
-                    <span>选择水务局：</span>
-                    <select class="select-factory-input"></select>
-                </div>
-                <div class="data-wrapper">
-                    <div class="block">
-                        <div class="icon water-icon"></div>
-                        <div class="content">
-                            <p class="key">用户月用水总量</p>
-                            <p class="value water-value">- - -</p>
-                        </div>
-                    </div>
-                    <div class="block">
-                        <div class="icon money-icon"></div>
-                        <div class="content">
-                            <p class="key">用户月总金额</p>
-                            <p class="value money-value">- - -</p>
-                        </div>
-                    </div>
-                    <div class="block">
-                        <div class="icon user-icon"></div>
-                        <div class="content">
-                            <p class="key">用户数量</p>
-                            <p class="value user-value">- - -</p>
-                        </div>
-                    </div>
+            <div class="title">换表记录</div>
+            <div class="search-wrapper">
+                <table>
+                    <tr>
+                        <td>表号：<input type="text" class="device-num" placeholder="例如：123456"></td>
+                        <td class="select-factory-wrapper">水务局：<select class="select-factory-input"></select></td>
+                    </tr>
+                    <tr>
+                        <td>开始时间：<input type="text" class="start-time"></td>
+                        <td>结束时间：<input type="text" class="end-time"></td>
+                    </tr>
+                    <tr>
+                        <td>发生原因：<select class="reason-select"></select></td>
+                        <td>是否处理：<select class="handle-select"></select></td>
+                    </tr>
+                </table>
+                <div class="search-tip"></div>
+                <div class="search-btn-wrapper">
+                    <div class="search-btn">搜 索</div>
                 </div>
             </div>
-            <div class="paging-check-wrapper">
+            <div class="table-wrapper">
                 <div class="info-title">
-                    <div class="info-title-text">实时统计表</div>
+                    <div class="info-title-text">图表</div>
                 </div>
                 <div class="table-content">
                     <table class="table table-bordered">
                         <thead>
-                        <tr class="header-class">
+                        <tr>
+                            <th>表号</th>
+                            <th>报警描述</th>
+                            <th>报警时间</th>
+                            <th>批量处理</th>
+                            <th>地址</th>
+                            <th>操作</th>
                         </tr>
                         </thead>
-                        <tbody class="month-tbody">
+                        <tbody class="table-tbody">
                         <tr class="table-no-data">
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
                             <td>-</td>
                             <td>-</td>
                             <td>-</td>
@@ -169,42 +164,68 @@
                         </tr>
                         </tbody>
                     </table>
-                    <div class="download-wrapper">
-                        <span class="text">下载表格</span><a class="download icon iconfont"
-                                                         href="">&#xe620;</a>
-                    </div>
-                    <div class="pagination-wrapper">
-                        <div class="pagination page" id="page"><!--
-                            <li><a href="#">&laquo;</a></li>
-                            <li class="active"><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li><a href="#">&raquo;</a></li>-->
-                        </div>
-                        <div class="switch-wrapper">跳转到：
-                            <div class="switch-up-wrapper"><input type="text" class="switch-input">
-                                <span class="switch-btn icon iconfont">&#xe60b;</span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-                <div class="no-data">未查询到数据</div>
+                <div id="pagination-wrapper">
+                    <div id="page" class="page clearfix "></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-wrapper" id="modal-wrapper">
+        <div class="right-bottom-wrapper">
+            <div class="submit-wrapper">
+                <div class="close-wrapper"><i class="iconfont close-icon">&#xe6d0;</i></div>
+                <div class="one-line-rapper">
+                    <span class="key device-num">
+                        表号：
+                    </span>
+                    <span class="value device-num-text"></span>
+                </div>
+                <div class="one-line-rapper">
+                    <span class="key warning-type">
+                       报警类型：
+                    </span>
+                    <span class="value warning-type-text"></span>
+                </div>
+                <div class="one-line-rapper">
+                    <span class="key warning-description">
+                       报警描述：
+                    </span>
+                    <span class="value warning-description-text"></span>
+                </div>
+                <div class="one-line-rapper">
+                    <span class="key warning-time">
+                       报警时间：
+                    </span>
+                    <span class="value warning-time-text"></span>
+                </div>
+                <div class="one-line-rapper">
+                    <span class="key deal-time">
+                       处理时间：
+                    </span>
+                    <input type="password" class="value dealTime-input">
+                </div>
+                <div class="one-line-rapper">
+                    <span class="key deal-description">
+                       处理描述：
+                    </span>
+                    <input type="text" class="value dealDescription-input">
+                    <span class="dealDescription-text"></span>
+                </div>
+                <div class="submit-btn-wrapper">
+                    <a class="submit-btn">修改</a>
+                </div>
             </div>
         </div>
     </div>
 </div>
 <script src="dist/js/lib/jquery-3.1.1.min.js"></script>
 <script src="dist/js/lib/bootstrap.min.js"></script>
-<script src="dist/js/lib/mock.js"></script>
-<script src="src/js/url_str.js"></script>
 <script src="dist/js/lib/page.js"></script>
-<script src="src/js/nav.js"></script>
-<script src="src/js/index.js"></script>
+<script src="dist/js/lib/mock.js"></script>
+<script src="dist/js/lib/foundation-datepicker.js"></script>
+<script src="src/js/url_str.js"></script>
 <script src="src/js/log_out.js"></script>
-<!--<script src="dist/js/url_str.min.js"></script>
-<script src="dist/js/index.min.js"></script>
-<script src="dist/js/log_out.min.js"></script>-->
+<script src="src/js/warningInfo.js"></script>
 </body>
 </html>

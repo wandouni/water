@@ -72,6 +72,7 @@ $(function () {
 				},
 				error: function () {
 					console.log('ajax error');
+					alert("网络出错")
 				}
 			});
 		}

@@ -1,0 +1,187 @@
+.page-wrapper .title {
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+  line-height: 40px;
+  text-indent: 20px;
+  color: #529fff;
+  background-color: #2a384e;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0 0 5px 1px rgba(162, 162, 162, 0.2);
+          box-shadow: 0 0 5px 1px rgba(162, 162, 162, 0.2);
+}
+.page-wrapper .search-wrapper {
+  width: 100%;
+  background-color: #fff;
+  border: #efefef 1px solid;
+  border-radius: 6px;
+  padding: 37px 233px 26px 233px;
+  font-size: 0;
+  margin-bottom: 10px;
+  position: relative;
+  -webkit-box-shadow: 0 0 5px 1px rgba(162, 162, 162, 0.2);
+          box-shadow: 0 0 5px 1px rgba(162, 162, 162, 0.2);
+}
+.page-wrapper .search-wrapper .device-number {
+  color: #444;
+  margin-bottom: 16px;
+}
+.page-wrapper .search-wrapper .device-number span {
+  font-size: 14px;
+  display: inline-block;
+  width: 60px;
+}
+.page-wrapper .search-wrapper .device-number input {
+  font-size: 12px;
+  width: 189px;
+  height: 34px;
+  border: #ebebeb 1px solid;
+  text-indent: 15px;
+  border-radius: 4px;
+  color: #333;
+}
+.page-wrapper .search-wrapper .device-number input.original_device-number {
+  margin: 0 30px 0 62px;
+}
+.page-wrapper .search-wrapper .device-number input.new_device-number {
+  margin-left: 10px;
+}
+.page-wrapper .search-wrapper .device-number input::-webkit-input-placeholder {
+  color: #eee;
+}
+.page-wrapper .search-wrapper .device-number input:-ms-input-placeholder {
+  color: #eee;
+}
+.page-wrapper .search-wrapper .enter-year {
+  color: #444;
+  font-size: 0;
+  position: relative;
+}
+.page-wrapper .search-wrapper .enter-year span {
+  font-size: 14px;
+}
+.page-wrapper .search-wrapper .enter-year span.text {
+  display: inline-block;
+  width: 100px;
+}
+.page-wrapper .search-wrapper .enter-year input {
+  font-size: 12px;
+  width: 189px;
+  height: 34px;
+  border: #ebebeb 1px solid;
+  margin-left: 20px;
+  text-indent: 15px;
+  border-radius: 4px;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #333;
+}
+.page-wrapper .search-wrapper .enter-year input::-webkit-input-placeholder {
+  color: #eee;
+}
+.page-wrapper .search-wrapper .enter-year input:-ms-input-placeholder {
+  color: #eee;
+}
+.page-wrapper .search-wrapper .enter-year input.start-time {
+  margin-right: 20px;
+}
+.page-wrapper .search-wrapper .search-tip {
+  position: absolute;
+  top: 130px;
+  left: 225px;
+  display: none;
+  color: #FF0000;
+  font-size: 12px;
+  height: 34px;
+  line-height: 34px;
+  padding-left: 127px;
+}
+.page-wrapper .search-wrapper .search-btn-wrapper {
+  margin-top: 30px;
+  width: 100%;
+  height: 36px;
+  text-align: center;
+}
+.page-wrapper .search-wrapper .search-btn-wrapper .search-btn {
+  display: inline-block;
+  width: 82px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 14px;
+  background-color: #529fff;
+  color: #fff;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+}
+.page-wrapper .search-wrapper .search-btn-wrapper .search-btn:hover {
+  background-color: #4d8fe8;
+}
+.page-wrapper .table-wrapper {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  border: #efefef 1px solid;
+  padding-bottom: 36px;
+  -webkit-box-shadow: 0 0 5px 1px rgba(162, 162, 162, 0.2);
+          box-shadow: 0 0 5px 1px rgba(162, 162, 162, 0.2);
+}
+.page-wrapper .table-wrapper .info-title {
+  font-size: 14px;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 21px;
+}
+.page-wrapper .table-wrapper .info-title .info-title-text {
+  border-bottom: #efefef 1px solid;
+  color: #2a384e;
+}
+.page-wrapper .table-wrapper .table-content {
+  width: 100%;
+  padding: 24px 233px 0 233px;
+}
+.page-wrapper .table-wrapper .table-content table {
+  border: #eaedfa 1px solid;
+}
+.page-wrapper .table-wrapper .table-content table thead {
+  border: #eaedfa 1px solid;
+}
+.page-wrapper .table-wrapper .table-content table thead tr {
+  border: #eaedfa 1px solid;
+  height: 36px;
+}
+.page-wrapper .table-wrapper .table-content table thead tr th {
+  border: #eaedfa 1px solid;
+  background-color: #eff2f7;
+  color: #333;
+  font-size: 12px;
+  font-weight: normal;
+  text-align: center;
+}
+.page-wrapper .table-wrapper .table-content table tbody {
+  border: #eaedfa 1px solid;
+}
+.page-wrapper .table-wrapper .table-content table tbody tr {
+  border: #eaedfa 1px solid;
+  height: 36px;
+}
+.page-wrapper .table-wrapper .table-content table tbody tr td {
+  border: #eaedfa 1px solid;
+  color: #666;
+  font-size: 12px;
+  font-weight: normal;
+  text-align: center;
+}
+.page-wrapper #pagination-wrapper {
+  width: 100%;
+  padding: 24px 233px 0;
+  text-align: center;
+}
+.page-wrapper #pagination-wrapper .page {
+  display: inline-block;
+  margin: 0 auto;
+}

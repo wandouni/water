@@ -181,6 +181,7 @@ $(function () {
 			},
 			error: function () {
 				console.log('ajax error');
+				alert('网络错误');
 			}
 		});
 	}
@@ -199,8 +200,7 @@ $(function () {
 				$month_tbody.append($tr);
 			})(j);
 		}
-		$month_tbody.append($('<tr><td>总计</td><td></td><td>'
-			+ data.userTotal + '</td><td>'
+		$month_tbody.append($('<tr><td>总计</td><td></td><td>' + '</td><td>'
 			+ data.amountTotal + '</td><td>'
 			+ data.priceTotal + '</td></tr>'
 		));

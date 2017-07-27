@@ -25,6 +25,28 @@ $(function () {
 	console.log(getStorage('permission'));
 	initPage();
 
+	function initPagination(current, total, flag) {
+		/*flag 0渲染导航 1不需要渲染导航*/
+		console.log(current);
+		console.log(total);
+		var options = {
+			"id": "page",//显示页码的元素
+			"maxshowpageitem": 3,//最多显示的页码个数
+			"pagelistcount": 10,//每页显示数据个数
+			"callBack": function (index) {
+				var check_data;
+				if (permission === '1') {
+					check_data = 'index=' + index + '&managerUserId=' + $select_factory_input.val(); //flag代表是水务局还是电信
+					CheckData(check_data, 1); //第二个参数代表是首页刷新和改变水务局时候的查询
+				} else {
+					check_data = 'index=' + index;
+					CheckData(check_data, 1);
+				}
+			}
+		};
+		page.init(10 * total, current, options);
+	}
+
 	function initPage() {
 		//1 电信 2 水务局
 		permission = getStorage('permission');
@@ -60,12 +82,12 @@ $(function () {
 	function generateData(index, flag) {
 		var check_data;
 		if (permission === '1') {
-			check_data = 'index=' + index + '&flag=' + flag;
-			CheckData(check_data);
+			check_data = 'index=' + index + '&flag=' + flag; //flag代表是水务局还是电信
+			CheckData(check_data, 0); //第二个参数代表是首页刷新和改变水务局时候的查询
 			initFactoryList('');
 		} else {
 			check_data = 'index=' + index + '&flag=' + flag;
-			CheckData(check_data);
+			CheckData(check_data, 0);
 		}
 	}
 
@@ -104,7 +126,7 @@ $(function () {
 
 	}
 
-	function CheckData(data) {
+	function CheckData(data, flag) {
 		console.log(data);
 		$.ajax({
 			type: 'POST',
@@ -122,16 +144,20 @@ $(function () {
 					$no_data.css('display', 'none');
 					renderTable(data);
 
-					renderPagination(data.currentpage, data.totalpage);
+					if (flag === 0) {
+						initPagination(data.currentpage, data.totalpage, 0);
+					}
 
 					initClick();
 				} else {
 					console.log('ajax 返回空');
+					alert('ajax 返回空');
 					renderNoData();
 				}
 			},
 			error: function (XMLHttpRequest) {
 				console.log('ajax error');
+				alert('网络错误');
 			}
 		});
 	}
@@ -197,63 +223,63 @@ $(function () {
 		}
 	}
 
-	function renderPagination(current, total) {
-		currentIndex = current;
-		$pagination.empty();
-		if (total <= 15) {
-			for (var i = 1; i <= total; i++) {
-				if (i === current) {
-					$pagination.append($('<li class="active"><a class="pagination-index">' + i + '</a></li>'));
-				} else {
-					$pagination.append($('<li><a class="pagination-index">' + i + '</a></li>'));
-				}
-			}
-			$pagination.prepend($('<li><a class="pre-page">&laquo;</a></li>'));
-			$pagination.append($('<li><a class="next-page">&raquo;</a></li>'));
+	/*function renderPagination(current, total) {
+	 currentIndex = current;
+	 $pagination.empty();
+	 if (total <= 15) {
+	 for (var i = 1; i <= total; i++) {
+	 if (i === current) {
+	 $pagination.append($('<li class="active"><a class="pagination-index">' + i + '</a></li>'));
+	 } else {
+	 $pagination.append($('<li><a class="pagination-index">' + i + '</a></li>'));
+	 }
+	 }
+	 $pagination.prepend($('<li><a class="pre-page">&laquo;</a></li>'));
+	 $pagination.append($('<li><a class="next-page">&raquo;</a></li>'));
 
-			bindIndexClick(current, total);
-		} else {
-			renderFlexPagination(current, total);
-		}
-	}
+	 bindIndexClick(current, total);
+	 } else {
+	 renderFlexPagination(current, total);
+	 }
+	 }*/
 
-	function renderFlexPagination(c, t) {
-		var current = c;
-		var total = t;
+	/*	function renderFlexPagination(c, t) {
+	 var current = c;
+	 var total = t;
 
-	}
+	 }*/
 
-	function bindIndexClick(current, total) {
-		var $pagination_index = $('.pagination-index');
-		for (var i = 0; i < $pagination_index.length; i++) {
-			(function (index) {
-				$($pagination_index[index]).click(function (e) {
-					var index_value = parseInt($(e.target).text());
-					console.log(index_value);
-					console.log(current);
-					if (index_value === current) {
+	/*function bindIndexClick(current, total) {
+	 var $pagination_index = $('.pagination-index');
+	 for (var i = 0; i < $pagination_index.length; i++) {
+	 (function (index) {
+	 $($pagination_index[index]).click(function (e) {
+	 var index_value = parseInt($(e.target).text());
+	 console.log(index_value);
+	 console.log(current);
+	 if (index_value === current) {
 
-					} else {
-						generateData(index_value, 0);
-					}
-				});
-			})(i);
-		}
-		$('.pre-page').click(function () {
-			if (current === 1) {
+	 } else {
+	 generateData(index_value, 0);
+	 }
+	 });
+	 })(i);
+	 }
+	 $('.pre-page').click(function () {
+	 if (current === 1) {
 
-			} else {
-				generateData(current - 1, 0);
-			}
-		});
-		$('.next-page').click(function () {
-			if (current === total) {
+	 } else {
+	 generateData(current - 1, 0);
+	 }
+	 });
+	 $('.next-page').click(function () {
+	 if (current === total) {
 
-			} else {
-				generateData(current + 1, 0);
-			}
-		});
-	}
+	 } else {
+	 generateData(current + 1, 0);
+	 }
+	 });
+	 }*/
 
 	/*渲染厂商列表*/
 	function renderFactoryList(factoryList) {

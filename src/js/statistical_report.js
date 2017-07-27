@@ -51,7 +51,7 @@ $(function () {
 				}
 			},
 			error: function (x) {
-				// alert('网络出错，请重试！');
+				alert('网络出错，请重试！');
 				console.log(x);
 			}
 		});

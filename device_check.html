@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="dist/css/lib/bootstrap.css">
     <link rel="stylesheet" href="dist/css/lib/iconfont.css">
     <link rel="stylesheet" href="dist/css/lib/reset.css">
+    <link rel="stylesheet" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
+    <link rel="stylesheet" href="dist/css/lib/page.css">
     <link rel="stylesheet" href="dist/css/common.min.css">
     <link rel="stylesheet" href="dist/css/device_check.min.css">
 </head>
@@ -50,6 +52,9 @@
                                 class="gray-triangle none active"></span>
                         </li>
                         <li class="little-navbar">
+                            <a href="./change_device.html" class="">换表记录</a><span class="gray-triangle none"></span>
+                        </li>
+                        <li class="little-navbar">
                             <a href="./statistical_report.html">统计报表</a><span class="gray-triangle none"></span>
                         </li>
                     </ul>
@@ -86,9 +91,9 @@
                         <li class="little-navbar">
                             <a href="./device_information.html">表具信息</a><span class="gray-triangle none"></span>
                         </li>
-                        <!--<li class="little-navbar">
-                            <a href="#">自动报警</a><span class="gray-triangle none"></span>
-                        </li>-->
+                        <li class="little-navbar">
+                            <a href="./warningInfo.html">自动报警</a><span class="gray-triangle none"></span>
+                        </li>
                     </ul>
                 </li>
                 <li class="big-navbar">
@@ -157,15 +162,8 @@
                         </tbody>
                     </table>
                     <div class="pagination-wrapper">
-                        <ul class="pagination"><!--
-                            <li><a href="#">&laquo;</a></li>
-                            <li class="active"><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li><a href="#">&raquo;</a></li>-->
-                        </ul>
+                        <div class="pagination page" id="page">
+                        </div>
                         <div class="switch-wrapper">跳转到：
                             <div class="switch-up-wrapper"><input type="text" class="switch-input">
                                 <span class="switch-btn icon iconfont">&#xe60b;</span>
@@ -182,6 +180,7 @@
 <script src="dist/js/lib/bootstrap.min.js"></script>
 <script src="dist/js/lib/mock.js"></script>
 <script src="src/js/url_str.js"></script>
+<script src="dist/js/lib/page.js"></script>
 <script src="src/js/nav.js"></script>
 <script src="src/js/device_check.js"></script>
 <script src="src/js/log_out.js"></script>

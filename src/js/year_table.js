@@ -121,6 +121,7 @@ $(function () {
 			},
 			error: function () {
 				console.log('ajax error');
+				alert('网络出错');
 			}
 		});
 	}
@@ -139,8 +140,7 @@ $(function () {
 				$year_tbody.append($tr);
 			})(j);
 		}
-		$year_tbody.append($('<tr><td>总计</td><td></td><td>'
-			+ data.userTotal + '</td><td>'
+		$year_tbody.append($('<tr><td>总计</td><td></td><td>' + '</td><td>'
 			+ data.amountTotal + '</td><td>'
 			+ data.priceTotal + '</td></tr>'
 		));

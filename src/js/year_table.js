@@ -4,7 +4,13 @@ $(function () {
 	var $start_year = $('.start-year');
 	var $end_year = $('.end-year');
 	var $year_item = $('.year-item');
+	var $year_input = $('.year-input');
+	var $pre_year = $('.pre-year');   //三角上一个
+	var $next_year = $('.next-year');   //三角下一个
+	var $year_title = $('.year-title span');  //年的标题
 	var $select_year_wrapper = $('.select-year-wrapper');
+	var $year_item_li = $('.year-item li');  //年列表item
+	var $confirm_btn = $('.confirm-btn');  //今年
 	var $search_btn = $('.search-btn');
 	var $search_tip = $('.search-tip');
 	var $year_tbody = $('.year-tbody');
@@ -12,6 +18,7 @@ $(function () {
 	var $table_no_data = $('.table-no-data');
 	var $select_factory_input = $('.select-factory-input');
 	var $select_factory_wrapper = $('.select-factory-wrapper');
+	// var $year_input = $('.year-input');
 	var permission;
 
 	/*---------------初始化页面----------------*/
@@ -31,9 +38,92 @@ $(function () {
 				break;
 			default:
 				$select_factory_wrapper.css('display', 'none');
+				(function () {
+					var data;
+					if (permission === '1') {
+						data = 'startYear=' + 2016
+							+ '&endYear=' + 2017
+							+ '&managerId=' + $select_factory_input.val();
+						checkData(data);
+					} else {
+						data = 'startYear=' + 2016
+							+ '&endYear=' + 2017;
+						checkData(data);
+					}
+				})();
 				break;
 		}
+		// initYearSelect();
 	}
+
+	function initYearSelect() {
+		$start_year.click(function () {
+			$select_year_wrapper.removeClass('none');
+			generateYearlist();
+		});
+		$end_year.click(function () {
+			$select_year_wrapper.removeClass('none');
+			generateYearlist();
+		});
+		/*当点击其他地方的时候弹框消失*/
+		$(document).click(function (event) {
+			var target = event.target;
+			var flag = $.inArray($select_year_wrapper[0], $(target).parents());
+			if (target !== $select_year_wrapper[0] && target !== $year_input[0] && flag < 0) {
+				$select_year_wrapper.addClass('none');
+			}
+		});
+		/*三角上的点击事件*/
+		$pre_year.click(function () {
+			generateYearlist(old_first_year - 1);
+		});
+
+		/*三角下的点击事件*/
+		$next_year.click(function () {
+			generateYearlist(old_first_year + 9);
+		});
+
+		/*生成默认年的列表，设置默认年的标题*/
+		generateYearlist();
+
+		/*更新年的列表*/
+		function generateYearlist(last_y) {
+			//清空
+			$year_item.empty();
+			var last_year = last_y || parseInt($year_input.val());
+			var first_year = last_year - 4;
+			old_first_year = first_year;
+			$year_title.text(last_year);
+			for (var i = first_year; i < last_year + 1; i++) {
+				$('<li>' + i + '</li>').appendTo($year_item);
+			}
+			bindListclick();
+		}
+
+		/*年列表item的点击事件*/
+		function bindListclick() {
+			var $list = $('.year-item li');
+			for (var i = 0; i < $list.length; i++) {
+				(function (j) {
+					$($list[j]).click(function (e) {
+						check_year = $(e.target).text();
+						// $year_title.text(check_year);
+						$year_input.val(check_year);
+						$select_year_wrapper.addClass('none');
+					});
+				})(i);
+			}
+		}
+
+		/*今年按钮的点击事件*/
+		$confirm_btn.click(function (e) {
+			check_year = new Date().getFullYear();
+			// $year_title.text(check_year);
+			$year_input.val(check_year);
+			$select_year_wrapper.addClass('none');
+		});
+	}
+
 
 	function initFactoryList() {
 		console.log('ajax21');
@@ -48,6 +138,19 @@ $(function () {
 				if (data.msg === 0) {
 					console.log(data);
 					renderFactoryList(data.dataList);
+					(function () {
+						var data;
+						if (permission === '1') {
+							data = 'startYear=' + 2016
+								+ '&endYear=' + 2017
+								+ '&managerId=' + $select_factory_input.val();
+							checkData(data);
+						} else {
+							data = 'startYear=' + 2016
+								+ '&endYear=' + 2017;
+							checkData(data);
+						}
+					})();
 				} else {
 					alert('未查询到任何水务局信息');
 					console.log('未查询到任何水务局信息！');
@@ -115,15 +218,27 @@ $(function () {
 					renderLine();
 					renderTable(data, data.dataList);
 				} else {
+					renderNodata('无数据');
 					alert('您所查询的年份没有数据');
 					console.log('未返回任何数据！');
 				}
 			},
 			error: function () {
+				renderNodata('网络出错');
 				console.log('ajax error');
 				alert('网络出错');
 			}
 		});
+	}
+
+	function renderNodata(text) {
+		/*显示表格空*/
+		$year_tbody.empty();
+		$year_tbody.append($('<tr class="table-no-data"> <td>-</td> <td>-</td> <td>-</td> <td>-</td> <td>-</td> </tr>'));
+
+		/*显示无数据*/
+		$line_no_data.text(text);
+		$line_no_data.css('display', 'block');
 	}
 
 	/*渲染表格*/

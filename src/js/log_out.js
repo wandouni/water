@@ -11,7 +11,7 @@ $(function () {
 			context: document.body,
 			timeout: 5000,
 			success: function (data) {
-				window.location.href = '../../login.html';
+				window.location.href = '../manager/login.html';
 			},
 			error: function () {
 				console.log('ajax error');

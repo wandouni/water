@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="dist/css/lib/bootstrap.css">
     <link rel="stylesheet" href="dist/css/lib/iconfont.css">
     <link rel="stylesheet" href="dist/css/lib/reset.css">
-    <link rel="stylesheet" href="dist/css/lib/lyz.calendar.css">
+    <link rel="stylesheet" href="dist/css/lib/page.css">
+    <link rel="stylesheet" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
+    <link rel="stylesheet" href="dist/css/lib/foundation-datepicker.css">
     <link rel="stylesheet" href="dist/css/common.min.css">
     <link rel="stylesheet" href="dist/css/statistical_report.min.css">
 </head>
@@ -91,9 +93,9 @@
                         <li class="little-navbar">
                             <a href="./device_information.html">表具信息</a><span class="gray-triangle none"></span>
                         </li>
-                        <!--<li class="little-navbar">
-                            <a href="#">自动报警</a><span class="gray-triangle none"></span>
-                        </li>-->
+                        <li class="little-navbar">
+                            <a href="./warningInfo.html">自动报警</a><span class="gray-triangle none"></span>
+                        </li>
                     </ul>
                 </li>
                 <li class="big-navbar">
@@ -109,7 +111,7 @@
                             <a href="./change_password.html">修改密码</a><span class="gray-triangle none"></span>
                         </li>
                         <li class="little-navbar add-plant-item">
-                            <a href="./add_waterplant.html">水务局列表</a><span class="gray-triangle none"></span>
+                            <a href="./add_waterplant.html">水务局查询和添加</a><span class="gray-triangle none"></span>
                         </li>
                     </ul>
                 </li>
@@ -135,7 +137,7 @@
             </div>
             <div class="table-wrapper">
                 <div class="info-title">
-                    <div class="info-title-text">图表</div>
+                    <div class="info-title-text">表格</div>
                 </div>
                 <div class="table-content">
                     <table class="table table-bordered">
@@ -159,6 +161,15 @@
                         </tbody>
                     </table>
                 </div>
+                <div class="pagination-wrapper">
+                    <div class="pagination page" id="page">
+                    </div>
+                    <div class="switch-wrapper">跳转到：
+                        <div class="switch-up-wrapper"><input type="text" class="switch-input">
+                            <span class="switch-btn icon iconfont">&#xe60b;</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -166,12 +177,12 @@
 </div>
 <script src="dist/js/lib/jquery-3.1.1.min.js"></script>
 <script src="dist/js/lib/bootstrap.min.js"></script>
-<script src="dist/js/lib/jquery-1.5.1.js"></script>
-<script src="dist/js/lib/lyz.calendar.min.js"></script>
 <!--<script src="dist/js/url_str.min.js"></script>
 <script src="dist/js/statistical_report.min.js"></script>
 <script src="dist/js/log_out.min.js"></script>-->
+<script src="dist/js/lib/foundation-datepicker.js"></script>
 <script src="src/js/url_str.js"></script>
+<script src="dist/js/lib/page.js"></script>
 <script src="src/js/nav.js"></script>
 <script src="src/js/statistical_report.js"></script>
 <script src="src/js/log_out.js"></script>

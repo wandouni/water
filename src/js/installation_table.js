@@ -8,6 +8,7 @@ $(function () {
 	var $table_no_data = $('.table-no-data');
 	var $select_year = $('#select-year');  //选择年份下拉框
 	var $year_input = $('.year-input');
+	var $select_time_icon = $('.select-time-icon');
 	var $year_item = $('.year-item');  //年列表
 	var $year_item_li = $('.year-item li');  //年列表item
 	var $confirm_btn = $('.confirm-btn');  //今年
@@ -17,7 +18,13 @@ $(function () {
 
 	/*给输入框一个默认的时间，为今年*/
 	$year_input.val(new Date().getFullYear());
+	checkData(new Date().getFullYear());
 	/*点击输入框，弹框出现*/
+	$select_time_icon.click(function () {
+		$year_input.focus();
+		$select_year_wrapper.removeClass('none');
+		generateYearlist();
+	});
 	$year_input.click(function () {
 		$select_year_wrapper.removeClass('none');
 		generateYearlist();
@@ -26,7 +33,7 @@ $(function () {
 	$(document).click(function (event) {
 		var target = event.target;
 		var flag = $.inArray($select_year_wrapper[0], $(target).parents());
-		if (target !== $select_year_wrapper[0] && target !== $year_input[0] && flag < 0) {
+		if (target !== $select_year_wrapper[0] && target !== $year_input[0] && flag < 0 && target !== $select_time_icon[0]) {
 			$select_year_wrapper.addClass('none');
 		}
 	});

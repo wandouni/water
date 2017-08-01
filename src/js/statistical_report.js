@@ -6,13 +6,14 @@ $(function () {
 	var $search_btn = $('.search-btn'); //搜索按钮
 	var $table_no_data = $('.table-no-data'); //无数据的表格的一行
 	var $year_tbody = $('.year-tbody'); //tr插入到这个dom中
+	var $pagination_wrapper = $('.pagination-wrapper'); //分页
 
 	initInput();
 	initClick();
 
 	function initInput() {
-		$('.start-year').calendar();
-		$('.end-year').calendar();
+		$('.start-year').fdatepicker();
+		$('.end-year').fdatepicker();
 	}
 
 	function initClick() {
@@ -25,13 +26,13 @@ $(function () {
 				$search_tip.css('display', 'block');
 			}
 			else {
-				checkData(number, start_year, end_year);
+				checkData(number, start_year, end_year, 1);
 			}
 		});
 	}
 
-	function checkData(number, start_year, end_year) {
-		var data = 'meterCode=' + number + '&startTime=' + start_year + '&endTime=' + end_year;
+	function checkData(number, start_year, end_year, index) {
+		var data = 'meterCode=' + number + '&startTime=' + start_year + '&endTime=' + end_year + '&index=' + index;
 		console.log(data);
 		/*请求数据*/
 		$.ajax({
@@ -45,6 +46,7 @@ $(function () {
 				if (data.msg === 0) {
 					console.log(data);
 					renderTable(data, data.dataList);
+					renderPagination();
 				} else {
 					alert('您所查询的年份没有数据');
 					console.log('未返回任何数据！');
@@ -78,5 +80,21 @@ $(function () {
 			+ data.totalPrice + '</td><td>' + '</td>'
 			+ '</tr>'
 		));
+	}
+
+	/*渲染分页*/
+	function renderPagination() {
+		$pagination_wrapper.css('display', 'block');
+		function initPagination(current, total, flag) {
+			var options = {
+				"id": "page",//显示页码的元素
+				"maxshowpageitem": 3,//最多显示的页码个数
+				"pagelistcount": 10,//每页显示数据个数
+				"callBack": function () {
+
+				}
+			};
+			page.init(10 * total, current, options);
+		}
 	}
 });

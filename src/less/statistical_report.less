@@ -168,5 +168,80 @@
         }
       }
     }
+    .pagination-wrapper {
+      padding: 24px 100px 0;
+      height: 30px;
+      width: 100%;
+      text-align: center;
+      position: relative;
+      .pagination {
+        display: inline-block;
+        margin: 0;
+        height: 30px;
+        li {
+          &.active {
+            a {
+              color: #fff;
+              background-color: #529fff;
+            }
+          }
+          a {
+            border: #efefef 1px solid;
+            height: 30px;
+            padding: 3px 12px;
+            color: #979797;
+            box-sizing: border-box;
+            font-weight: normal;
+            font-size: 14px;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+      .switch-wrapper {
+        position: absolute;
+        top: 6px;
+        right: 20px;
+        font-size: 14px;
+        color: #333;
+        .switch-up-wrapper {
+          width: 70px;
+          height: 30px;
+          box-sizing: border-box;
+          border-radius: 4px;
+          border: #efefef 1px solid;
+          display: inline-block;
+          position: relative;
+          .switch-input {
+            width: 70px;
+            height: 28px;
+            line-height: 28px;
+            text-indent: 10px;
+            display: inline-block;
+            border: none;
+            font-size: 12px;
+            &:focus {
+              outline: none;
+            }
+          }
+          .switch-btn {
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: #eff2f7;
+            color: #373738;
+            text-align: center;
+            display: inline-block;
+            width: 39px;
+            height: 100%;
+            &:hover {
+              background-color: #e3e4e9;
+            }
+          }
+        }
+      }
+    }
   }
 }

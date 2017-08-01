@@ -171,3 +171,76 @@
   font-weight: normal;
   text-align: center;
 }
+.page-wrapper .table-wrapper .pagination-wrapper {
+  padding: 24px 100px 0;
+  height: 30px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+.page-wrapper .table-wrapper .pagination-wrapper .pagination {
+  display: inline-block;
+  margin: 0;
+  height: 30px;
+}
+.page-wrapper .table-wrapper .pagination-wrapper .pagination li.active a {
+  color: #fff;
+  background-color: #529fff;
+}
+.page-wrapper .table-wrapper .pagination-wrapper .pagination li a {
+  border: #efefef 1px solid;
+  height: 30px;
+  padding: 3px 12px;
+  color: #979797;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: normal;
+  font-size: 14px;
+}
+.page-wrapper .table-wrapper .pagination-wrapper .pagination li a:hover {
+  cursor: pointer;
+}
+.page-wrapper .table-wrapper .pagination-wrapper .switch-wrapper {
+  position: absolute;
+  top: 6px;
+  right: 20px;
+  font-size: 14px;
+  color: #333;
+}
+.page-wrapper .table-wrapper .pagination-wrapper .switch-wrapper .switch-up-wrapper {
+  width: 70px;
+  height: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  border: #efefef 1px solid;
+  display: inline-block;
+  position: relative;
+}
+.page-wrapper .table-wrapper .pagination-wrapper .switch-wrapper .switch-up-wrapper .switch-input {
+  width: 70px;
+  height: 28px;
+  line-height: 28px;
+  text-indent: 10px;
+  display: inline-block;
+  border: none;
+  font-size: 12px;
+}
+.page-wrapper .table-wrapper .pagination-wrapper .switch-wrapper .switch-up-wrapper .switch-input:focus {
+  outline: none;
+}
+.page-wrapper .table-wrapper .pagination-wrapper .switch-wrapper .switch-up-wrapper .switch-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #eff2f7;
+  color: #373738;
+  text-align: center;
+  display: inline-block;
+  width: 39px;
+  height: 100%;
+}
+.page-wrapper .table-wrapper .pagination-wrapper .switch-wrapper .switch-up-wrapper .switch-btn:hover {
+  background-color: #e3e4e9;
+}

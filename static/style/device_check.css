@@ -195,8 +195,8 @@
 }
 .page-wrapper .table-wrapper .table-content .pagination-wrapper .switch-wrapper {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 6px;
+  right: -18px;
   font-size: 14px;
   color: #333;
 }

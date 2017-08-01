@@ -149,7 +149,7 @@ $(function () {
 				'data-id': arr[i].alarmId,
 				click: function () {
 					console.log($(this).attr('data-id'));
-					renderModal($(this).attr('data-id'), arr);
+					renderModal($(this).attr('data-id'), dataArray);
 				}
 			}).appendTo($td_btn);
 			$tr.append($tds);
@@ -176,8 +176,38 @@ $(function () {
 		updateTable(data, flag);
 	}
 
+	// console.log(getNow());
+	function getNow() {
+		var date = new Date();
+		return date.getFullYear() +
+			'-' + returnTwo(date.getMonth() + 1) +
+			'-' + returnTwo(date.getDate()) +
+			' ' + returnTwo(date.getHours()) +
+			':' + returnTwo(date.getMinutes()) +
+			':00';
+	}
+
+	function returnTwo(num) {
+		var num_str = num.toString();
+		console.log(num_str.split('')[1]);
+		if (num_str.split('')[1]) {
+			return num_str;
+		} else {
+			return '0' + num;
+		}
+	}
+
 	function renderModal(data_id, arr) {
 		$modal_wrapper.css('display', 'block');
+		/*初始化时间选择*/
+
+		$('.dealTime-input').fdatepicker({
+			format: 'yyyy-mm-dd hh:ii:ss',
+			pickTime: true,
+			minuteStep: 5
+		});
+
+		/*填充4项文本*/
 		var targetObj;
 		for (var i = 0; i < arr.length; i++) {
 			if (arr[i].alarmId === parseInt(data_id)) {
@@ -189,18 +219,28 @@ $(function () {
 		$warning_type_text.text(targetObj.alarmTypeId);
 		$warning_description_text.text(targetObj.alarmDescripe);
 		$warning_time_text.text(getDate(targetObj.alarmTime));
-		$dealTime_input.text(targetObj.alarmTime);
-		// $dealDescription_input.text(targetObj.alarmTime);
 
 		if (parseInt(targetObj.isProcession) === 1) {
+			/*已处理*/
+			$('.dealTime-input').val(targetObj.processionTime);
+
 			$dealDescription_input.css('display', 'none');
 			$dealDescription_text.css('display', 'inline-block');
 			$dealDescription_text.text("已处理");
+
 			$('.submit-btn').attr('disabled', 'disabled');
 			$('.submit-btn').addClass('disabled');
 		} else {
+			/*未处理*/
+			$dealTime_input.val(getNow());
+
+			$dealDescription_input.css('display', 'inline-block');
+			$dealDescription_text.css('display', 'none');
+			$dealDescription_input.val("");
+
+			$('.submit-btn').removeClass('disabled');
 			$('.submit-btn').click(function () {
-				bindSubmit(data_id, $dealDescription_input.text());
+				bindSubmit(data_id, $(".dealTime-input").val(), $('.dealDescription-input').val(), arr);
 			});
 		}
 
@@ -214,11 +254,8 @@ $(function () {
 	var submitData = {"msg": 0};
 	Mock.mock('submitData', submitData);
 
-	function bindSubmit(id, text) {
-		var data = JSON.stringify({
-			alarmId: id,
-			processionInfo: text
-		});
+	function bindSubmit(id, time, description, arr) {
+		var data = 'alarmId=' + id + '&processionTime=' + time + '&processionInfo=' + description;
 		console.log(data);
 		$.ajax({
 			url: common_url + '/watersys/saveAlarmProcession.do',
@@ -231,6 +268,19 @@ $(function () {
 				console.log(data);
 				if (data.msg === 0) {
 					alert('修改成功');
+					console.log(id);
+					console.log(arr);
+
+					/*修改dataArray*/
+					for (var i = 0; i < dataArray.length; i++) {
+						if (dataArray[i].alarmId.toString() === id.toString()) {
+							dataArray[i].isProcession = 1;
+							dataArray[i].processionTime = time;
+						}
+					}
+					reupdateTable(id);
+
+					$modal_wrapper.css('display', 'none');
 				} else {
 					alert("修改失败");
 				}
@@ -259,7 +309,7 @@ $(function () {
 			success: function (data) {
 				console.log(data);
 				if (data.msg === 0) {
-					// dataArray = data.dataList;
+					dataArray = data.dataList;
 					fillTable(data.dataList);
 					if (flag === 0) {
 						initPagination(parseInt(data.currentPage), parseInt(data.totalPage), flag);
@@ -271,9 +321,15 @@ $(function () {
 			},
 			error: function () {
 				console.log('ajax error');
-				alert('ajax error');
+				alert('网络错误请重试！');
 			}
 		});
+	}
+
+	function reupdateTable(id) {
+		var id_str = id.toString();
+		$("span[data-id='" + id_str + "']").text('已处理');
+		$("tr[data-id='" + id_str + "'] td:nth-child(4)").text("已处理");
 	}
 
 	function initPage() {
@@ -299,7 +355,7 @@ $(function () {
 					},
 					error: function () {
 						console.log('ajax error');
-						alert('ajax error');
+						alert('网络错误');
 					}
 				});
 				break;
@@ -316,6 +372,7 @@ $(function () {
 			type: 'POST',
 			timeout: 5000,
 			success: function (data) {
+				console.log(data);
 				if (data.msg === 0) {
 					console.log(data.dataList);
 					fillReasonSelect(data.dataList);

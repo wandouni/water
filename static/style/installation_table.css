@@ -42,15 +42,6 @@
   margin-right: 167px;
   font-size: 14px;
 }
-.page-wrapper .select-time-wrapper .select-time:after {
-  position: absolute;
-  content: '';
-  top: 0;
-  right: 0;
-  background: url("../../img/select_time.png") center center / 55px 36px no-repeat;
-  width: 46px;
-  height: 36px;
-}
 .page-wrapper .select-time-wrapper .select-time .year-input {
   border: none;
   width: 100%;
@@ -154,6 +145,15 @@
 }
 .page-wrapper .select-time-wrapper .select-time .select-year-wrapper .confirm-btn span:hover {
   background-color: #9e9e9e;
+}
+.page-wrapper .select-time-wrapper .select-time .select-time-icon {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  background: url("../../img/select_time.png") center center / 55px 36px no-repeat;
+  width: 46px;
+  height: 36px;
 }
 .page-wrapper .select-time-wrapper .search-btn {
   display: inline-block;

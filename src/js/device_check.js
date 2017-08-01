@@ -37,6 +37,7 @@ $(function () {
 				$select_factory_wrapper.css('display', 'none');
 				break;
 		}
+		generateData('', '', 1);
 		initClick();
 	}
 
@@ -55,7 +56,7 @@ $(function () {
 				console.log('请输入页数');
 				alert('请输入页数');
 			} else {
-				generateData(device_number_value, install_address_value, switch_input, permission, $select_factory_input.val());
+				generateData($device_number.val(), $install_address.val(), switch_input);
 			}
 		});
 	}

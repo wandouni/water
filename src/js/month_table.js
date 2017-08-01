@@ -10,6 +10,7 @@ $(function () {
 	var $line_no_data = $('.line-no-data');
 	var $table_no_data = $('.table-no-data');
 	var $select_year = $('#select-year');  //选择年份下拉框
+	var $select_time_icon = $('.select-time-icon');
 	var $year_input = $('.year-input');
 	var $year_item = $('.year-item');  //年列表
 	var $year_item_li = $('.year-item li');  //年列表item
@@ -37,6 +38,18 @@ $(function () {
 				break;
 			default:
 				$select_factory_wrapper.css('display', 'none');
+				(function () {
+					var data;
+					if (permission === '1') {
+						data = 'year=' + new Date().getFullYear() + '&managerId=' + $select_factory_input.val();
+						console.log(data);
+						checkData(data);
+					} else {
+						data = 'year=' + new Date().getFullYear();
+						console.log(data);
+						checkData(data);
+					}
+				})();
 				break;
 		}
 	}
@@ -54,6 +67,18 @@ $(function () {
 				if (data.msg === 0) {
 					console.log(data);
 					renderFactoryList(data.dataList);
+					(function () {
+						var data;
+						if (permission === '1') {
+							data = 'year=' + new Date().getFullYear() + '&managerId=' + $select_factory_input.val();
+							console.log(data);
+							checkData(data);
+						} else {
+							data = 'year=' + new Date().getFullYear();
+							console.log(data);
+							checkData(data);
+						}
+					})();
 				} else {
 					alert('未查询到任何水务局信息');
 					console.log('未查询到任何水务局信息！');
@@ -69,6 +94,11 @@ $(function () {
 	/*给输入框一个默认的时间，为今年*/
 	$year_input.val(new Date().getFullYear());
 	/*点击输入框，弹框出现*/
+	$select_time_icon.click(function () {
+		$year_input.focus();
+		$select_year_wrapper.removeClass('none');
+		generateYearlist();
+	});
 	$year_input.click(function () {
 		$select_year_wrapper.removeClass('none');
 		generateYearlist();
@@ -77,7 +107,7 @@ $(function () {
 	$(document).click(function (event) {
 		var target = event.target;
 		var flag = $.inArray($select_year_wrapper[0], $(target).parents());
-		if (target !== $select_year_wrapper[0] && target !== $year_input[0] && flag < 0) {
+		if (target !== $select_year_wrapper[0] && target !== $year_input[0] && flag < 0 && target !== $select_time_icon[0]) {
 			$select_year_wrapper.addClass('none');
 		}
 	});
@@ -175,15 +205,27 @@ $(function () {
 					renderView();
 					renderTable(data, data.dataList);
 				} else {
+					renderNodata("无数据");
 					alert('您所查询的年份没有数据');
 					console.log('未返回任何数据！');
 				}
 			},
 			error: function () {
+				renderNodata("网络错误");
 				console.log('ajax error');
 				alert('网络错误');
 			}
 		});
+	}
+
+	function renderNodata(text) {
+		/*显示表格空*/
+		$month_tbody.empty();
+		$month_tbody.append($('<tr class="table-no-data"> <td>-</td> <td>-</td> <td>-</td> <td>-</td> <td>-</td> </tr>'));
+
+		/*显示无数据*/
+		$line_no_data.text(text);
+		$line_no_data.css('display', 'block');
 	}
 
 	/*渲染表格*/

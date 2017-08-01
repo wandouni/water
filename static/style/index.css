@@ -280,7 +280,7 @@
 }
 .page-wrapper .paging-check-wrapper .table-content .pagination-wrapper .switch-wrapper {
   position: absolute;
-  top: 0;
+  top: 6px;
   right: 0;
   font-size: 14px;
   color: #333;

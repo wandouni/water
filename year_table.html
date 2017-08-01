@@ -91,9 +91,9 @@
                         <li class="little-navbar">
                             <a href="./device_information.html">表具信息</a><span class="gray-triangle none"></span>
                         </li>
-                        <!--<li class="little-navbar">
-                            <a href="#">自动报警</a><span class="gray-triangle none"></span>
-                        </li>-->
+                        <li class="little-navbar">
+                            <a href="./warningInfo.html">自动报警</a><span class="gray-triangle none"></span>
+                        </li>
                     </ul>
                 </li>
                 <li class="big-navbar">
@@ -109,7 +109,7 @@
                             <a href="./change_password.html">修改密码</a><span class="gray-triangle none"></span>
                         </li>
                         <li class="little-navbar add-plant-item">
-                            <a href="./add_waterplant.html">水务局列表</a><span class="gray-triangle none"></span>
+                            <a href="./add_waterplant.html">水务局查询和添加</a><span class="gray-triangle none"></span>
                         </li>
                     </ul>
                 </li>
@@ -124,23 +124,23 @@
                         <select class="select-factory-input"></select>
                     </div>
                     <span>输入起止年份：</span>
-                    <input type="text" class="start-year" placeholder="输入：例如2016">
+                    <input type="text" class="start-year" placeholder="输入：例如2016" value="2016">
                     <span> - </span>
-                    <input type="text" class="end-year" placeholder="输入：例如2017">
-                    <!--<div class="select-year-wrapper none">
+                    <input type="text" class="end-year" placeholder="输入：例如2017" value="2017">
+                    <!--                    <div class="select-year-wrapper none">
+                                            <div class="year-title"><span></span><i class="pre-year"></i><i class="next-year"></i></div>
+                                            <div class="i-select">快速选择</div>
+                                            <ul class="year-item">
+                                            </ul>
+                                            <div class="confirm-btn"><span>今年</span></div>
+                                        </div>-->
+                    <div class="select-end-year-wrapper select-year-wrapper none">
                         <div class="year-title"><span></span><i class="pre-year"></i><i class="next-year"></i></div>
                         <div class="i-select">快速选择</div>
                         <ul class="year-item">
                         </ul>
                         <div class="confirm-btn"><span>今年</span></div>
-                    </div>-->
-                    <!--<div class="select-end-year-wrapper select-year-wrapper">
-                        <div class="year-title"><span></span><i class="pre-year"></i><i class="next-year"></i></div>
-                        <div class="i-select">快速选择</div>
-                        <ul class="year-item">
-                        </ul>
-                        <div class="confirm-btn"><span>今年</span></div>
-                    </div>-->
+                    </div>
                 </div>
                 <span class="search-tip">2222</span>
                 <div class="search-btn-wrapper">
@@ -179,9 +179,9 @@
                     <div class="info-title-text">年用量趋势图</div>
                 </div>
                 <div class="year-line-wrapper" id="year-line-wrapper">
-                    <div class="line-no-data">
-                        无数据
-                    </div>
+                </div>
+                <div class="line-no-data">
+                    无数据
                 </div>
             </div>
         </div>

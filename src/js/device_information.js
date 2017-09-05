@@ -42,12 +42,22 @@ $(function () {
 					renderText(data);
 				} else {
 					console.log('数据库查询异常');
-					alert('数据库查询异常');
+					// alert('数据库查询异常');
+					$.showSuccessPop({
+						msg: '数据库查询异常,请重试！',
+						type: 'failure',
+						autoHide: true
+					});
 				}
 			},
 			error: function () {
 				console.log('ajax error');
-				alert('网络出错');
+				// alert('网络出错');
+				$.showSuccessPop({
+					msg: '网络错误，请重试！',
+					type: 'failure',
+					autoHide: true
+				});
 			}
 		});
 	}

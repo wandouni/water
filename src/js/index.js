@@ -70,7 +70,12 @@ $(function () {
 			var switch_input = $switch_input.val();
 			if (switch_input === '') {
 				console.log('请输入页数');
-				alert('请输入页数');
+				// alert('请输入页数');
+				$.showSuccessPop({
+					msg: '请输入页数',
+					type: 'failure',
+					autoHide: true
+				});
 			} else {
 				generateData(switch_input, 0);
 			}
@@ -106,12 +111,22 @@ $(function () {
 					renderFactoryList(factoryList);
 				} else {
 					console.log('未查询到任何水务局信息');
-					alert('未查询到任何水务局信息');
+					// alert('未查询到任何水务局信息');
+					$.showSuccessPop({
+						msg: '未查询到任何水务局信息',
+						type: 'failure',
+						autoHide: true
+					});
 				}
 			},
 			error: function () {
 				console.log('ajax error');
-				alert('网络错误，请重试！');
+				// alert('网络错误，请重试！');
+				$.showSuccessPop({
+					msg: '网络错误，请重试！',
+					type: 'failure',
+					autoHide: true
+				});
 			}
 		});
 	}
@@ -151,13 +166,21 @@ $(function () {
 					initClick();
 				} else {
 					console.log('ajax 返回空');
-					alert('ajax 返回空');
+					// alert('ajax 返回空');
+					$.showSuccessPop({
+						msg: '无数据',
+						autoHide: true
+					});
 					renderNoData();
 				}
 			},
 			error: function (XMLHttpRequest) {
 				console.log('ajax error');
-				alert('网络错误');
+				// alert('网络错误');
+				$.showSuccessPop({
+					msg: '网络错误',
+					autoHide: true
+				});
 			}
 		});
 	}

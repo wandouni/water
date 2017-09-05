@@ -102,12 +102,22 @@ $(function () {
 					}
 				} else {
 					console.log("查询结果为空或您的请求方式有错，请重试!");
-					alert("查询结果为空或您的请求方式有错，请重试!");
+					// alert("查询结果为空或您的请求方式有错，请重试!");
+					$.showSuccessPop({
+						msg: '查询结果为空，请重试!',
+						type: 'failure',
+						autoHide: true
+					});
 				}
 			},
 			error: function (XMLHttpRequest, textStatus, errorThrown) {
 				console.log('ajax error');
-				alert("网络出错");
+				// alert("网络出错");
+				$.showSuccessPop({
+					msg: '网络错误，请重试！',
+					type: 'failure',
+					autoHide: true
+				});
 			}
 
 		});

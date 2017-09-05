@@ -152,13 +152,22 @@ $(function () {
 						}
 					})();
 				} else {
-					alert('未查询到任何水务局信息');
+					// alert('未查询到任何水务局信息');
 					console.log('未查询到任何水务局信息！');
+					$.showSuccessPop({
+						msg: '未查询到任何水务局信息',
+						autoHide: true
+					});
 				}
 			},
 			error: function () {
 				console.log('ajax error');
-				alert('ajax error');
+				// alert('ajax error');
+				$.showSuccessPop({
+					msg: '网络错误，请重试！',
+					type: 'failure',
+					autoHide: true
+				});
 			}
 		});
 	}
@@ -219,14 +228,23 @@ $(function () {
 					renderTable(data, data.dataList);
 				} else {
 					renderNodata('无数据');
-					alert('您所查询的年份没有数据');
+					// alert('您所查询的年份没有数据');
 					console.log('未返回任何数据！');
+					$.showSuccessPop({
+						msg: '您所查询的年份没有数据',
+						autoHide: true
+					});
 				}
 			},
 			error: function () {
 				renderNodata('网络出错');
 				console.log('ajax error');
-				alert('网络出错');
+				// alert('网络出错');
+				$.showSuccessPop({
+					msg: '网络错误，请重试！',
+					type: 'failure',
+					autoHide: true
+				});
 			}
 		});
 	}

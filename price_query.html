@@ -6,15 +6,15 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>表具查询</title>
+    <meta name="keywords" content="物联网，水，电，气，数据运营平台">
+    <meta name="description" content="物联网，水，电，气，数据运营平台">
+    <title>价格查询</title>
     <link rel="stylesheet" href="dist/css/lib/bootstrap.css">
     <link rel="stylesheet" href="dist/css/lib/iconfont.css">
     <link rel="stylesheet" href="dist/css/lib/reset.css">
     <link rel="stylesheet" href="dist/css/lib/pop.css">
-    <link rel="stylesheet" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
-    <link rel="stylesheet" href="dist/css/lib/page.css">
     <link rel="stylesheet" href="dist/css/common.min.css">
-    <link rel="stylesheet" href="dist/css/device_check.min.css">
+    <link rel="stylesheet" href="dist/css/price_query.min.css">
 </head>
 <body>
 <div class="wrapper" id="wrapper">
@@ -49,12 +49,11 @@
                         </a>
                     </div>
                     <ul class="nav nav-second-level collapse comChild in" id="check">
-                        <li class="little-navbar active">
-                            <a href="./device_check.html" class="">表具查询</a><span
-                                class="gray-triangle none active"></span>
-                        </li>
                         <li class="little-navbar">
-                            <a href="./price_query.html" class="">价格查询</a><span class="gray-triangle none"></span>
+                            <a href="./device_check.html" class="">表具查询</a><span class="gray-triangle none"></span>
+                        </li>
+                        <li class="little-navbar active">
+                            <a class="">价格查询</a><span class="gray-triangle none active"></span>
                         </li>
                         <li class="little-navbar">
                             <a href="./change_device.html" class="">换表记录</a><span class="gray-triangle none"></span>
@@ -110,10 +109,7 @@
                         </a>
                     </div>
                     <ul class="nav nav-second-level collapse comChild" id="security">
-                        <li class="little-navbar change-password-item">
-                            <a href="./change_password.html">修改密码</a><span class="gray-triangle none"></span>
-                        </li>
-                        <li class="little-navbar add-plant-item">
+                        <li class="little-navbar">
                             <a href="./add_waterplant.html">水务局查询和添加</a><span class="gray-triangle none"></span>
                         </li>
                     </ul>
@@ -121,77 +117,122 @@
             </ul>
         </div>
         <div class="page-wrapper">
-            <div class="title">表具查询</div>
-            <div class="search-wrapper">
+            <div class="title">价格查询</div>
+            <div class="info-wrapper">
                 <div class="select-factory-wrapper">
                     <span>选择水务局：</span>
                     <select name='select-factory-input' class="select-factory-input">
                     </select>
                 </div>
-                <div class="enter-year">
-                    输入表号：<input type="text" class="device-number" placeholder="例如：13699161406">
-                    输入安装地址：<input type="text" class="install-address" placeholder="例如：莲路沙涌村段36号">
-                </div>
-                <span class="search-tip"></span>
-                <div class="search-btn-wrapper">
-                    <span class="search-btn">搜 索</span>
-                </div>
-            </div>
-            <div class="table-wrapper">
-                <div class="info-title">
-                    <div class="info-title-text">查询统计表</div>
-                </div>
-                <div class="table-content">
-                    <table class="table table-bordered">
-                        <thead>
-                        <tr>
-                            <th>序号</th>
-                            <th>水表表号</th>
-                            <th>起始用量</th>
-                            <th>累计用量</th>
-                            <th>使用金额</th>
-                            <th>价格类型</th>
-                            <th>安装地址</th>
-                        </tr>
-                        </thead>
-                        <tbody class="year-tbody">
-                        <tr class="table-no-data">
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    <div class="pagination-wrapper">
-                        <div class="pagination page" id="page">
-                        </div>
-                        <div class="switch-wrapper">跳转到：
-                            <div class="switch-up-wrapper"><input type="text" class="switch-input">
-                                <span class="switch-btn icon iconfont">&#xe60b;</span>
-                            </div>
-                        </div>
-                    </div>
+                <div class="tip-div">Tip：表格中，除了价格名称不可更改，其他选项都是可更改的</div>
+                <table class="table table-bordered info-table">
+                    <thead>
+                    <tr>
+                        <th>价格名称</th>
+                        <!--<th>类型</th>-->
+                        <th>周期</th>
+                        <th>第一阶梯价</th>
+                        <th>第一阶梯量</th>
+                        <th>第二阶梯价</th>
+                        <th>第二阶梯量</th>
+                        <th>第三阶梯价</th>
+                        <th>第三阶梯量</th>
+                        <th>第四阶梯价</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody class="price-tbody">
+                    <tr class="nodata-tr">
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="add-btn-wrapper">
+                    <span class="add-btn btn none">添加</span>
                 </div>
             </div>
         </div>
     </div>
-
-</div>
-<script src="dist/js/lib/jquery-3.1.1.min.js"></script>
-<script src="dist/js/lib/bootstrap.min.js"></script>
-<script src="dist/js/lib/mock.js"></script>
-<script src="src/js/url_str.js"></script>
-<script src="dist/js/lib/page.js"></script>
-<script src="dist/js/lib/pop.js"></script>
-<script src="src/js/nav.js"></script>
-<script src="src/js/device_check.js"></script>
-<script src="src/js/log_out.js"></script>
-<!--<script src="dist/js/url_str.min.js"></script>
-<script src="dist/js/device_check.min.js"></script>
-<script src="dist/js/log_out.min.js"></script>-->
+    <div class="modal-wrapper" id="modal-wrapper">
+        <div class="right-bottom-wrapper">
+            <div class="submit-wrapper">
+                <div class="close-wrapper"><i class="iconfont close-icon">&#xe6d0;</i></div>
+                <div class="table-wrapper">
+                    <table>
+                        <tr>
+                            <td>价格名称:</td>
+                            <td><select class="price-select">
+                                <option value="4">民用价格</option>
+                                <option value="2">商用价格</option>
+                                <option value="3">其他价格</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td>周期:</td>
+                            <td><input class="price-input cycleTimes-input" type="number"
+                                       placeholder="仅允许输入数字，例如' 123'"></td>
+                        </tr>
+                        <tr>
+                            <td>第一阶梯价:</td>
+                            <td><input class="price-input stepPriceOne-input" type="number"
+                                       placeholder="仅允许输入数字，例如' 123'"></td>
+                        </tr>
+                        <tr>
+                            <td>第一阶梯量:</td>
+                            <td><input class="price-input stepDosageOne-input" type="number"
+                                       placeholder="仅允许输入数字，例如' 123'"></td>
+                        </tr>
+                        <tr>
+                            <td>第二阶梯价:</td>
+                            <td><input class="price-input stepPriceTwo-input" type="number"
+                                       placeholder="仅允许输入数字，例如' 123'"></td>
+                        </tr>
+                        <tr>
+                            <td>第二阶梯量:</td>
+                            <td><input class="price-input stepDosageTwo-input" type="number"
+                                       placeholder="仅允许输入数字，例如' 123'"></td>
+                        </tr>
+                        <tr>
+                            <td>第三阶梯价:</td>
+                            <td><input class="price-input stepPriceThree-input" type="number"
+                                       placeholder="仅允许输入数字，例如' 123'"></td>
+                        </tr>
+                        <tr>
+                            <td>第三阶梯量:</td>
+                            <td><input class="price-input stepDosageThree-input" type="number"
+                                       placeholder="仅允许输入数字，例如' 123'"></td>
+                        </tr>
+                        <tr>
+                            <td>第四阶梯价:</td>
+                            <td><input class="price-input stepPriceFour-input" type="number"
+                                       placeholder="仅允许输入数字，例如' 123'"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="tip-wrapper none">您还有信息未填写！</div>
+                <div class="submit-btn-wrapper">
+                    <span class="submit-btn">提交</span>
+                </div>
+            </div>
+        </div>
+        <script src="dist/js/lib/jquery-3.1.1.min.js"></script>
+        <script src="dist/js/lib/bootstrap.min.js"></script>
+        <script src="dist/js/lib/pop.js"></script>
+        <script src="dist/js/lib/mock.js"></script>
+        <script src="src/js/url_str.js"></script>
+        <script src="src/js/log_out.js"></script>
+        <script src="src/js/price_query.js"></script>
+        <!--<script src="dist/js/url_str.min.js"></script>
+        <script src="dist/js/log_out.min.js"></script>
+        <script src="dist/js/add_waterplant.js"></script>-->
 </body>
 </html>

@@ -39,6 +39,7 @@ $(function () {
 		});
 
 		$submit_btn.click(function () {
+			console.log(account_flag, name_flag, address_flag, password_flag);
 			if (account_flag && name_flag && address_flag && password_flag) {
 				submitWaterInfo();
 			} else {
@@ -49,7 +50,7 @@ $(function () {
 
 		$account_input.blur(function () {
 			if ($account_input.val() !== '') {
-				account_flag = !account_flag;
+				account_flag = true;
 			} else {
 				account_flag = false;
 				$tip_wrapper.text('账号输入不能为空！');
@@ -58,7 +59,7 @@ $(function () {
 		});
 		$name_input.blur(function () {
 			if ($name_input.val() !== '') {
-				name_flag = !name_flag;
+				name_flag = true;
 			} else {
 				name_flag = false;
 				$tip_wrapper.text('名称输入不能为空！');
@@ -67,7 +68,7 @@ $(function () {
 		});
 		$address_input.blur(function () {
 			if ($address_input.val() !== '') {
-				address_flag = !address_flag;
+				address_flag = true;
 			} else {
 				address_flag = false;
 				$tip_wrapper.text('地址输入不能为空！');
@@ -76,7 +77,7 @@ $(function () {
 		});
 		$password_input.blur(function () {
 			if (checkNewpassword()) {
-				password_flag = !password_flag;
+				password_flag = true;
 			} else {
 				password_flag = false;
 				$tip_wrapper.text('密码输入不能为空！');
@@ -107,12 +108,22 @@ $(function () {
 					renderTable(data.dataList);
 				} else {
 					console.log('返回信息不存在');
-					alert("返回信息不存在");
+					// alert("返回信息不存在");
+					$.showSuccessPop({
+						msg: '网络错误，请重试！',
+						type: 'failure',
+						autoHide: true
+					});
 				}
 			},
 			error: function () {
 				console.log('网络异常！');
-				alert("网络出错");
+				// alert("网络出错");
+				$.showSuccessPop({
+					msg: '网络错误，请重试！',
+					type: 'failure',
+					autoHide: true
+				});
 			}
 		});
 	}
@@ -184,18 +195,36 @@ $(function () {
 			success: function (data) {
 				if (data.msg === 0) {
 					console.log('注册成功');
+					// alert('注册成功');
+					$.showSuccessPop({
+						msg: '恭喜您，注册成功！',
+						type: 'success',
+						autoHide: true
+					});
 					$modal_wrapper.fadeOut('slow');
+					window.location.reload();
 					resetModal();
 				} else if (data.msg === 1) {
+					$tip_wrapper.text('数据库插入异常');
+					$tip_wrapper.css('display', 'block');
 					console.log('数据库插入异常');
 				} else if (data.msg === 2) {
+					$tip_wrapper.text('请求参数异常');
+					$tip_wrapper.css('display', 'block');
 					console.log('请求参数异常');
 				} else if (data.msg === 3) {
 					console.log('该账户已经注册');
+					$tip_wrapper.text('该账户已经注册');
+					$tip_wrapper.css('display', 'block');
 				}
 			},
 			error: function () {
 				console.log('网络错误！');
+				$.showSuccessPop({
+					msg: '网络错误，请重试！',
+					type: 'failure',
+					autoHide: true
+				});
 			}
 		});
 

@@ -54,7 +54,12 @@ $(function () {
 			var switch_input = $switch_input.val();
 			if (switch_input === '') {
 				console.log('请输入页数');
-				alert('请输入页数');
+				// alert('请输入页数');
+				$.showSuccessPop({
+					msg: '请输入页数',
+					type: 'failure',
+					autoHide: true
+				});
 			} else {
 				generateData($device_number.val(), $install_address.val(), switch_input);
 			}
@@ -115,12 +120,21 @@ $(function () {
 					renderFactoryList(factoryList);
 				} else {
 					console.log('未查询到任何水务局信息');
-					alert('未查询到任何水务局信息');
+					// alert('未查询到任何水务局信息');
+					$.showSuccessPop({
+						msg: '未查询到任何水务局信息',
+						autoHide: true
+					});
 				}
 			},
 			error: function () {
 				console.log('ajax error');
-				alert('网络出错');
+				// alert('网络出错');
+				$.showSuccessPop({
+					msg: '网络错误，请重试！',
+					type: 'failure',
+					autoHide: true
+				});
 			}
 		});
 	}
@@ -141,17 +155,26 @@ $(function () {
 					if (flag === 0) {
 						initPagination(data.currentPage, data.totalPage, 0);
 					}
-
 					initSwitchClick();
 				} else {
 					$table_content.css('display', 'none');
-					alert('未查询到此表具的相关信息！请检查输入！');
+					// alert('未查询到此表具的相关信息！请检查输入！');
 					console.log('未返回任何数据！');
+					$.showSuccessPop({
+						msg: '未查询到相关信息！请检查输入！',
+						type: 'failure',
+						autoHide: true
+					});
 				}
 			},
 			error: function () {
 				console.log('ajax error');
-				alert('网络出错');
+				// alert('网络出错');
+				$.showSuccessPop({
+					msg: '网络错误，请重试！',
+					type: 'failure',
+					autoHide: true
+				});
 			}
 		});
 	}

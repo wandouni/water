@@ -7,6 +7,8 @@ $(function () {
 	var $table_no_data = $('.table-no-data'); //无数据的表格的一行
 	var $year_tbody = $('.year-tbody'); //tr插入到这个dom中
 	var $pagination_wrapper = $('.pagination-wrapper'); //分页
+	var $switch_input = $('.switch-input');
+	var $switch_btn = $('.switch-btn');
 
 	initInput();
 	initClick();
@@ -31,8 +33,8 @@ $(function () {
 		});
 	}
 
-	function checkData(number, start_year, end_year, index) {
-		var data = 'meterCode=' + number + '&startTime=' + start_year + '&endTime=' + end_year + '&index=' + index;
+	function checkData(number, start_year, end_year, page) {
+		var data = 'meterCode=' + number + '&startTime=' + start_year + '&endTime=' + end_year + '&page=' + page;
 		console.log(data);
 		/*请求数据*/
 		$.ajax({
@@ -46,15 +48,25 @@ $(function () {
 				if (data.msg === 0) {
 					console.log(data);
 					renderTable(data, data.dataList);
-					renderPagination();
+					renderPagination(data.currentPage, data.totalPage);
+					initSwitchClick();
 				} else {
-					alert('您所查询的年份没有数据');
+					// alert('您所查询的年份没有数据');
 					console.log('未返回任何数据！');
+					$.showSuccessPop({
+						msg: '您所查询的年份没有数据',
+						autoHide: true
+					});
 				}
 			},
 			error: function (x) {
-				alert('网络出错，请重试！');
+				// alert('网络出错，请重试！');
 				console.log(x);
+				$.showSuccessPop({
+					msg: '网络错误，请重试！',
+					type: 'failure',
+					autoHide: true
+				});
 			}
 		});
 	}
@@ -66,7 +78,7 @@ $(function () {
 		for (var j = 0; j < arr.length; j++) {
 			(function (num) {
 				var $tr = $('<tr><td>'
-					+ (num + 1) + '</td><td>'
+					+ ((data.currentPage - 1) * 10 + (num + 1)) + '</td><td>'
 					+ arr[j].meterCode + '</td><td>'
 					+ arr[j].amountNum + '</td><td>'
 					+ arr[j].priceNum + '</td><td>'
@@ -74,27 +86,44 @@ $(function () {
 				$year_tbody.append($tr);
 			})(j);
 		}
-		$year_tbody.append($('<tr><td>总计</td>' +
-			'<td></td><td>'
-			+ data.totalAmount + '</td><td>'
-			+ data.totalPrice + '</td><td>' + '</td>'
-			+ '</tr>'
-		));
+		if (data.currentPage === data.totalPage) {
+			$year_tbody.append($('<tr><td>总计</td>' +
+				'<td></td><td>'
+				+ data.totalAmount + '</td><td>'
+				+ data.totalPrice + '</td><td>' + '</td>'
+				+ '</tr>'
+			));
+		}
 	}
 
 	/*渲染分页*/
-	function renderPagination() {
+	function renderPagination(current, total, flag) {
 		$pagination_wrapper.css('display', 'block');
-		function initPagination(current, total, flag) {
-			var options = {
-				"id": "page",//显示页码的元素
-				"maxshowpageitem": 3,//最多显示的页码个数
-				"pagelistcount": 10,//每页显示数据个数
-				"callBack": function () {
+		var options = {
+			"id": "page",//显示页码的元素
+			"maxshowpageitem": 3,//最多显示的页码个数
+			"pagelistcount": 10,//每页显示数据个数
+			"callBack": function (index) {
+				checkData($device_number_input.val(), $start_year.val(), $end_year.val(), index);
+			}
+		};
+		page.init(10 * total, current, options);
+	}
 
-				}
-			};
-			page.init(10 * total, current, options);
-		}
+	function initSwitchClick() {
+		$switch_btn.click(function () {
+			var switch_input = $switch_input.val();
+			if (switch_input === '') {
+				console.log('请输入页数');
+				// alert('请输入页数');
+				$.showSuccessPop({
+					msg: '请输入页数',
+					type: 'failure',
+					autoHide: true
+				});
+			} else {
+				checkData($device_number_input.val(), $start_year.val(), $end_year.val(), switch_input);
+			}
+		});
 	}
 });

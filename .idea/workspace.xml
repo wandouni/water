@@ -3,41 +3,39 @@
   <component name="ChangeListManager">
     <list default="true" id="717ce54d-6a49-4a54-8503-87e5d38577d7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add_waterplant.html" afterPath="$PROJECT_DIR$/add_waterplant.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/change_device.html" afterPath="$PROJECT_DIR$/change_device.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/change_password.html" afterPath="$PROJECT_DIR$/change_password.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data.json" afterPath="$PROJECT_DIR$/data.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/device_check.html" afterPath="$PROJECT_DIR$/device_check.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/device_information.html" afterPath="$PROJECT_DIR$/device_information.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/device_check.min.css" afterPath="$PROJECT_DIR$/dist/css/device_check.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/add_waterplant.min.css" afterPath="$PROJECT_DIR$/dist/css/add_waterplant.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/index.min.css" afterPath="$PROJECT_DIR$/dist/css/index.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/installation_table.min.css" afterPath="$PROJECT_DIR$/dist/css/installation_table.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/lib/foundation-datepicker.css" afterPath="$PROJECT_DIR$/dist/css/lib/foundation-datepicker.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/month_table.min.css" afterPath="$PROJECT_DIR$/dist/css/month_table.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/statistical_report.min.css" afterPath="$PROJECT_DIR$/dist/css/statistical_report.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/warningInfo.min.css" afterPath="$PROJECT_DIR$/dist/css/warningInfo.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/year_table.min.css" afterPath="$PROJECT_DIR$/dist/css/year_table.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/installation_table.html" afterPath="$PROJECT_DIR$/installation_table.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.html" afterPath="$PROJECT_DIR$/login.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/month_table.html" afterPath="$PROJECT_DIR$/month_table.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/add_waterplant.js" afterPath="$PROJECT_DIR$/src/js/add_waterplant.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/change_device.js" afterPath="$PROJECT_DIR$/src/js/change_device.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/change_password.js" afterPath="$PROJECT_DIR$/src/js/change_password.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/device_check.js" afterPath="$PROJECT_DIR$/src/js/device_check.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/device_information.js" afterPath="$PROJECT_DIR$/src/js/device_information.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/index.js" afterPath="$PROJECT_DIR$/src/js/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/installation_table.js" afterPath="$PROJECT_DIR$/src/js/installation_table.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/log_out.js" afterPath="$PROJECT_DIR$/src/js/log_out.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/login.js" afterPath="$PROJECT_DIR$/src/js/login.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/month_table.js" afterPath="$PROJECT_DIR$/src/js/month_table.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/nav.js" afterPath="$PROJECT_DIR$/src/js/nav.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/statistical_report.js" afterPath="$PROJECT_DIR$/src/js/statistical_report.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/url_str.js" afterPath="$PROJECT_DIR$/src/js/url_str.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/warningInfo.js" afterPath="$PROJECT_DIR$/src/js/warningInfo.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/year_table.js" afterPath="$PROJECT_DIR$/src/js/year_table.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/add_waterplant.less" afterPath="$PROJECT_DIR$/src/less/add_waterplant.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/index.less" afterPath="$PROJECT_DIR$/src/less/index.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/installation_table.less" afterPath="$PROJECT_DIR$/src/less/installation_table.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/month_table.less" afterPath="$PROJECT_DIR$/src/less/month_table.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/statistical_report.less" afterPath="$PROJECT_DIR$/src/less/statistical_report.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/warningInfo.less" afterPath="$PROJECT_DIR$/src/less/warningInfo.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/year_table.less" afterPath="$PROJECT_DIR$/src/less/year_table.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/style/device_check.css" afterPath="$PROJECT_DIR$/static/style/device_check.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/style/add_waterplant.css" afterPath="$PROJECT_DIR$/static/style/add_waterplant.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/style/index.css" afterPath="$PROJECT_DIR$/static/style/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/style/installation_table.css" afterPath="$PROJECT_DIR$/static/style/installation_table.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/style/month_table.css" afterPath="$PROJECT_DIR$/static/style/month_table.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/style/statistical_report.css" afterPath="$PROJECT_DIR$/static/style/statistical_report.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/style/warningInfo.css" afterPath="$PROJECT_DIR$/static/style/warningInfo.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/style/year_table.css" afterPath="$PROJECT_DIR$/static/style/year_table.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistical_report.html" afterPath="$PROJECT_DIR$/statistical_report.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/warningInfo.html" afterPath="$PROJECT_DIR$/warningInfo.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/year_table.html" afterPath="$PROJECT_DIR$/year_table.html" />
@@ -61,149 +59,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="warningInfo.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/warningInfo.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2130">
-              <caret line="303" column="34" lean-forward="false" selection-start-line="303" selection-start-column="34" selection-end-line="303" selection-end-column="34" />
-              <folding>
-                <element signature="e#978#1009#0" expanded="false" />
-                <element signature="e#1035#1066#0" expanded="false" />
-                <element signature="e#1085#1566#0" expanded="false" />
-                <element signature="e#1695#2190#0" expanded="false" />
-                <element signature="e#2239#2542#0" expanded="false" />
-                <element signature="e#2576#2833#0" expanded="false" />
-                <element signature="e#2862#3111#0" expanded="false" />
-                <element signature="e#3140#3321#0" expanded="false" />
-                <element signature="e#4192#4700#0" expanded="false" />
-                <element signature="e#4748#4974#0" expanded="false" />
-                <element signature="e#5001#5159#0" expanded="false" />
-                <element signature="e#6758#7615#0" expanded="false" />
-                <element signature="e#7643#7722#0" expanded="false" />
-                <element signature="e#8562#10501#0" expanded="false" />
-                <element signature="e#9950#10437#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="statistical_report.less" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/less/statistical_report.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="205" column="24" lean-forward="false" selection-start-line="205" selection-start-column="24" selection-end-line="205" selection-end-column="24" />
-              <folding>
-                <element signature="e#2758#2974#0" expanded="false" />
-                <element signature="e#3062#3855#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="statistical_report.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/statistical_report.js">
+      <file leaf-file-name="price_query.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/price_query.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="372">
-              <caret line="91" column="43" lean-forward="true" selection-start-line="91" selection-start-column="43" selection-end-line="91" selection-end-column="43" />
+              <caret line="215" column="66" lean-forward="false" selection-start-line="215" selection-start-column="58" selection-end-line="215" selection-end-column="77" />
               <folding>
-                <element signature="e#1656#2183#0" expanded="false" />
+                <element signature="n#li#2;n#ul#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#table#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="statistical_report.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/statistical_report.html">
+      <file leaf-file-name="price_query.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/less/price_query.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="186" column="52" lean-forward="false" selection-start-line="186" selection-start-column="52" selection-end-line="186" selection-end-column="52" />
+            <state relative-caret-position="214">
+              <caret line="225" column="33" lean-forward="false" selection-start-line="225" selection-start-column="33" selection-end-line="225" selection-end-column="33" />
               <folding>
-                <element signature="n#div#1;n#div#2;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="e#25#285#0" expanded="false" />
+                <element signature="e#1297#1646#0" expanded="false" />
+                <element signature="e#3821#4326#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="price_query.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/js/price_query.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="86" column="28" lean-forward="true" selection-start-line="86" selection-start-column="28" selection-end-line="86" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/js/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="157" column="46" lean-forward="true" selection-start-line="157" selection-start-column="46" selection-end-line="157" selection-end-column="46" />
+            <state relative-caret-position="353">
+              <caret line="174" column="37" lean-forward="false" selection-start-line="174" selection-start-column="37" selection-end-line="174" selection-end-column="37" />
               <folding>
-                <element signature="e#1199#1772#0" expanded="false" />
-                <element signature="e#6025#6628#0" expanded="false" />
-                <element signature="e#6631#6714#0" expanded="false" />
-                <element signature="e#6717#7379#0" expanded="false" />
-                <marker date="1501139328655" expanded="true" signature="6442:6449" ph="«" />
-                <marker date="1501139328655" expanded="true" signature="6512:6519" ph="»" />
+                <element signature="e#628#1082#0" expanded="false" />
+                <element signature="e#1129#1153#0" expanded="false" />
+                <element signature="e#1182#2124#0" expanded="false" />
+                <element signature="e#2180#2411#0" expanded="false" />
+                <element signature="e#3398#3477#0" expanded="false" />
+                <element signature="e#8103#9370#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="device_check.less" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/less/device_check.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2505">
-              <caret line="240" column="7" lean-forward="false" selection-start-line="167" selection-start-column="6" selection-end-line="240" selection-end-column="7" />
-              <folding>
-                <element signature="e#3923#5839#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="device_check.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/device_check.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2610">
-              <caret line="182" column="0" lean-forward="false" selection-start-line="182" selection-start-column="0" selection-end-line="182" selection-end-column="43" />
-              <folding>
-                <element signature="n#div#0;n#div#1;n#div#2;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="year_table.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/year_table.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1890">
-              <caret line="240" column="46" lean-forward="false" selection-start-line="240" selection-start-column="46" selection-end-line="240" selection-end-column="46" />
-              <folding>
-                <element signature="e#1299#1596#0" expanded="false" />
-                <element signature="e#1670#3383#0" expanded="false" />
-                <element signature="e#2232#2278#0" expanded="false" />
-                <element signature="e#2328#2374#0" expanded="false" />
-                <element signature="e#2844#3169#0" expanded="false" />
-                <element signature="e#3221#3378#0" expanded="false" />
-                <element signature="e#3414#4234#0" expanded="false" />
-                <element signature="e#3741#4050#0" expanded="false" />
-                <element signature="e#6410#6893#0" expanded="false" />
-                <element signature="e#6929#8315#0" expanded="false" />
-                <element signature="e#8343#8422#0" expanded="false" />
-                <element signature="e#8477#8708#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="year_table.less" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/less/year_table.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4080">
-              <caret line="272" column="52" lean-forward="false" selection-start-line="272" selection-start-column="52" selection-end-line="272" selection-end-column="52" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -219,36 +114,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>generateData</find>
-      <find>$search_btn</find>
-      <find>图表</find>
-      <find>td</find>
-      <find>select-year-wrapper none</find>
-      <find>select-time</find>
-      <find>switch-wrapper</find>
-      <find>start-year</find>
-      <find>$select_year_wrapper</find>
-      <find>$pre_year</find>
-      <find>$year_input</find>
-      <find>initYearSelect</find>
-      <find>select-year-wrapper</find>
-      <find>one-line-rapper</find>
-      <find>pass</find>
-      <find>submit-btn</find>
-      <find>bindSubmit</find>
-      <find>dealDescription-input</find>
-      <find>renderModal</find>
-      <find>fillTable</find>
-      <find>reupdateTable</find>
-      <find>jax</find>
-      <find>修改</find>
-      <find>$line_no_data</find>
-      <find>line-no-data</find>
-      <find>line-no</find>
-      <find>click</find>
       <find>ajax</find>
-      <find>pagina</find>
-      <find>checkData</find>
+      <find>修改</find>
+      <find>click</find>
+      <find>月</find>
+      <find>reupdateTable</find>
+      <find>renderModal</find>
+      <find>alert</find>
+      <find>$table_no_data</find>
+      <find>initFactoryList</find>
+      <find>select-factory-wrapper</find>
+      <find>getStorage</find>
+      <find>renderFactoryList</find>
+      <find>$switch_input</find>
+      <find>$select_factory_input</find>
+      <find>initValueChange</find>
+      <find>render</find>
+      <find>stepPriceInfoId</find>
+      <find>btn-edit</find>
+      <find>table-content</find>
+      <find>sea</find>
+      <find>close-wrapper</find>
+      <find>add-btn</find>
+      <find>editPrice</find>
+      <find>addEdit</find>
+      <find>$add_btn</find>
+      <find>table-wrapper</find>
+      <find>web</find>
+      <find>modal-wrapper</find>
+      <find>addPrice</find>
+      <find>tip-wrapper</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -257,13 +152,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test.html" />
-        <option value="$PROJECT_DIR$/src/less/add_waterplant.less" />
-        <option value="$PROJECT_DIR$/src/js/nav.js" />
-        <option value="$USER_HOME$/Desktop/20150512122515265/Loading.js" />
-        <option value="$USER_HOME$/Desktop/勾.svg" />
-        <option value="$PROJECT_DIR$/test.js" />
-        <option value="$PROJECT_DIR$/src/css/pop.css" />
         <option value="$PROJECT_DIR$/pop.html" />
         <option value="$PROJECT_DIR$/src/js/pop.js" />
         <option value="$PROJECT_DIR$/../pop/pop.html" />
@@ -273,41 +161,48 @@
         <option value="$PROJECT_DIR$/dist/js/lib/jquery.z-pager.js" />
         <option value="$PROJECT_DIR$/src/less/change_device.less" />
         <option value="$PROJECT_DIR$/dist/css/lib/page.css" />
-        <option value="$PROJECT_DIR$/add_waterplant.html" />
-        <option value="$PROJECT_DIR$/change_password.html" />
         <option value="$PROJECT_DIR$/dist/js/lib/page.js" />
-        <option value="$PROJECT_DIR$/data.json" />
         <option value="$PROJECT_DIR$/src/less/device_check.less" />
+        <option value="$PROJECT_DIR$/src/less/installation_table.less" />
+        <option value="$PROJECT_DIR$/dist/css/lib/foundation-datepicker.css" />
+        <option value="$PROJECT_DIR$/src/less/warningInfo.less" />
+        <option value="$PROJECT_DIR$/src/js/log_out.js" />
+        <option value="$PROJECT_DIR$/src/less/month_table.less" />
+        <option value="$PROJECT_DIR$/src/less/year_table.less" />
+        <option value="$PROJECT_DIR$/src/js/login.js" />
+        <option value="$PROJECT_DIR$/src/less/statistical_report.less" />
+        <option value="$PROJECT_DIR$/dist/css/lib/pop.css" />
+        <option value="$PROJECT_DIR$/src/js/month_table.js" />
+        <option value="$PROJECT_DIR$/src/js/year_table.js" />
+        <option value="$PROJECT_DIR$/src/js/installation_table.js" />
         <option value="$PROJECT_DIR$/src/js/change_device.js" />
-        <option value="$PROJECT_DIR$/src/js/add_waterplant.js" />
         <option value="$PROJECT_DIR$/src/js/change_password.js" />
-        <option value="$PROJECT_DIR$/src/js/device_information.js" />
+        <option value="$PROJECT_DIR$/src/js/statistical_report.js" />
         <option value="$PROJECT_DIR$/src/js/index.js" />
+        <option value="$PROJECT_DIR$/src/js/device_information.js" />
+        <option value="$PROJECT_DIR$/src/js/device_check.js" />
+        <option value="$PROJECT_DIR$/src/js/add_waterplant.js" />
+        <option value="$PROJECT_DIR$/src/js/nav.js" />
+        <option value="$PROJECT_DIR$/src/js/warningInfo.js" />
+        <option value="$PROJECT_DIR$/src/less/add_waterplant.less" />
+        <option value="$PROJECT_DIR$/data.json" />
+        <option value="$PROJECT_DIR$/src/js/url_str.js" />
+        <option value="$PROJECT_DIR$/src/less/index.less" />
+        <option value="$PROJECT_DIR$/year_table.html" />
+        <option value="$PROJECT_DIR$/warningInfo.html" />
+        <option value="$PROJECT_DIR$/statistical_report.html" />
+        <option value="$PROJECT_DIR$/month_table.html" />
+        <option value="$PROJECT_DIR$/login.html" />
+        <option value="$PROJECT_DIR$/installation_table.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/device_information.html" />
         <option value="$PROJECT_DIR$/device_check.html" />
+        <option value="$PROJECT_DIR$/change_password.html" />
         <option value="$PROJECT_DIR$/change_device.html" />
-        <option value="$PROJECT_DIR$/installation_table.html" />
-        <option value="$PROJECT_DIR$/src/less/installation_table.less" />
-        <option value="$PROJECT_DIR$/src/js/installation_table.js" />
-        <option value="$PROJECT_DIR$/src/less/index.less" />
-        <option value="$PROJECT_DIR$/src/js/device_check.js" />
-        <option value="$PROJECT_DIR$/dist/css/lib/foundation-datepicker.css" />
-        <option value="$PROJECT_DIR$/src/less/warningInfo.less" />
-        <option value="$PROJECT_DIR$/warningInfo.html" />
-        <option value="$PROJECT_DIR$/src/js/login.js" />
-        <option value="$PROJECT_DIR$/src/js/log_out.js" />
-        <option value="$PROJECT_DIR$/src/js/url_str.js" />
-        <option value="$PROJECT_DIR$/src/js/month_table.js" />
-        <option value="$PROJECT_DIR$/month_table.html" />
-        <option value="$PROJECT_DIR$/src/less/month_table.less" />
-        <option value="$PROJECT_DIR$/year_table.html" />
-        <option value="$PROJECT_DIR$/src/less/year_table.less" />
-        <option value="$PROJECT_DIR$/src/js/year_table.js" />
-        <option value="$PROJECT_DIR$/src/js/warningInfo.js" />
-        <option value="$PROJECT_DIR$/src/less/statistical_report.less" />
-        <option value="$PROJECT_DIR$/statistical_report.html" />
-        <option value="$PROJECT_DIR$/src/js/statistical_report.js" />
+        <option value="$PROJECT_DIR$/add_waterplant.html" />
+        <option value="$PROJECT_DIR$/src/less/price_query.less" />
+        <option value="$PROJECT_DIR$/price_query.html" />
+        <option value="$PROJECT_DIR$/src/js/price_query.js" />
       </list>
     </option>
   </component>
@@ -342,7 +237,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
+    <option name="width" value="1370" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -363,6 +258,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -424,77 +320,10 @@
               <option name="myItemId" value="dist" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -513,19 +342,19 @@
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\ahtmlLearning\manager\dist\css\lib" />
-      <recent name="D:\ahtmlLearning\manager\dist\js\lib" />
-      <recent name="D:\ahtmlLearning\manager\img" />
-      <recent name="D:\ahtmlLearning\manager\src" />
-      <recent name="D:\ahtmlLearning\newwater-master\js\lib" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\ahtmlLearning\manager" />
       <recent name="D:\ahtmlLearning\manager\dist" />
       <recent name="D:\ahtmlLearning\manager\src" />
       <recent name="D:\ahtmlLearning\manager\static\js" />
       <recent name="D:\ahtmlLearning\newwater-master\css" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ahtmlLearning\manager\dist\js\lib" />
+      <recent name="D:\ahtmlLearning\manager\img" />
+      <recent name="D:\ahtmlLearning\manager\dist\css\lib" />
+      <recent name="D:\ahtmlLearning\manager\src" />
+      <recent name="D:\ahtmlLearning\newwater-master\js\lib" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -735,12 +564,25 @@
       <workItem from="1501137530079" duration="12688000" />
       <workItem from="1501224867821" duration="8288000" />
       <workItem from="1501464179483" duration="16151000" />
-      <workItem from="1501549592941" duration="1972000" />
+      <workItem from="1501549592941" duration="18357000" />
+      <workItem from="1502179293950" duration="214000" />
+      <workItem from="1502673981841" duration="388000" />
+      <workItem from="1503280448176" duration="49000" />
+      <workItem from="1503280505861" duration="461000" />
+      <workItem from="1503281021516" duration="1624000" />
+      <workItem from="1503284871278" duration="1004000" />
+      <workItem from="1503538371789" duration="1848000" />
+      <workItem from="1504061664148" duration="102000" />
+      <workItem from="1504061957957" duration="10847000" />
+      <workItem from="1504142399782" duration="659000" />
+      <workItem from="1504165304347" duration="21286000" />
+      <workItem from="1504490920229" duration="13882000" />
+      <workItem from="1504575814425" duration="14769000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="613723000" />
+    <option name="totallyTimeSpent" value="697241000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -752,19 +594,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1370" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24851191" sideWeight="0.2704918" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24851191" sideWeight="0.7295082" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24774775" sideWeight="0.31559634" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24774775" sideWeight="0.68440366" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12111293" sideWeight="0.51488096" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1" sideWeight="0.51488096" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10655738" sideWeight="0.48511904" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10819672" sideWeight="0.48511904" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24925596" sideWeight="0.30983606" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24925596" sideWeight="0.30983606" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -808,179 +650,15 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/js/index.js</url>
-          <line>139</line>
+          <line>154</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="10" />
+      <option name="time" value="16" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dist/js/lib/jquery.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/js/lib/jquery.z-pager.js" />
-    <entry file="file://$PROJECT_DIR$/dist/css/lib/page.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/js/lib/jquery-1.5.1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="380" column="8" lean-forward="false" selection-start-line="380" selection-start-column="8" selection-end-line="380" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="52" lean-forward="false" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/web-forms2.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="625" column="16" lean-forward="false" selection-start-line="625" selection-start-column="16" selection-end-line="625" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="946" column="0" lean-forward="false" selection-start-line="946" selection-start-column="0" selection-end-line="946" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/less/add_waterplant.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="134" column="9" lean-forward="false" selection-start-line="114" selection-start-column="8" selection-end-line="134" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/js/lib/page.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="70" column="31" lean-forward="false" selection-start-line="70" selection-start-column="31" selection-end-line="70" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1830">
-          <caret line="122" column="26" lean-forward="false" selection-start-line="122" selection-start-column="26" selection-end-line="122" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/add_waterplant.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="109" column="34" lean-forward="false" selection-start-line="109" selection-start-column="20" selection-end-line="109" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/change_password.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="68" column="28" lean-forward="true" selection-start-line="68" selection-start-column="28" selection-end-line="68" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/device_information.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="27" column="10" lean-forward="false" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/nav.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/less/change_device.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="184" column="3" lean-forward="false" selection-start-line="176" selection-start-column="2" selection-end-line="184" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/change_device.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="108" column="33" lean-forward="false" selection-start-line="108" selection-start-column="29" selection-end-line="108" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/less/installation_table.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="143" column="0" lean-forward="false" selection-start-line="143" selection-start-column="0" selection-end-line="151" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/installation_table.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="34" column="75" lean-forward="false" selection-start-line="34" selection-start-column="75" selection-end-line="34" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/less/index.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="339" column="16" lean-forward="false" selection-start-line="339" selection-start-column="16" selection-end-line="339" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/installation_table.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-124">
-          <caret line="129" column="56" lean-forward="false" selection-start-line="129" selection-start-column="20" selection-end-line="129" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/device_information.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1485">
-          <caret line="99" column="47" lean-forward="false" selection-start-line="99" selection-start-column="47" selection-end-line="99" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/change_password.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1515">
-          <caret line="101" column="28" lean-forward="false" selection-start-line="101" selection-start-column="28" selection-end-line="101" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/change_device.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1710">
-          <caret line="114" column="65" lean-forward="true" selection-start-line="114" selection-start-column="65" selection-end-line="114" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/add_waterplant.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="33" lean-forward="true" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/css/lib/jedate.css" />
     <entry file="file://$PROJECT_DIR$/dist/js/lib/jquery.jedate.js" />
     <entry file="file://$PROJECT_DIR$/dist/css/login.min.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -993,13 +671,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="63" lean-forward="true" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="134" column="58" lean-forward="false" selection-start-line="134" selection-start-column="58" selection-end-line="134" selection-end-column="58" />
         </state>
       </provider>
     </entry>
@@ -1031,34 +702,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/url_str.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="48" lean-forward="false" selection-start-line="1" selection-start-column="48" selection-end-line="1" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/warningInfo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="224" column="6" lean-forward="false" selection-start-line="224" selection-start-column="6" selection-end-line="224" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/month_table.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="170" column="40" lean-forward="false" selection-start-line="170" selection-start-column="28" selection-end-line="170" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/month_table.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="228" column="5" lean-forward="false" selection-start-line="220" selection-start-column="4" selection-end-line="228" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/less/warningInfo.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="485">
@@ -1073,144 +716,338 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/year_table.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2745">
-          <caret line="183" column="23" lean-forward="false" selection-start-line="183" selection-start-column="23" selection-end-line="183" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/less/year_table.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4080">
           <caret line="272" column="52" lean-forward="false" selection-start-line="272" selection-start-column="52" selection-end-line="272" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/year_table.js">
+    <entry file="file://$PROJECT_DIR$/src/less/login.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1890">
-          <caret line="240" column="46" lean-forward="false" selection-start-line="240" selection-start-column="46" selection-end-line="240" selection-end-column="46" />
-          <folding>
-            <element signature="e#1299#1596#0" expanded="false" />
-            <element signature="e#1670#3383#0" expanded="false" />
-            <element signature="e#2232#2278#0" expanded="false" />
-            <element signature="e#2328#2374#0" expanded="false" />
-            <element signature="e#2844#3169#0" expanded="false" />
-            <element signature="e#3221#3378#0" expanded="false" />
-            <element signature="e#3414#4234#0" expanded="false" />
-            <element signature="e#3741#4050#0" expanded="false" />
-            <element signature="e#6410#6893#0" expanded="false" />
-            <element signature="e#6929#8315#0" expanded="false" />
-            <element signature="e#8343#8422#0" expanded="false" />
-            <element signature="e#8477#8708#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="124" column="53" lean-forward="false" selection-start-line="124" selection-start-column="53" selection-end-line="124" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/less/statistical_report.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="204" column="21" lean-forward="false" selection-start-line="204" selection-start-column="21" selection-end-line="204" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/css/lib/pop.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="80" column="82" lean-forward="true" selection-start-line="80" selection-start-column="82" selection-end-line="80" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/js/lib/pop.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="80" column="42" lean-forward="true" selection-start-line="80" selection-start-column="42" selection-end-line="80" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/statistical_report.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="117" column="24" lean-forward="false" selection-start-line="117" selection-start-column="19" selection-end-line="117" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/month_table.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="230" column="24" lean-forward="false" selection-start-line="230" selection-start-column="19" selection-end-line="230" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/installation_table.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="109" column="28" lean-forward="false" selection-start-line="109" selection-start-column="23" selection-end-line="109" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/device_information.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="59" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/nav.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="38" lean-forward="false" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/css/warningInfo.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/warningInfo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2130">
-          <caret line="303" column="34" lean-forward="false" selection-start-line="303" selection-start-column="34" selection-end-line="303" selection-end-column="34" />
-          <folding>
-            <element signature="e#978#1009#0" expanded="false" />
-            <element signature="e#1035#1066#0" expanded="false" />
-            <element signature="e#1085#1566#0" expanded="false" />
-            <element signature="e#1695#2190#0" expanded="false" />
-            <element signature="e#2239#2542#0" expanded="false" />
-            <element signature="e#2576#2833#0" expanded="false" />
-            <element signature="e#2862#3111#0" expanded="false" />
-            <element signature="e#3140#3321#0" expanded="false" />
-            <element signature="e#4192#4700#0" expanded="false" />
-            <element signature="e#4748#4974#0" expanded="false" />
-            <element signature="e#5001#5159#0" expanded="false" />
-            <element signature="e#6758#7615#0" expanded="false" />
-            <element signature="e#7643#7722#0" expanded="false" />
-            <element signature="e#8562#10501#0" expanded="false" />
-            <element signature="e#9950#10437#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="447">
+          <caret line="309" column="42" lean-forward="true" selection-start-line="309" selection-start-column="42" selection-end-line="309" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/less/device_check.less">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2505">
-          <caret line="240" column="7" lean-forward="false" selection-start-line="167" selection-start-column="6" selection-end-line="240" selection-end-column="7" />
-          <folding>
-            <element signature="e#3923#5839#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/device_check.html">
+    <entry file="file://$PROJECT_DIR$/src/js/year_table.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2610">
-          <caret line="182" column="0" lean-forward="false" selection-start-line="182" selection-start-column="0" selection-end-line="182" selection-end-column="43" />
+        <state relative-caret-position="531">
+          <caret line="252" column="17" lean-forward="false" selection-start-line="252" selection-start-column="17" selection-end-line="252" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/less/add_waterplant.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-512">
+          <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/add_waterplant.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="27" column="17" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/change_password.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="71" column="32" lean-forward="false" selection-start-line="71" selection-start-column="27" selection-end-line="71" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/change_device.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1681">
+          <caret line="114" column="24" lean-forward="false" selection-start-line="114" selection-start-column="19" selection-end-line="114" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/url_str.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="48" lean-forward="false" selection-start-line="1" selection-start-column="48" selection-end-line="1" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/less/index.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3525">
+          <caret line="235" column="27" lean-forward="false" selection-start-line="235" selection-start-column="27" selection-end-line="235" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="211" column="29" lean-forward="false" selection-start-line="211" selection-start-column="29" selection-end-line="211" selection-end-column="29" />
           <folding>
-            <element signature="n#div#0;n#div#1;n#div#2;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#1199#1772#0" expanded="false" />
+            <element signature="e#4965#5044#0" expanded="false" />
+            <element signature="e#6472#7075#0" expanded="false" />
+            <element signature="e#7078#7161#0" expanded="false" />
+            <element signature="e#7164#7826#0" expanded="false" />
+            <marker date="1501580359163" expanded="true" signature="6889:6896" ph="«" />
+            <marker date="1501580359163" expanded="true" signature="6959:6966" ph="»" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/device_check.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="86" selection-end-column="5" />
+        <state relative-caret-position="486">
+          <caret line="119" column="26" lean-forward="false" selection-start-line="119" selection-start-column="26" selection-end-line="119" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/statistical_report.js">
+    <entry file="file://$PROJECT_DIR$/year_table.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="91" column="43" lean-forward="true" selection-start-line="91" selection-start-column="43" selection-end-line="91" selection-end-column="43" />
-          <folding>
-            <element signature="e#1656#2183#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/less/statistical_report.less">
+    <entry file="file://$PROJECT_DIR$/warningInfo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="205" column="24" lean-forward="false" selection-start-line="205" selection-start-column="24" selection-end-line="205" selection-end-column="24" />
-          <folding>
-            <element signature="e#2758#2974#0" expanded="false" />
-            <element signature="e#3062#3855#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/statistical_report.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="186" column="52" lean-forward="false" selection-start-line="186" selection-start-column="52" selection-end-line="186" selection-end-column="52" />
-          <folding>
-            <element signature="n#div#1;n#div#2;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add_waterplant.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="55" lean-forward="true" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/change_device.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/device_check.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/month_table.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/installation_table.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="86" column="28" lean-forward="true" selection-start-line="86" selection-start-column="28" selection-end-line="86" selection-end-column="28" />
+        <state relative-caret-position="60">
+          <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/index.js">
+    <entry file="file://$PROJECT_DIR$/data.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="157" column="46" lean-forward="true" selection-start-line="157" selection-start-column="46" selection-end-line="157" selection-end-column="46" />
+        <state relative-caret-position="390">
+          <caret line="26" column="22" lean-forward="false" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/change_password.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/device_information.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/js/lib/jquery-1.5.1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="8314" column="16" lean-forward="false" selection-start-line="8314" selection-start-column="16" selection-end-line="8314" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/less/change_device.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="173" column="7" lean-forward="false" selection-start-line="173" selection-start-column="7" selection-end-line="173" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/less/device_check.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="70" selection-end-column="9" />
           <folding>
-            <element signature="e#1199#1772#0" expanded="false" />
-            <element signature="e#6025#6628#0" expanded="false" />
-            <element signature="e#6631#6714#0" expanded="false" />
-            <element signature="e#6717#7379#0" expanded="false" />
-            <marker date="1501139328655" expanded="true" signature="6442:6449" ph="«" />
-            <marker date="1501139328655" expanded="true" signature="6512:6519" ph="»" />
+            <element signature="e#611#1209#0" expanded="false" />
+            <element signature="e#1875#2316#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/less/price_query.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="225" column="33" lean-forward="false" selection-start-line="225" selection-start-column="33" selection-end-line="225" selection-end-column="33" />
+          <folding>
+            <element signature="e#25#285#0" expanded="false" />
+            <element signature="e#1297#1646#0" expanded="false" />
+            <element signature="e#3821#4326#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/price_query.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="215" column="66" lean-forward="false" selection-start-line="215" selection-start-column="58" selection-end-line="215" selection-end-column="77" />
+          <folding>
+            <element signature="n#li#2;n#ul#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#table#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/price_query.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="174" column="37" lean-forward="false" selection-start-line="174" selection-start-column="37" selection-end-line="174" selection-end-column="37" />
+          <folding>
+            <element signature="e#628#1082#0" expanded="false" />
+            <element signature="e#1129#1153#0" expanded="false" />
+            <element signature="e#1182#2124#0" expanded="false" />
+            <element signature="e#2180#2411#0" expanded="false" />
+            <element signature="e#3398#3477#0" expanded="false" />
+            <element signature="e#8103#9370#0" expanded="false" />
           </folding>
         </state>
       </provider>

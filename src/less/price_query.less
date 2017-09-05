@@ -13,14 +13,47 @@
   }
   .info-wrapper {
     width: 100%;
-    padding: 38px 173px 97px;
+    padding: 38px 100px 97px;
     background-color: #fff;
     border: 1px solid #efefef;
     border-radius: 6px;
     box-shadow: 0 0 5px 1px rgba(162, 162, 162, .2);
+    .select-factory-wrapper {
+      height: 34px;
+      line-height: 34px;
+      color: #444;
+      font-size: 14px;
+      margin-bottom: 16px;
+      width: 912px;
+      .select-factory-input {
+        width: 189px;
+        height: 34px;
+        border-radius: 4px;
+        border: #efefef 1px solid;
+        position: relative;
+        margin-left: 6px;
+        text-indent: 15px;
+        font-size: 14px;
+        color: #444;
+        option {
+          font-size: 12px;
+          color: #444;
+          height: 30px;
+          padding: 7px 0 7px 15px;
+        }
+        &:after {
+        }
+      }
+    }
+    .tip-div {
+      margin: 20px 0 16px;
+      font-size: 12px;
+      color: #aaa;
+      font-weight: 500;
+    }
     .info-table {
       border: 1px solid #eaedfa;
-      margin-bottom: 26px;
+      margin-bottom: 40px;
       thead {
         border: 1px solid #eaedfa;
         tr {
@@ -41,33 +74,49 @@
         tr {
           height: 36px;
           border: 1px solid #eaedfa;
-          &.none {
-            display: none;
-          }
           td {
             border: 1px solid #eaedfa;
             color: #333;
             font-size: 12px;
             font-weight: 400;
             text-align: center;
+            line-height: 26px;
+            &.editClass {
+
+            }
+            .btn-edit {
+              font-size: 12px;
+              background: #529fff;
+              border: none;
+              height: 26px;
+              &:hover {
+                background: #337ab7;
+              }
+            }
           }
         }
       }
     }
-    .add-plants {
-      float: right;
-      width: 139px;
-      height: 36px;
-      line-height: 36px;
-      font-size: 14px;
-      background-color: #529fff;
-      color: #fff;
-      border-radius: 4px;
+    .add-btn-wrapper {
       text-align: center;
-      cursor: pointer;
-      &:hover {
-        background-color: #4d8fe8;
+      .add-btn {
+        padding: 0;
+        display: inline-block;
+        width: 82px;
+        height: 36px;
+        line-height: 36px;
+        font-size: 14px;
+        background-color: #529fff;
+        color: #fff;
+        border-radius: 4px;
+        text-align: center;
+        cursor: pointer;
+        margin-left: 30px;
+        &:hover {
+          background-color: #4d8fe8;
+        }
       }
+
     }
   }
 }
@@ -77,7 +126,7 @@
   position: relative;
   .modal-wrapper {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
@@ -102,6 +151,7 @@
           width: 100%;
           height: 51px;
           padding-right: 10px;
+          overflow: hidden;
           i {
             float: right;
             font-size: 35px;
@@ -136,17 +186,49 @@
             font-size: 12px;
           }
         }
+        .table-wrapper {
+          table {
+            margin: 0 auto;
+            tr {
+              td {
+                box-sizing: border-box;
+                padding: 6px 0;
+                height: 40px;
+                font-size: 12px;
+                margin-right: 5px;
+                color: #333;
+                &:nth-of-type(1) {
+                  padding-right: 10px;
+                }
+                input, select {
+                  width: 216px;
+                  height: 100%;
+                  border: 1px solid #ebebeb;
+                  text-indent: 15px;
+                  border-radius: 4px;
+                  color: #333;
+                  font-size: 12px;
+                  &::-webkit-input-placeholder {
+                    color: #eee;
+                  }
+                  &:-ms-input-placeholder {
+                    color: #eee;
+                  }
+                }
+              }
+            }
+          }
+        }
         .tip-wrapper {
           font-size: 12px;
           height: 20px;
           line-height: 20px;
-          padding: 0 8px 0 140px;
+          padding: 0 8px 0 152px;
           margin-bottom: 10px;
           color: #FF0000;
-          display: none;
         }
         .submit-btn-wrapper {
-          padding-top: 19px;
+          padding-top: 6px;
           text-align: center;
           span {
             display: inline-block;

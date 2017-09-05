@@ -108,6 +108,7 @@ $(function () {
 			success: function (data) {
 				var msg = data.msg;
 				var permission = data.permission;
+				var managerName = data.managerName;
 				switch (msg) {
 					/*1.msg为2，传递参数出错*/
 					case 2:
@@ -128,6 +129,7 @@ $(function () {
 					default:
 						$user_input.val('');
 						sessionStorage.setItem('permission', permission);
+						sessionStorage.setItem('managerName', managerName);
 						window.location.href = '../manager/index.html';
 						break;
 				}

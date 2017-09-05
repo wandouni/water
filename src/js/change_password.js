@@ -62,17 +62,37 @@ $(function () {
 				success: function (data) {
 					if (data.msg === '0') {
 						console.log('修改成功！');
-						alert('修改成功！');
+						// alert('修改成功！');
+						$.showSuccessPop({
+							msg: '修改成功',
+							type: 'failure',
+							autoHide: true
+						});
 					} else if (data.msg === '1') {
-						alert('数据库修改失败请重试！');
+						// alert('数据库修改失败请重试！');
+						$.showSuccessPop({
+							msg: '数据库修改失败请重试',
+							type: 'failure',
+							autoHide: true
+						});
 						console.log('数据库修改失败请重试！');
 					} else {
-						alert('旧密码输入错误！');
+						// alert('旧密码输入错误！');
+						$.showSuccessPop({
+							msg: '旧密码输入错误！',
+							type: 'failure',
+							autoHide: true
+						});
 					}
 				},
 				error: function () {
 					console.log('ajax error');
-					alert("网络出错")
+					// alert("网络出错");
+					$.showSuccessPop({
+						msg: '网络错误，请重试！',
+						type: 'failure',
+						autoHide: true
+					});
 				}
 			});
 		}

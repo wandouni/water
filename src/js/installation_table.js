@@ -107,16 +107,31 @@ $(function () {
 					console.log(data);
 					renderTable(data, data.dataList);
 				} else {
-					alert('您所查询的年份没有数据！');
+					// alert('您所查询的年份没有数据！');
 					console.log('未返回任何数据！');
+					$.showSuccessPop({
+						msg: '您所查询的年份没有数据！',
+						type: 'failure',
+						autoHide: true
+					});
+					renderNodata();
 				}
 			},
 			error: function () {
 				console.log('ajax error');
 				console.log('网络错误');
-
+				$.showSuccessPop({
+					msg: '网络错误，请重试！',
+					type: 'failure',
+					autoHide: true
+				});
 			}
 		});
+	}
+
+	function renderNodata() {
+		$month_tbody.empty();
+		$month_tbody.append($('<tr><td>-</td><td>-</td></tr>'));
 	}
 
 	/*渲染表格*/

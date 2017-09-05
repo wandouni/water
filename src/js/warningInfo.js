@@ -74,7 +74,7 @@ $(function () {
 		var second = date.getSeconds();
 		minute = minute < 10 ? ('0' + minute) : minute;
 		second = second < 10 ? ('0' + second) : second;
-		return y + '年' + m + '月' + d + '日 ' + h + ':' + minute + ':' + second;
+		return y + '-' + m + '-' + d + ' ' + h + ':' + minute + ':' + second;
 	}
 
 	function initPagination(current, total, flag) {
@@ -150,6 +150,7 @@ $(function () {
 				click: function () {
 					console.log($(this).attr('data-id'));
 					renderModal($(this).attr('data-id'), dataArray);
+					console.log($(this).attr('data-id'));
 				}
 			}).appendTo($td_btn);
 			$tr.append($tds);
@@ -198,6 +199,7 @@ $(function () {
 	}
 
 	function renderModal(data_id, arr) {
+		$('.submit-btn').off('click');
 		$modal_wrapper.css('display', 'block');
 		/*初始化时间选择*/
 
@@ -222,17 +224,23 @@ $(function () {
 
 		if (parseInt(targetObj.isProcession) === 1) {
 			/*已处理*/
-			$('.dealTime-input').val(targetObj.processionTime);
+			$('.dealTime-input').val(getDate(targetObj.processionTime));
+			$('.dealTime-input').attr('disabled', 'disabled');
 
 			$dealDescription_input.css('display', 'none');
 			$dealDescription_text.css('display', 'inline-block');
-			$dealDescription_text.text("已处理");
+			if (targetObj.processionDecrip === '') {
+				$dealDescription_text.text("已处理");
+			} else {
+				$dealDescription_text.text(targetObj.processionDecrip);
+			}
 
 			$('.submit-btn').attr('disabled', 'disabled');
 			$('.submit-btn').addClass('disabled');
 		} else {
 			/*未处理*/
 			$dealTime_input.val(getNow());
+			$('.dealTime-input').removeAttr('disabled');
 
 			$dealDescription_input.css('display', 'inline-block');
 			$dealDescription_text.css('display', 'none');
@@ -241,12 +249,14 @@ $(function () {
 			$('.submit-btn').removeClass('disabled');
 			$('.submit-btn').click(function () {
 				bindSubmit(data_id, $(".dealTime-input").val(), $('.dealDescription-input').val(), arr);
+				console.log('1111');
 			});
 		}
 
 		/*给关闭按钮绑定点击事件*/
 		$('.close-icon').click(function () {
 			$modal_wrapper.css('display', 'none');
+			$('.submit-btn').off('click');
 		});
 	}
 
@@ -254,8 +264,9 @@ $(function () {
 	var submitData = {"msg": 0};
 	Mock.mock('submitData', submitData);
 
+	// console.log(new Date('2017-08-02 10:57:00').getTime());
 	function bindSubmit(id, time, description, arr) {
-		var data = 'alarmId=' + id + '&processionTime=' + time + '&processionInfo=' + description;
+		var data = 'alarmId=' + id + '&processionTime=' + new Date(time).getTime() + '&processionInfo=' + description;
 		console.log(data);
 		$.ajax({
 			url: common_url + '/watersys/saveAlarmProcession.do',
@@ -267,7 +278,12 @@ $(function () {
 			success: function (data) {
 				console.log(data);
 				if (data.msg === 0) {
-					alert('修改成功');
+					// alert('修改成功');
+					$.showSuccessPop({
+						msg: '修改成功',
+						type: 'success',
+						autoHide: true
+					});
 					console.log(id);
 					console.log(arr);
 
@@ -276,18 +292,28 @@ $(function () {
 						if (dataArray[i].alarmId.toString() === id.toString()) {
 							dataArray[i].isProcession = 1;
 							dataArray[i].processionTime = time;
+							dataArray[i].processionDecrip = description;
 						}
 					}
 					reupdateTable(id);
-
 					$modal_wrapper.css('display', 'none');
 				} else {
-					alert("修改失败");
+					// alert("修改失败");
+					$.showSuccessPop({
+						msg: '修改失败，请重试！',
+						type: 'failure',
+						autoHide: true
+					});
 				}
 			},
 			error: function () {
 				console.log('ajax error');
-				alert('网络错误！');
+				// alert('网络错误！');
+				$.showSuccessPop({
+					msg: '网络错误，请重试！',
+					type: 'failure',
+					autoHide: true
+				});
 			}
 		});
 	}
@@ -316,14 +342,31 @@ $(function () {
 					}
 				} else {
 					console.log("查询结果为空");
-					alert("查询结果为空");
+					// alert("查询结果为空");
+					$.showSuccessPop({
+						msg: '查询结果为空',
+						autoHide: true
+					});
+					showNodata();
 				}
 			},
 			error: function () {
 				console.log('ajax error');
-				alert('网络错误请重试！');
+				// alert('网络错误请重试！');
+				$.showSuccessPop({
+					msg: '网络错误，请重试！',
+					type: 'failure',
+					autoHide: true
+				});
+				showNodata();
 			}
 		});
+	}
+
+	function showNodata() {
+		$(".table-tbody tr:not([class='table-no-data'])").remove();
+		$('#page').empty();
+		$table_no_data.css('display', 'table-row');
 	}
 
 	function reupdateTable(id) {
@@ -351,11 +394,20 @@ $(function () {
 							fillFactory(data.dataList);
 						} else {
 							console.log("查询结果为空");
+							$.showSuccessPop({
+								msg: '查询结果为空',
+								autoHide: true
+							});
 						}
 					},
 					error: function () {
 						console.log('ajax error');
-						alert('网络错误');
+						// alert('网络错误');
+						$.showSuccessPop({
+							msg: '网络错误，请重试！',
+							type: 'failure',
+							autoHide: true
+						});
 					}
 				});
 				break;
@@ -378,12 +430,22 @@ $(function () {
 					fillReasonSelect(data.dataList);
 				} else {
 					console.log("查询结果为空");
-					alert("查询结果为空");
+					// alert("查询结果为空");
+					$.showSuccessPop({
+						msg: '查询结果为空',
+						type: 'failure',
+						autoHide: true
+					});
 				}
 			},
 			error: function () {
 				console.log('ajax error');
-				alert('ajax error');
+				// alert('ajax error');
+				$.showSuccessPop({
+					msg: '网络错误，请重试！',
+					type: 'failure',
+					autoHide: true
+				});
 			}
 		});
 

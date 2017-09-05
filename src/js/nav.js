@@ -11,4 +11,22 @@ $(function () {
 		$change_password_item.css('display', 'block');
 		$add_plant_item.css('display', 'none');
 	}
+
+
+	/*用户名称显示*/
+	var $user = $('.user'), permission;
+	initPage();
+	function initPage() {
+		var managerName = getStorage('managerName');
+		if (managerName) {
+			$user.text('用户：' + managerName);
+		} else {
+			$user.text('用户：' + '---');
+		}
+	}
+
+	function getStorage(key) {
+		var value = sessionStorage.getItem(key);
+		return value ? value : false;
+	}
 });

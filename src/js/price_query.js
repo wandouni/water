@@ -13,10 +13,10 @@ $(function () {
 	var $tip_wrapper = $('.tip-wrapper');
 	var permission, factoryList;
 	var priceType = {
-		'4': '民用价格',
+		'1': '民用价格',
 		'2': '商用价格',
 		'3': '其他价格'
-	}
+	};
 
 	function PriceObj (option) {
 		this.priceTypeName = option.priceTypeName;
@@ -142,21 +142,24 @@ $(function () {
 		if ($price_select.has('option')) {
 			$price_select.empty();
 		}
-		$price_select.append("<option value='4'>民用价格</option><option value='2'>商用价格</option><option value='3'>其他价格</option>")
+		$price_select.append("<option value='1'>民用价格</option><option value='2'>商用价格</option><option value='3'>其他价格</option>")
 	}
 
 	function submitPrice () {
-		var data = 'stepPriceInfoId=' + $price_select.val()
+		var data = 'priceTypeId=' + $price_select.val()
 			+ '&cycleTimes=' + $('.cycleTimes-input').val()
-			+ '&cycleTimes=' + $('.stepPriceOne-input').val()
-			+ '&cycleTimes=' + $('.stepDosageOne-input').val()
-			+ '&cycleTimes=' + $('.stepPriceTwo-input').val()
-			+ '&cycleTimes=' + $('.stepDosageTwo-input').val()
-			+ '&cycleTimes=' + $('.stepPriceThree-input').val()
-			+ '&cycleTimes=' + $('.stepDosageThree-input').val()
-			+ '&cycleTimes=' + $('.stepPriceFour-input').val();
+			+ '&stepPriceOne=' + $('.stepPriceOne-input').val()
+			+ '&stepDosageOne=' + $('.stepDosageOne-input').val()
+			+ '&stepPriceTwo=' + $('.stepPriceTwo-input').val()
+			+ '&stepDosageTwo=' + $('.stepDosageTwo-input').val()
+			+ '&stepPriceThree=' + $('.stepPriceThree-input').val()
+			+ '&stepDosageThree=' + $('.stepDosageThree-input').val()
+			+ '&stepPriceFour=' + $('.stepPriceFour-input').val();
+		if (permission === '1') {
+			data += '&managerUserId=' + $('.select-factory-input').val();
+		}
 		$.ajax({
-			url: common_url + '/watersys/updateStepPriceInfo.do',
+			url: common_url + '/watersys/saveStepPriceInfo.do',
 			type: 'POST',
 			data: data,
 			dataType: 'json',
@@ -165,16 +168,20 @@ $(function () {
 			success: function (data) {
 				console.log(data);
 				if (data.msg === 0) {
-					$('.price-input').each(function (index) {
+					$('.price-input').each(function () {
 						$(this).val('');
 					});
 					$modal_wrapper.css('display', 'none');
+					if (permission === '1') {
+						renderTable('managerId=' + factoryList[0].managerId);
+					} else {
+						renderTable('');
+					}
 					$.showSuccessPop({
 						msg: '操作成功！',
 						type: 'success',
 						autoHide: true
 					});
-
 				} else if (data.msg === 1) {
 					console.log('数据库插入异常');
 					$.showSuccessPop({
@@ -210,19 +217,18 @@ $(function () {
 	}
 
 	function addPrice (arr) {
-		// if (arr.length < 3) {
-		if (true) {
+		if (arr.length < 3 && arr.length > 0) {
 			$add_btn.removeClass('disabled none').click(function () {
 				$modal_wrapper.css('display', 'block');
 				renderOption();
 				console.log(arr);
 				arr.forEach(function (ele) {
-					$price_select.find($('option[value=' + ele.stepPriceInfoId + ']')).remove();
+					$price_select.find($('option[value=' + ele.priceTypeId + ']')).remove();
 				})
 			});
 			$submit_btn.click(function () {
 				$tip_wrapper.addClass('none');
-				$('.price-input').each(function (index) {
+				$('.price-input').each(function () {
 					if ($(this).val() === '') {
 						$tip_wrapper.removeClass('none');
 						return false;
@@ -233,6 +239,9 @@ $(function () {
 				}
 			});
 			$close_icon.click(function () {
+				$('.price-input').each(function () {
+					$(this).val('');
+				});
 				$modal_wrapper.css('display', 'none');
 			});
 		} else {
@@ -379,9 +388,10 @@ $(function () {
 					addEdit(data.dataList);
 					addPrice(data.dataList);
 				} else {
-					console.log('返回信息不存在');
+					addPrice([]);
+					console.log('查询结果为空！');
 					$.showSuccessPop({
-						msg: '网络错误，请重试！',
+						msg: '查询结果为空！',
 						type: 'failure',
 						autoHide: true
 					});

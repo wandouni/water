@@ -1,0 +1,101 @@
+.page-wrapper {
+  .title {
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+    text-indent: 20px;
+    color: #529fff;
+    background-color: #2a384e;
+    border-radius: 6px;
+    box-shadow: 0 0 5px 1px rgba(162, 162, 162, .2);
+    margin-bottom: 10px;
+  }
+  .upload-wrapper {
+    background-color: #fff;
+    border: 1px solid #efefef;
+    border-radius: 6px;
+    padding: 37px 0 43px 0;
+    font-size: 0;
+    box-shadow: 0 0 5px 1px rgba(162, 162, 162, .2);
+    margin-bottom: 10px;
+    .select-factory-wrapper {
+      line-height: 36px;
+      color: #444;
+      font-size: 14px;
+      margin: 0 auto 40px;
+      width: 912px;
+      display: none;
+      position: relative;
+      .select-factory-input {
+        width: 216px;
+        height: 36px;
+        border-radius: 4px;
+        border: #efefef 1px solid;
+        position: relative;
+        margin-left: 26px;
+        text-indent: 15px;
+        font-size: 12px;
+        color: #444;
+        option {
+          font-size: 12px;
+          color: #444;
+        }
+        &:after {
+        }
+      }
+      input {
+        margin: 10px 0;
+      }
+      .upload {
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+      }
+      .upload-label {
+        display: inline-block;
+        height: 36px;
+        line-height: 36px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #5e5e5e;
+        text-align: center;
+        cursor: pointer;
+        border: none;
+        margin-top: 20px;
+        padding: 5px;
+        box-sizing: border-box;
+        i {
+          margin-right: 5px;
+        }
+      }
+      .submit-btn {
+        width: 82px;
+        height: 36px;
+        line-height: 36px;
+        font-size: 14px;
+        background-color: #529fff;
+        color: #fff;
+        border-radius: 4px;
+        text-align: center;
+        cursor: pointer;
+        border: none;
+      }
+      p {
+        font-size: 12px;
+        color: #aaa;
+        .get-standard-file {
+          color: #5e5e5e;
+          border-bottom: 1px #000 dashed;
+          &:hover {
+            color: #f00;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+

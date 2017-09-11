@@ -2,23 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="renderer" content="webkit">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="renderer" content="webkit">
     <meta name="keywords" content="物联网，水，电，气，数据运营平台">
     <meta name="description" content="物联网，水，电，气，数据运营平台">
-    <title>自动报警</title>
+    <title>上传表单</title>
     <link rel="stylesheet" href="dist/css/lib/bootstrap.css">
     <link rel="stylesheet" href="dist/css/lib/iconfont.css">
     <link rel="stylesheet" href="dist/css/lib/reset.css">
     <link rel="stylesheet" href="dist/css/lib/pop.css">
     <link rel="stylesheet" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
     <link rel="stylesheet" href="dist/css/lib/foundation-datepicker.css">
-    <!--<link rel="stylesheet" href="dist/css/lib/jedate.css">-->
     <link rel="stylesheet" href="dist/css/lib/page.css">
     <link rel="stylesheet" href="dist/css/common.min.css">
-    <link rel="stylesheet" href="dist/css/warningInfo.min.css">
+    <link rel="stylesheet" href="dist/css/upload_excel.min.css">
 </head>
 <body>
 <div class="wrapper" id="wrapper">
@@ -89,33 +88,33 @@
                     </ul>
                 </li>
                 <li class="big-navbar">
-                    <div class="parent-wrapper active">
+                    <div class="parent-wrapper">
                         <a href="#" data-toggle="collapse" data-target="#manage" class="">
                             <span class="index-icon icon iconfont">&#xe622;</span>
                             <span class="index-text text">管理</span>
                             <span class="triangle iconfont">&#xe724;</span>
                         </a>
                     </div>
-                    <ul class="nav nav-second-level collapse comChild in" id="manage">
+                    <ul class="nav nav-second-level collapse comChild" id="manage">
                         <li class="little-navbar">
                             <a href="./device_information.html">表具信息</a><span class="gray-triangle none"></span>
                         </li>
-                        <li class="little-navbar active">
-                            <a href="./warningInfo.html">自动报警</a><span class="gray-triangle none active"></span>
+                        <li class="little-navbar">
+                            <a href="./warning_info.html">自动报警</a><span class="gray-triangle none"></span>
                         </li>
                     </ul>
                 </li>
                 <li class="big-navbar">
-                    <div class="parent-wrapper">
+                    <div class="parent-wrapper active">
                         <a href="#" data-toggle="collapse" data-target="#security" class="">
                             <span class="index-icon icon iconfont">&#xe601;</span>
                             <span class="index-text text">职能权限</span>
                             <span class="triangle iconfont">&#xe724;</span>
                         </a>
                     </div>
-                    <ul class="nav nav-second-level collapse comChild" id="security">
-                        <li class="little-navbar change-password-item">
-                            <a href="./change_password.html">修改密码</a><span class="gray-triangle none"></span>
+                    <ul class="nav nav-second-level collapse comChild in" id="security">
+                        <li class="little-navbar active upload-excel-item">
+                            <a href="./upload_excel.html">文件上传</a><span class="gray-triangle none active"></span>
                         </li>
                         <li class="little-navbar add-plant-item">
                             <a href="./add_waterplant.html">水务局查询和添加</a><span class="gray-triangle none"></span>
@@ -125,119 +124,35 @@
             </ul>
         </div>
         <div class="page-wrapper">
-            <div class="title">自动报警</div>
-            <div class="search-wrapper">
-                <table>
-                    <tr>
-                        <td>表号：<input type="text" class="device-num" placeholder="例如：123456"></td>
-                        <td class="select-factory-wrapper">水务局：<select class="select-factory-input"></select></td>
-                    </tr>
-                    <tr>
-                        <td>开始时间：<input type="text" class="start-time"></td>
-                        <td>结束时间：<input type="text" class="end-time"></td>
-                    </tr>
-                    <tr>
-                        <td>发生原因：<select class="reason-select"></select></td>
-                        <td>是否处理：<select class="handle-select"></select></td>
-                    </tr>
-                </table>
-                <div class="search-tip"></div>
-                <div class="search-btn-wrapper">
-                    <div class="search-btn">搜 索</div>
-                </div>
-            </div>
-            <div class="table-wrapper">
-                <div class="info-title">
-                    <div class="info-title-text">表格</div>
-                </div>
-                <div class="table-content">
-                    <table class="table table-bordered">
-                        <thead>
-                        <tr>
-                            <th>表号</th>
-                            <th>报警描述</th>
-                            <th>报警时间</th>
-                            <th>批量处理</th>
-                            <th>地址</th>
-                            <th>操作</th>
-                        </tr>
-                        </thead>
-                        <tbody class="table-tbody">
-                        <tr class="table-no-data">
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div id="pagination-wrapper">
-                    <div id="page" class="page clearfix "></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal-wrapper" id="modal-wrapper">
-        <div class="right-bottom-wrapper">
-            <div class="submit-wrapper">
-                <div class="close-wrapper"><i class="iconfont close-icon">&#xe6d0;</i></div>
-                <div class="one-line-rapper">
-                    <span class="key device-num">
-                        表号：
-                    </span>
-                    <span class="value device-num-text"></span>
-                </div>
-                <div class="one-line-rapper">
-                    <span class="key warning-type">
-                       报警类型：
-                    </span>
-                    <span class="value warning-type-text"></span>
-                </div>
-                <div class="one-line-rapper">
-                    <span class="key warning-description">
-                       报警描述：
-                    </span>
-                    <span class="value warning-description-text"></span>
-                </div>
-                <div class="one-line-rapper">
-                    <span class="key warning-time">
-                       报警时间：
-                    </span>
-                    <span class="value warning-time-text"></span>
-                </div>
-                <div class="one-line-rapper">
-                    <span class="key deal-time">
-                       处理时间：
-                    </span>
-                    <input type="text" class="value dealTime-input">
-                </div>
-                <div class="one-line-rapper">
-                    <span class="key deal-description">
-                       处理描述：
-                    </span>
-                    <input type="text" class="value dealDescription-input">
-                    <span class="dealDescription-text"></span>
-                </div>
-                <div class="submit-btn-wrapper">
-                    <a class="submit-btn">修改</a>
-                </div>
+            <div class="title">水表用户批量录入</div>
+            <div class="upload-wrapper">
+                <form id="upload-file-form" class="upload-file-form" name="upload-file-form" action="" method="post"
+                      enctype="multipart/form-data">
+                    <div class="select-factory-wrapper">
+                        <span>选择水务局：</span>
+                        <select class="select-factory-input" name="muid"></select><br>
+                        <input type="file" id="upload" class="upload" name="filename"
+                               accept="application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
+                        <label for="upload" class="upload-label"><i
+                                class="icon iconfont">&#xe603;</i><span>选择Excel文件...</span></label><br>
+                        <input type="submit" value="上传" class="submit-btn" name="submit-btn">
+                        <p>Tip：点击<a class="get-standard-file">上传文档格式</a>,获取文档标准格式</p>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
 </div>
+
 <script src="dist/js/lib/jquery-3.1.1.min.js"></script>
+<script src="dist/js/lib/jquery.form.min.js"></script>
 <script src="dist/js/lib/bootstrap.min.js"></script>
 <script src="dist/js/lib/page.js"></script>
 <script src="dist/js/lib/pop.js"></script>
 <script src="dist/js/lib/mock.js"></script>
 <script src="dist/js/lib/foundation-datepicker.js"></script>
-<!--<script src="dist/js/lib/jquery.jedate.js"></script>-->
-<script src="src/js/nav.js"></script>
 <script src="src/js/url_str.js"></script>
 <script src="src/js/log_out.js"></script>
-<script src="src/js/warningInfo.js"></script>
+<script src="src/js/upload_excel.js"></script>
 </body>
 </html>

@@ -127,18 +127,12 @@
   height: 100%;
 }
 .page-wrapper .total-data-wrapper .data-wrapper .block .icon.water-icon {
-  border-bottom-left-radius: 4px;
-  border-top-left-radius: 4px;
   background: url("../../img/total_water.png") #70cac8 center center no-repeat;
 }
 .page-wrapper .total-data-wrapper .data-wrapper .block .icon.money-icon {
-  border-bottom-left-radius: 4px;
-  border-top-left-radius: 4px;
   background: url("../../img/total_money.png") #f7d254 center center no-repeat;
 }
 .page-wrapper .total-data-wrapper .data-wrapper .block .icon.user-icon {
-  border-bottom-left-radius: 4px;
-  border-top-left-radius: 4px;
   background: url("../../img/total_user.png") #aad772 center center no-repeat;
 }
 .page-wrapper .total-data-wrapper .data-wrapper .block .content {
